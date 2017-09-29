@@ -1,0 +1,38 @@
+﻿/*positioning*/
+h3 {margin-bottom:.5em;}
+#mainDisplay{clear:both;padding: 3px;}
+#roomRequestContainer{  position:relative;}
+#tab0 {padding:0em;}
+#leftColumn{position:absolute;left:0px;padding:.2em;width:22em;top:0px;vertical-align:top;z-index:4;}
+#roomRequestCore{position:relative;	margin-left:20.5em;}
+#content{clear:both;}
+.abr{width:25%;}
+.attendeeRow{clear:left;position:relative;}
+.attendeeWidth{float:left;display:block;overflow:hidden;border-top: solid 1px;border-bottom: solid 1px;border-left: solid 1px;white-space:nowrap;}
+.aw{width:20%;}
+.iw {width:25%;}
+.lw {width:72%}
+.attendeeMargin{margin-top:1em;}
+.tipHeader{width:14em;font-weight:bold;display:block; vertical-align:top;}
+
+/*formatting*/
+.attendeeWidth {background-color:White;	border-color:#dcdcdc;}
+.accepted{color:Green;}
+.declined{color:red;}
+.tentative{	color:Aqua;}
+.noresponse{color:Orange;}
+.OnDateLabel {font-size:1em;}
+#leftColumn{border-right: 2px groove grey;border-bottom: 2px groove grey;}
+h3{font-size:1.3em;}
+#featureScroll {overflow:auto;width:18em;max-height:16em;border:1px solid lightgrey;}
+.pmbRightCol{padding-left:1em; height:100%;}
+.pmbLeftCol{padding-right:.5em;border-right: 2px groove grey; }
+
+#bookHeaderContainer, #pamBookHeaderContainer 
+{
+    width:647px;
+}
+.bookScroll, .pamBookScroll { width:664px;}
+.safari-mac .bookScroll, .safari-mac .pamBookScroll {width:647px; }
+.bookScroll{height:150px;}
+.pamAttendees{padding-top:17px;}

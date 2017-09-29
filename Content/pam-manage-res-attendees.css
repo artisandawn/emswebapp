@@ -1,0 +1,17 @@
+﻿
+#leftColumn{position:absolute;left:2px;width:21.5em;top:0px;vertical-align:top;z-index:4;}
+#roomRequestCore{padding-left:22.5em;}
+#roomRequestContainer{position:relative; margin-top:1em;}
+
+/*formatting*/
+.attendeeWidth{border-color:#dcdcdc;background-color:White;}
+a.white, a.white:hover{}
+#leftColumn{border: 2px groove grey;}
+.pamBookScroll { width:668px;}
+.iw {width:14%;padding-left:.2em;}
+.lw {width:82%;}
+#bookHeaderContainer, #pamBookWrapper { width: 651px; }
+.safari-mac .bookScroll, .safari-mac .pamBookScroll {width:651px; }
+.pamAttendees{padding-top:19px;}
+.p, .bp{line-height:1.8em;}
+

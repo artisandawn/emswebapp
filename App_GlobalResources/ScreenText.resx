@@ -1,0 +1,3502 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="About" xml:space="preserve">
+    <value>about</value>
+  </data>
+  <data name="AboutTheXTemplate" xml:space="preserve">
+    <value>About The "{0}" Template</value>
+  </data>
+  <data name="AboutThisTemplate" xml:space="preserve">
+    <value>About This Template</value>
+  </data>
+  <data name="AboutYou" xml:space="preserve">
+    <value>About You</value>
+  </data>
+  <data name="Accepted" xml:space="preserve">
+    <value>Accepted</value>
+  </data>
+  <data name="AcceptTerms" xml:space="preserve">
+    <value>Accept Terms of Use</value>
+  </data>
+  <data name="AccountConfirmationCreate" xml:space="preserve">
+    <value>Are you sure you want to create your account?</value>
+  </data>
+  <data name="AccountConfirmationRequest" xml:space="preserve">
+    <value>Are you sure you want to request an account?</value>
+  </data>
+  <data name="AccountDetails" xml:space="preserve">
+    <value>Account Details</value>
+  </data>
+  <data name="AccountHeader" xml:space="preserve">
+    <value>Account Information</value>
+  </data>
+  <data name="AccountInstructionsCreate" xml:space="preserve">
+    <value>To create an account, enter your info and click &lt;b&gt;Create An Account&lt;/b&gt;.</value>
+  </data>
+  <data name="AccountInstructionsRequest" xml:space="preserve">
+    <value>To request an account, enter your info and click &lt;b&gt;Request An Account&lt;/b&gt;.</value>
+  </data>
+  <data name="AccountManagementNotes" xml:space="preserve">
+    <value>{0}</value>
+  </data>
+  <data name="ActAsActingMessage" xml:space="preserve">
+    <value>You are currently acting as {0}. Switch back to {1}.</value>
+  </data>
+  <data name="ActAsCancelButton" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="ActAsMessage" xml:space="preserve">
+    <value>You are currently signed in as {0}.</value>
+  </data>
+  <data name="ActAsOkButton" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="ActAsTitle" xml:space="preserve">
+    <value>Act As</value>
+  </data>
+  <data name="Actions" xml:space="preserve">
+    <value>Actions</value>
+  </data>
+  <data name="Active" xml:space="preserve">
+    <value>Active</value>
+  </data>
+  <data name="ActualCount" xml:space="preserve">
+    <value>Actual Attendance:</value>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="AddAnother" xml:space="preserve">
+    <value>Add Another {0}</value>
+  </data>
+  <data name="AddBooking" xml:space="preserve">
+    <value>Add Booking</value>
+  </data>
+  <data name="AddBookingSuccessful" xml:space="preserve">
+    <value>Booking added!</value>
+  </data>
+  <data name="AddBookingTabs" xml:space="preserve">
+    <value>Location</value>
+  </data>
+  <data name="AddCategoryAttendee" xml:space="preserve">
+    <value>Add New {0} Attendee</value>
+  </data>
+  <data name="AdditionalBookingCaption" xml:space="preserve">
+    <value>Additional Bookings</value>
+  </data>
+  <data name="AdditionalDetails" xml:space="preserve">
+    <value>Additional Details</value>
+  </data>
+  <data name="AdditionalEventsPluralFormat" xml:space="preserve">
+    <value>{0} more {1}</value>
+  </data>
+  <data name="AdditionalEventsSingularFormat" xml:space="preserve">
+    <value>{0} more {1}</value>
+  </data>
+  <data name="AdditionalInfo" xml:space="preserve">
+    <value>Additional Information</value>
+  </data>
+  <data name="AdditionalInformation" xml:space="preserve">
+    <value>Additional Information</value>
+  </data>
+  <data name="AdditionalServiceOrdersCaption" xml:space="preserve">
+    <value>Additional Service Orders</value>
+  </data>
+  <data name="AddLocation" xml:space="preserve">
+    <value>Add Location</value>
+  </data>
+  <data name="AddRemove" xml:space="preserve">
+    <value>Add/Remove</value>
+  </data>
+  <data name="AddRoom" xml:space="preserve">
+    <value>Add {0}</value>
+  </data>
+  <data name="AddServices" xml:space="preserve">
+    <value>Add Services</value>
+  </data>
+  <data name="AddServicesAltTag" xml:space="preserve">
+    <value>Add or Edit Services</value>
+  </data>
+  <data name="AddServicesNoBookings" xml:space="preserve">
+    <value>There are no bookings to which services can be added.</value>
+  </data>
+  <data name="AddThisReservationToMyCalendar" xml:space="preserve">
+    <value>Add this reservation to my calendar</value>
+  </data>
+  <data name="AddToAdditionalBookings" xml:space="preserve">
+    <value>Add To Additional Bookings</value>
+  </data>
+  <data name="AddToCartFailed" xml:space="preserve">
+    <value>There was a problem adding the room to your reservation.</value>
+  </data>
+  <data name="AddToMyCalendar" xml:space="preserve">
+    <value>Add to my calendar.</value>
+  </data>
+  <data name="AdminFunctions" xml:space="preserve">
+    <value>Admin Functions</value>
+  </data>
+  <data name="AgreeToTandC" xml:space="preserve">
+    <value>I accept the </value>
+  </data>
+  <data name="All" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="AllAreas" xml:space="preserve">
+    <value>(all {0})</value>
+  </data>
+  <data name="AllDates" xml:space="preserve">
+    <value>All Dates</value>
+  </data>
+  <data name="AllFacilities" xml:space="preserve">
+    <value>(all facilities)</value>
+  </data>
+  <data name="AllFieldsRequired" xml:space="preserve">
+    <value>(all fields required)</value>
+  </data>
+  <data name="AllFloors" xml:space="preserve">
+    <value>(all floors)</value>
+  </data>
+  <data name="AllowCheckInXMinutesBeforeStartOfBooking" xml:space="preserve">
+    <value>Allow check-in X minutes before booking begins.</value>
+  </data>
+  <data name="AllowedWebUsers" xml:space="preserve">
+    <value>Allowed Web Users</value>
+  </data>
+  <data name="AllRoomTypes" xml:space="preserve">
+    <value>(all {0} types)</value>
+  </data>
+  <data name="AltContact" xml:space="preserve">
+    <value>{0}</value>
+  </data>
+  <data name="AltEmailAddress" xml:space="preserve">
+    <value>Alt Email Address:</value>
+  </data>
+  <data name="AltForAdditionalInformationSectionHelpButton" xml:space="preserve">
+    <value>Click to open help about the additional information section</value>
+  </data>
+  <data name="AltForEventDetailsHelpButton" xml:space="preserve">
+    <value>Click to open help about the event details section</value>
+  </data>
+  <data name="AltForGroupLookupButton" xml:space="preserve">
+    <value>Click to open a window to select a group you can book for</value>
+  </data>
+  <data name="AltForGroupSectionHelpButton" xml:space="preserve">
+    <value>Click to open help about the group details section</value>
+  </data>
+  <data name="AltForPamSectionHelpButton" xml:space="preserve">
+    <value>Click to open help about the message details section</value>
+  </data>
+  <data name="AltForPaymentSectionHelpButton" xml:space="preserve">
+    <value>Click to open help about the billing information section</value>
+  </data>
+  <data name="AltPhone" xml:space="preserve">
+    <value>Phone Field 2</value>
+  </data>
+  <data name="Amount" xml:space="preserve">
+    <value>Amount</value>
+  </data>
+  <data name="And" xml:space="preserve">
+    <value>and</value>
+  </data>
+  <data name="AndXOthers" xml:space="preserve">
+    <value>and {0} other(s)</value>
+  </data>
+  <data name="AppendedToMessage" xml:space="preserve">
+    <value>Appended To Message:</value>
+  </data>
+  <data name="ApplicationVersion" xml:space="preserve">
+    <value>Application Version</value>
+  </data>
+  <data name="Apply" xml:space="preserve">
+    <value>Apply</value>
+  </data>
+  <data name="ApplyFilter" xml:space="preserve">
+    <value>Apply Filter</value>
+  </data>
+  <data name="ApplyRecurrence" xml:space="preserve">
+    <value>Apply Recurrence</value>
+  </data>
+  <data name="Areas" xml:space="preserve">
+    <value>{0}</value>
+  </data>
+  <data name="AssistantName" xml:space="preserve">
+    <value>Assistant Name</value>
+  </data>
+  <data name="AttachFile" xml:space="preserve">
+    <value>Attach File</value>
+  </data>
+  <data name="AttachFiles" xml:space="preserve">
+    <value>Attach Files</value>
+  </data>
+  <data name="Attachments" xml:space="preserve">
+    <value>Attachments</value>
+  </data>
+  <data name="AttachmentViolatesMaxLength" xml:space="preserve">
+    <value>The file you attempted to attach is too big.</value>
+  </data>
+  <data name="Attendance" xml:space="preserve">
+    <value>Attendance</value>
+  </data>
+  <data name="AttendanceAndSetupType" xml:space="preserve">
+    <value>Attendance &amp; Setup Type</value>
+  </data>
+  <data name="Attendees" xml:space="preserve">
+    <value>Attendees</value>
+  </data>
+  <data name="AttendeesNoResults" xml:space="preserve">
+    <value>No matching attendees found.</value>
+  </data>
+  <data name="AuthenticationType" xml:space="preserve">
+    <value>Authentication Type</value>
+  </data>
+  <data name="AuthenticationTypeHelp" xml:space="preserve">
+    <value>Some directory services don't implement secure binding. FastBind is a common type of authentication.</value>
+  </data>
+  <data name="Availability" xml:space="preserve">
+    <value>Availability</value>
+  </data>
+  <data name="AvailabilityFilters" xml:space="preserve">
+    <value>Availability Filters</value>
+  </data>
+  <data name="AvailabilityLegend" xml:space="preserve">
+    <value>Availability Legend</value>
+  </data>
+  <data name="Available" xml:space="preserve">
+    <value>Available</value>
+  </data>
+  <data name="AvailableInventory" xml:space="preserve">
+    <value>available inventory</value>
+  </data>
+  <data name="AvailableServices" xml:space="preserve">
+    <value>Available Services</value>
+  </data>
+  <data name="AvailableToBuildings" xml:space="preserve">
+    <value>Available to the following {0}</value>
+  </data>
+  <data name="Average" xml:space="preserve">
+    <value>Average</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>Back</value>
+  </data>
+  <data name="BackToManageBookings" xml:space="preserve">
+    <value>Back to Manage Bookings</value>
+  </data>
+  <data name="BackToPage" xml:space="preserve">
+    <value>Back To Page</value>
+  </data>
+  <data name="BackToSummary" xml:space="preserve">
+    <value>Back To Reservation Details</value>
+  </data>
+  <data name="BackToViewMyRequest" xml:space="preserve">
+    <value>Back to My Requests</value>
+  </data>
+  <data name="BillingInfo" xml:space="preserve">
+    <value>Billing Information</value>
+  </data>
+  <data name="BillingReference" xml:space="preserve">
+    <value>{0}</value>
+  </data>
+  <data name="BillingReferences" xml:space="preserve">
+    <value>{0}</value>
+  </data>
+  <data name="BillingReferenceStartsWith" xml:space="preserve">
+    <value>Starts with text</value>
+  </data>
+  <data name="Booking" xml:space="preserve">
+    <value>booking</value>
+  </data>
+  <data name="BookingAdded" xml:space="preserve">
+    <value>Booking added!</value>
+  </data>
+  <data name="BookingDetails" xml:space="preserve">
+    <value>Booking Details</value>
+  </data>
+  <data name="BookingId" xml:space="preserve">
+    <value>Booking Id</value>
+  </data>
+  <data name="BookingInformation" xml:space="preserve">
+    <value>Booking Information</value>
+  </data>
+  <data name="BookingRequirements" xml:space="preserve">
+    <value>Booking Requirements</value>
+  </data>
+  <data name="BookingRules" xml:space="preserve">
+    <value>Booking Rules</value>
+  </data>
+  <data name="Bookings" xml:space="preserve">
+    <value>bookings</value>
+  </data>
+  <data name="BookingsCaption" xml:space="preserve">
+    <value>Events for {0} on {1}</value>
+  </data>
+  <data name="BookingsEmptyText" xml:space="preserve">
+    <value>No bookings for {0} today</value>
+  </data>
+  <data name="BookingsSummary" xml:space="preserve">
+    <value>Table of event information for group</value>
+  </data>
+  <data name="BookingTime" xml:space="preserve">
+    <value>Booking Time</value>
+  </data>
+  <data name="BookingTools" xml:space="preserve">
+    <value>Booking Tools</value>
+  </data>
+  <data name="BookingUpdated" xml:space="preserve">
+    <value>Booking updated!</value>
+  </data>
+  <data name="BookingViolatesCategoryDateRestriction" xml:space="preserve">
+    <value>The selected services violate their cutoff date.</value>
+  </data>
+  <data name="BookNow" xml:space="preserve">
+    <value>book now</value>
+  </data>
+  <data name="BookNowWithThisTemplate" xml:space="preserve">
+    <value>Book Now With This Template</value>
+  </data>
+  <data name="Browse" xml:space="preserve">
+    <value>Browse</value>
+  </data>
+  <data name="BrowseEventsListViewGridSummary" xml:space="preserve">
+    <value>A table of events</value>
+  </data>
+  <data name="BrowseFacilities" xml:space="preserve">
+    <value>Browse Facilities</value>
+  </data>
+  <data name="BrowserSupport" xml:space="preserve">
+    <value>Browser Support</value>
+  </data>
+  <data name="BrowseReservationsGridCaption" xml:space="preserve">
+    <value>Reservations</value>
+  </data>
+  <data name="BrowseReservationsNoData" xml:space="preserve">
+    <value>No matching reservations found.</value>
+  </data>
+  <data name="BrowseReservationsTabsList" xml:space="preserve">
+    <value>Current,Historical</value>
+  </data>
+  <data name="BrPoLookupSummary" xml:space="preserve">
+    <value>Table of items with three columns.</value>
+  </data>
+  <data name="btnCancelBookings" xml:space="preserve">
+    <value>Cancel Booking(s)</value>
+  </data>
+  <data name="btnLogin" xml:space="preserve">
+    <value>Sign In</value>
+  </data>
+  <data name="Building" xml:space="preserve">
+    <value>{0}</value>
+  </data>
+  <data name="BuildingCode" xml:space="preserve">
+    <value>{0} Code</value>
+  </data>
+  <data name="BuildingDetails" xml:space="preserve">
+    <value>{0} Details</value>
+  </data>
+  <data name="BuildingOpenTimes" xml:space="preserve">
+    <value>{0} Open Times</value>
+  </data>
+  <data name="Buildings" xml:space="preserve">
+    <value>{0}</value>
+  </data>
+  <data name="Busy" xml:space="preserve">
+    <value>Busy</value>
+  </data>
+  <data name="ByDate" xml:space="preserve">
+    <value>By Date</value>
+  </data>
+  <data name="ByGroup" xml:space="preserve">
+    <value>By {0}</value>
+  </data>
+  <data name="ByLocation" xml:space="preserve">
+    <value>By Location</value>
+  </data>
+  <data name="ByRoom" xml:space="preserve">
+    <value>By {0}</value>
+  </data>
+  <data name="BySetupType" xml:space="preserve">
+    <value>By Setup Type</value>
+  </data>
+  <data name="Calendar" xml:space="preserve">
+    <value>Calendar</value>
+  </data>
+  <data name="CalendaringDetails" xml:space="preserve">
+    <value>Calendaring Details</value>
+  </data>
+  <data name="CalendaringInformation" xml:space="preserve">
+    <value>Calendaring Details</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="CancelAllBookings" xml:space="preserve">
+    <value>Cancel All Bookings</value>
+  </data>
+  <data name="CancelAllConfirm" xml:space="preserve">
+    <value>Are you sure you want to cancel this meeting?</value>
+  </data>
+  <data name="CancelAllLocations" xml:space="preserve">
+    <value>Cancel All Locations</value>
+  </data>
+  <data name="CancelBooking" xml:space="preserve">
+    <value>Cancel Booking</value>
+  </data>
+  <data name="CancelBookingInProgress" xml:space="preserve">
+    <value>Cancel booking in progress</value>
+  </data>
+  <data name="CancelBookingQuestion" xml:space="preserve">
+    <value>Cancel Booking?</value>
+  </data>
+  <data name="CancelBookings" xml:space="preserve">
+    <value>Cancel Bookings</value>
+  </data>
+  <data name="CancelBookingsCaption" xml:space="preserve">
+    <value>Bookings available to cancel</value>
+  </data>
+  <data name="CancelBookingsNoBookings" xml:space="preserve">
+    <value>No bookings available to cancel</value>
+  </data>
+  <data name="CancelBookingsQuestion" xml:space="preserve">
+    <value>Cancel Bookings?</value>
+  </data>
+  <data name="CancellationCutoffDays" xml:space="preserve">
+    <value>Cancellation cutoff days</value>
+  </data>
+  <data name="CancellationCutoffHours" xml:space="preserve">
+    <value>Cancellation cutoff hours</value>
+  </data>
+  <data name="CancellationCutoffTime" xml:space="preserve">
+    <value>Cancellation cutoff time</value>
+  </data>
+  <data name="Cancelled" xml:space="preserve">
+    <value>Cancelled</value>
+  </data>
+  <data name="CancelNotes" xml:space="preserve">
+    <value>Cancel Notes</value>
+  </data>
+  <data name="CancelOccurrence" xml:space="preserve">
+    <value>Cancel Occurrence</value>
+  </data>
+  <data name="CancelReason" xml:space="preserve">
+    <value>Cancel Reason</value>
+  </data>
+  <data name="CancelReservation" xml:space="preserve">
+    <value>Cancel Reservation</value>
+  </data>
+  <data name="CancelReservationQuestion" xml:space="preserve">
+    <value>Cancel Reservation?</value>
+  </data>
+  <data name="CancelSelectedBookings" xml:space="preserve">
+    <value>Cancel Selected Bookings</value>
+  </data>
+  <data name="CancelServices" xml:space="preserve">
+    <value>Cancel Services</value>
+  </data>
+  <data name="CancelServicesCategoryLabel" xml:space="preserve">
+    <value>Select A Service Category</value>
+  </data>
+  <data name="CancelServicesEmptyData" xml:space="preserve">
+    <value>Select a category above</value>
+  </data>
+  <data name="CancelSoAltTag" xml:space="preserve">
+    <value>Cancel Service Order</value>
+  </data>
+  <data name="CancelWebRequest" xml:space="preserve">
+    <value>Cancel Request</value>
+  </data>
+  <data name="CancleSodAltTag" xml:space="preserve">
+    <value>Cancel this item</value>
+  </data>
+  <data name="Cap" xml:space="preserve">
+    <value>Cap</value>
+  </data>
+  <data name="Capacity" xml:space="preserve">
+    <value>Capacity</value>
+  </data>
+  <data name="CardAlias" xml:space="preserve">
+    <value>Card Alias:</value>
+  </data>
+  <data name="CardType" xml:space="preserve">
+    <value>Type:</value>
+  </data>
+  <data name="Cart" xml:space="preserve">
+    <value>Cart</value>
+  </data>
+  <data name="Categories" xml:space="preserve">
+    <value>Categories</value>
+  </data>
+  <data name="CategoryAvailability" xml:space="preserve">
+    <value>View Service Availability</value>
+  </data>
+  <data name="CategoryGroupLabel" xml:space="preserve">
+    <value>Group</value>
+  </data>
+  <data name="CategoryLabel" xml:space="preserve">
+    <value>Category</value>
+  </data>
+  <data name="CategoryNotAllowedOnWeekend" xml:space="preserve">
+    <value>This category is not available on weekends.</value>
+  </data>
+  <data name="CC" xml:space="preserve">
+    <value>CC:</value>
+  </data>
+  <data name="CertificatePath" xml:space="preserve">
+    <value>Certificate Path</value>
+  </data>
+  <data name="CertificatePathHelp" xml:space="preserve">
+    <value>Path to the certificate file to be used during SSL (if empty will trust all certificates)</value>
+  </data>
+  <data name="ChangeHost" xml:space="preserve">
+    <value>Change Host</value>
+  </data>
+  <data name="ChangeLocation" xml:space="preserve">
+    <value>Change Location</value>
+  </data>
+  <data name="CheckAvailability" xml:space="preserve">
+    <value>Check Availability</value>
+  </data>
+  <data name="CheckedIn" xml:space="preserve">
+    <value>checked</value>
+  </data>
+  <data name="CheckedInStatus" xml:space="preserve">
+    <value>Checked In</value>
+  </data>
+  <data name="CheckedOut" xml:space="preserve">
+    <value>checked out</value>
+  </data>
+  <data name="Checkin" xml:space="preserve">
+    <value>Check In</value>
+  </data>
+  <data name="CheckinCheckout" xml:space="preserve">
+    <value>Check in/Check out</value>
+  </data>
+  <data name="CheckOut" xml:space="preserve">
+    <value>Check Out</value>
+  </data>
+  <data name="City" xml:space="preserve">
+    <value>City</value>
+  </data>
+  <data name="ClassicRequestTabLabels" xml:space="preserve">
+    <value>Details</value>
+  </data>
+  <data name="ClassicRequestTabLabelsWithAvailability" xml:space="preserve">
+    <value>Details,Availability</value>
+  </data>
+  <data name="ClearCache" xml:space="preserve">
+    <value>Clear Cache</value>
+  </data>
+  <data name="ClearCacheHelp" xml:space="preserve">
+    <value>Click to empty cache of parameters, tool tip options and web text. If you have multiple servers that host this app, click the button on each server.</value>
+  </data>
+  <data name="ClearResults" xml:space="preserve">
+    <value>Clear Results</value>
+  </data>
+  <data name="ClickToCollapseAdditionalFilters" xml:space="preserve">
+    <value>Click to collapse additional filters</value>
+  </data>
+  <data name="ClickToExpandAdditionalFilters" xml:space="preserve">
+    <value>Click to expand additional filters</value>
+  </data>
+  <data name="ClickToRemove" xml:space="preserve">
+    <value>Remove</value>
+  </data>
+  <data name="ClickToSort" xml:space="preserve">
+    <value>Click to sort</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="Closed" xml:space="preserve">
+    <value>Closed</value>
+  </data>
+  <data name="CloseTheCalendar" xml:space="preserve">
+    <value>Close the Calendar</value>
+  </data>
+  <data name="Closure" xml:space="preserve">
+    <value>Closure</value>
+  </data>
+  <data name="CommunicationOptions" xml:space="preserve">
+    <value>Communication Options</value>
+  </data>
+  <data name="CompactView" xml:space="preserve">
+    <value>Compact View</value>
+  </data>
+  <data name="CompanyName" xml:space="preserve">
+    <value>Company Name</value>
+  </data>
+  <data name="Confirmation" xml:space="preserve">
+    <value>Confirmation</value>
+  </data>
+  <data name="ConfirmationSalesPerson" xml:space="preserve">
+    <value>Salesperson:</value>
+  </data>
+  <data name="ConfirmPassword" xml:space="preserve">
+    <value>Confirm Password</value>
+  </data>
+  <data name="Conflict" xml:space="preserve">
+    <value>Conflict</value>
+  </data>
+  <data name="Conflicting" xml:space="preserve">
+    <value>Conflicting</value>
+  </data>
+  <data name="ConnectionString" xml:space="preserve">
+    <value>Connection String</value>
+  </data>
+  <data name="ConnectionSuccessful" xml:space="preserve">
+    <value>Connection Successful</value>
+  </data>
+  <data name="Contact" xml:space="preserve">
+    <value>Contact</value>
+  </data>
+  <data name="ContactEmail" xml:space="preserve">
+    <value>{0} Email</value>
+  </data>
+  <data name="ContactFax" xml:space="preserve">
+    <value>{0} Fax</value>
+  </data>
+  <data name="ContactName" xml:space="preserve">
+    <value>{0} Name</value>
+  </data>
+  <data name="ContactPhone" xml:space="preserve">
+    <value>{0} Phone</value>
+  </data>
+  <data name="Continue" xml:space="preserve">
+    <value>Continue</value>
+  </data>
+  <data name="CoreProperties" xml:space="preserve">
+    <value>Core Properties</value>
+  </data>
+  <data name="CoreTabList" xml:space="preserve">
+    <value>Locations,Message Details</value>
+  </data>
+  <data name="CountOfDetails" xml:space="preserve">
+    <value>Count Of Details</value>
+  </data>
+  <data name="CreateAccount" xml:space="preserve">
+    <value>Create An Account</value>
+  </data>
+  <data name="CreateARequest" xml:space="preserve">
+    <value>Create A Request</value>
+  </data>
+  <data name="CreateBookingIn" xml:space="preserve">
+    <value>Create Booking In</value>
+  </data>
+  <data name="CreateBookingInThisTimeZone" xml:space="preserve">
+    <value>Create booking in this time zone</value>
+  </data>
+  <data name="CreateRequest" xml:space="preserve">
+    <value>Create Request</value>
+  </data>
+  <data name="CreateReservation" xml:space="preserve">
+    <value>Create Reservation</value>
+  </data>
+  <data name="CreditCardNumber" xml:space="preserve">
+    <value>Credit Card Number:</value>
+  </data>
+  <data name="Culture" xml:space="preserve">
+    <value>Culture:</value>
+  </data>
+  <data name="Current" xml:space="preserve">
+    <value>Current</value>
+  </data>
+  <data name="CurrentActiveUsers" xml:space="preserve">
+    <value>Current Active Users</value>
+  </data>
+  <data name="CurrentContacts" xml:space="preserve">
+    <value>Current {0}</value>
+  </data>
+  <data name="CurrentIdentity" xml:space="preserve">
+    <value>Current Identity</value>
+  </data>
+  <data name="CurrentPassword" xml:space="preserve">
+    <value>Current Password</value>
+  </data>
+  <data name="CutoffHours" xml:space="preserve">
+    <value>Must be submitted at least {0} hour(s) prior to the start of the booking</value>
+  </data>
+  <data name="CutoffTime" xml:space="preserve">
+    <value>Must be submitted by {0:t} at least {1} day(s) prior to the start of the booking</value>
+  </data>
+  <data name="Daily" xml:space="preserve">
+    <value>Daily</value>
+  </data>
+  <data name="DailyByDay" xml:space="preserve">
+    <value>Every</value>
+  </data>
+  <data name="DailyByDayDateTip" xml:space="preserve">
+    <value>date</value>
+  </data>
+  <data name="DailyByDayTip" xml:space="preserve">
+    <value>by date</value>
+  </data>
+  <data name="DailyByWeekday" xml:space="preserve">
+    <value>Every Weekday</value>
+  </data>
+  <data name="DailyList" xml:space="preserve">
+    <value>Daily List</value>
+  </data>
+  <data name="DailyRecurrence" xml:space="preserve">
+    <value>Occurs every {5}, effective {4} until {3} from {2} to {1} {0}.</value>
+  </data>
+  <data name="DailyRecurrenceEveryDay" xml:space="preserve">
+    <value>Occurs every day effective {0:d} until {1:d} from {2} to {3}</value>
+  </data>
+  <data name="DailyRecurrenceEveryXDays" xml:space="preserve">
+    <value>Occurs every {4} days effective {0:d} until {1:d} from {2} to {3}</value>
+  </data>
+  <data name="DailyRecurrenceWeekDays" xml:space="preserve">
+    <value>Occurs every weekday effective {0:d} until {1:d} from {2} to {3}</value>
+  </data>
+  <data name="Date" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="DateAndTime" xml:space="preserve">
+    <value>Date &amp; Time</value>
+  </data>
+  <data name="DateColon" xml:space="preserve">
+    <value>Date:</value>
+  </data>
+  <data name="Dates" xml:space="preserve">
+    <value>Dates</value>
+  </data>
+  <data name="DateSaved" xml:space="preserve">
+    <value>Date Saved</value>
+  </data>
+  <data name="DateSelections" xml:space="preserve">
+    <value>date selections</value>
+  </data>
+  <data name="DatesRequested" xml:space="preserve">
+    <value>Dates Requested</value>
+  </data>
+  <data name="Day" xml:space="preserve">
+    <value>Day</value>
+  </data>
+  <data name="DayPlural" xml:space="preserve">
+    <value>days</value>
+  </data>
+  <data name="Days" xml:space="preserve">
+    <value>day(s)</value>
+  </data>
+  <data name="DaysCapital" xml:space="preserve">
+    <value>Day(s)</value>
+  </data>
+  <data name="DaySingular" xml:space="preserve">
+    <value>day</value>
+  </data>
+  <data name="Declined" xml:space="preserve">
+    <value>Declined</value>
+  </data>
+  <data name="Delegate" xml:space="preserve">
+    <value>Delegate</value>
+  </data>
+  <data name="DelegateLegend" xml:space="preserve">
+    <value>Delegation</value>
+  </data>
+  <data name="Delegates" xml:space="preserve">
+    <value>Delegates</value>
+  </data>
+  <data name="DelegateYourAuthorityTo" xml:space="preserve">
+    <value>Users who can act on your behalf</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="DeleteFilter" xml:space="preserve">
+    <value>Delete Filter</value>
+  </data>
+  <data name="Department" xml:space="preserve">
+    <value>Department</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="Detail" xml:space="preserve">
+    <value>Detail</value>
+  </data>
+  <data name="Details" xml:space="preserve">
+    <value>Details</value>
+  </data>
+  <data name="DetailView" xml:space="preserve">
+    <value>Detail View</value>
+  </data>
+  <data name="DisableCustomJavascriptHelp" xml:space="preserve">
+    <value>Click to disable custom JavaScript for this session so that you can troubleshoot.</value>
+  </data>
+  <data name="DisableCustomJs" xml:space="preserve">
+    <value>Disable Custom JavaScript</value>
+  </data>
+  <data name="DisableDetailedError" xml:space="preserve">
+    <value>Disable Detailed Errors</value>
+  </data>
+  <data name="DisableHelpTextEditMode" xml:space="preserve">
+    <value>Disable Help Text Edit</value>
+  </data>
+  <data name="DiscardChanges" xml:space="preserve">
+    <value>Discard Changes</value>
+  </data>
+  <data name="DisplayFormat" xml:space="preserve">
+    <value>Display Format</value>
+  </data>
+  <data name="DisplayName" xml:space="preserve">
+    <value>Display Name</value>
+  </data>
+  <data name="DisplayResultsAs" xml:space="preserve">
+    <value>Display Results As</value>
+  </data>
+  <data name="DomainList" xml:space="preserve">
+    <value>Domain</value>
+  </data>
+  <data name="DomainToAppend" xml:space="preserve">
+    <value>Domain to append to users</value>
+  </data>
+  <data name="DomainToAppendHelp" xml:space="preserve">
+    <value>Leave blank unless required; for example, you may have to enter your web server's domain if it's different than the domain of your users.</value>
+  </data>
+  <data name="Done" xml:space="preserve">
+    <value>Done</value>
+  </data>
+  <data name="DoNotAdd" xml:space="preserve">
+    <value>Do not apply to additional bookings</value>
+  </data>
+  <data name="DownloadAllDatesAsICS" xml:space="preserve">
+    <value>Add all bookings to personal calendar</value>
+  </data>
+  <data name="DownloadIcs" xml:space="preserve">
+    <value>Add to My Calendar</value>
+  </data>
+  <data name="DropDownAll" xml:space="preserve">
+    <value>(all)</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="EditAltTag" xml:space="preserve">
+    <value>Edit this item</value>
+  </data>
+  <data name="EditBooking" xml:space="preserve">
+    <value>Edit Booking</value>
+  </data>
+  <data name="EditBookingsNoBookings" xml:space="preserve">
+    <value>No bookings available to edit</value>
+  </data>
+  <data name="EditLocation" xml:space="preserve">
+    <value>Edit Location</value>
+  </data>
+  <data name="EditReservation" xml:space="preserve">
+    <value>Edit Reservation</value>
+  </data>
+  <data name="EditReservationDetails" xml:space="preserve">
+    <value>Edit Reservation Details</value>
+  </data>
+  <data name="EditThisReservation" xml:space="preserve">
+    <value>Edit this reservation.</value>
+  </data>
+  <data name="EditUdfs" xml:space="preserve">
+    <value>Additional Information</value>
+  </data>
+  <data name="EditView" xml:space="preserve">
+    <value>Edit View</value>
+  </data>
+  <data name="EditWebText" xml:space="preserve">
+    <value>Edit Web Text</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="EmailAddress" xml:space="preserve">
+    <value>Email Address</value>
+  </data>
+  <data name="EmailInUse" xml:space="preserve">
+    <value>This email address already has an account. You must enter a different email address.</value>
+  </data>
+  <data name="Employee" xml:space="preserve">
+    <value>Employee</value>
+  </data>
+  <data name="EnableCustomJs" xml:space="preserve">
+    <value>Enable Custom JavaScript</value>
+  </data>
+  <data name="EnableDetailedError" xml:space="preserve">
+    <value>Enable Detailed Errors</value>
+  </data>
+  <data name="EnableDetailedErrorHelp" xml:space="preserve">
+    <value>Click to see error details so that you can troubleshoot.</value>
+  </data>
+  <data name="EnableHelpText" xml:space="preserve">
+    <value>Enable Help Text Edit</value>
+  </data>
+  <data name="EnableHelpTextEditModeHelp" xml:space="preserve">
+    <value>This option lets you edit help text. (To edit help text, click link next to help text.)</value>
+  </data>
+  <data name="End" xml:space="preserve">
+    <value>End</value>
+  </data>
+  <data name="EndAfter" xml:space="preserve">
+    <value>End after</value>
+  </data>
+  <data name="EndBookingEarlier" xml:space="preserve">
+    <value>End Booking Earlier</value>
+  </data>
+  <data name="EndBookingInProgress" xml:space="preserve">
+    <value>End booking in progress</value>
+  </data>
+  <data name="EndBookingLater" xml:space="preserve">
+    <value>End Booking Later</value>
+  </data>
+  <data name="EndBookingNow" xml:space="preserve">
+    <value>End Booking Now</value>
+  </data>
+  <data name="EndBy" xml:space="preserve">
+    <value>End by:</value>
+  </data>
+  <data name="EndColon" xml:space="preserve">
+    <value>End:</value>
+  </data>
+  <data name="EndDate" xml:space="preserve">
+    <value>End Date</value>
+  </data>
+  <data name="EndNow" xml:space="preserve">
+    <value>End Now</value>
+  </data>
+  <data name="EndsNextDayIndicator" xml:space="preserve">
+    <value>(Ends next day)</value>
+  </data>
+  <data name="EndTime" xml:space="preserve">
+    <value>End Time</value>
+  </data>
+  <data name="EnterTextToSearch" xml:space="preserve">
+    <value>Search for</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="ErrorHeaderText" xml:space="preserve">
+    <value>These errors occurred while processing your request:</value>
+  </data>
+  <data name="ErrorLogs" xml:space="preserve">
+    <value>Error Logs</value>
+  </data>
+  <data name="ErrorMessage" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="EstimatedAttendance" xml:space="preserve">
+    <value>Estimated Attendance:</value>
+  </data>
+  <data name="EstimatedCount" xml:space="preserve">
+    <value>Estimated Count</value>
+  </data>
+  <data name="EstimatedCountFor" xml:space="preserve">
+    <value>for</value>
+  </data>
+  <data name="Event" xml:space="preserve">
+    <value>{0}</value>
+  </data>
+  <data name="EventCoordinator" xml:space="preserve">
+    <value>{0}</value>
+  </data>
+  <data name="EventDetails" xml:space="preserve">
+    <value>{0} Details</value>
+  </data>
+  <data name="EventName" xml:space="preserve">
+    <value>{0} Name</value>
+  </data>
+  <data name="EventNameColon" xml:space="preserve">
+    <value>{0} Name:</value>
+  </data>
+  <data name="EventTime" xml:space="preserve">
+    <value>{0} Time</value>
+  </data>
+  <data name="EventType" xml:space="preserve">
+    <value>{0} Type</value>
+  </data>
+  <data name="EventTypeColon" xml:space="preserve">
+    <value>{0} Type:</value>
+  </data>
+  <data name="ExisitingServices" xml:space="preserve">
+    <value>Existing Services</value>
+  </data>
+  <data name="ExistingAttendees" xml:space="preserve">
+    <value>Existing Attendees</value>
+  </data>
+  <data name="ExistingServices" xml:space="preserve">
+    <value>Existing Services</value>
+  </data>
+  <data name="ExpirationDate" xml:space="preserve">
+    <value>Expiration Date:</value>
+  </data>
+  <data name="Facilities" xml:space="preserve">
+    <value>Facilities</value>
+  </data>
+  <data name="FavoriteRoom" xml:space="preserve">
+    <value>Favorite {0}</value>
+  </data>
+  <data name="MyFavoriteRooms" xml:space="preserve">
+    <value>My Favorite {0}</value>
+  </data>
+  <data name="FavoriteRoomsOnly" xml:space="preserve">
+    <value>Favorite {0} only.</value>
+  </data>
+  <data name="Fax" xml:space="preserve">
+    <value>Fax</value>
+  </data>
+  <data name="FaxLabelFromParam" xml:space="preserve">
+    <value>{0}</value>
+  </data>
+  <data name="Feature" xml:space="preserve">
+    <value>Feature</value>
+  </data>
+  <data name="Features" xml:space="preserve">
+    <value>Features</value>
+  </data>
+  <data name="FeaturesCaption" xml:space="preserve">
+    <value>Features</value>
+  </data>
+  <data name="FeaturesColon" xml:space="preserve">
+    <value>Features:</value>
+  </data>
+  <data name="FeaturesEmptyText" xml:space="preserve">
+    <value>No Features Defined</value>
+  </data>
+  <data name="FeaturesSummary" xml:space="preserve">
+    <value>This table lists the room's features.</value>
+  </data>
+  <data name="FifteenMinutes" xml:space="preserve">
+    <value>15 Minutes</value>
+  </data>
+  <data name="FileCount" xml:space="preserve">
+    <value>File Count</value>
+  </data>
+  <data name="FileName" xml:space="preserve">
+    <value>File Name</value>
+  </data>
+  <data name="Filter" xml:space="preserve">
+    <value>Filter</value>
+  </data>
+  <data name="FilterByX" xml:space="preserve">
+    <value>Filter By {0}</value>
+  </data>
+  <data name="FilterName" xml:space="preserve">
+    <value>Filter Name</value>
+  </data>
+  <data name="FilterOptions" xml:space="preserve">
+    <value>Filter Options</value>
+  </data>
+  <data name="Filters" xml:space="preserve">
+    <value>Filters</value>
+  </data>
+  <data name="FilterType" xml:space="preserve">
+    <value>Filter Type</value>
+  </data>
+  <data name="FindARoom" xml:space="preserve">
+    <value>Find A {0}</value>
+  </data>
+  <data name="FindAttendee" xml:space="preserve">
+    <value>Find Attendee</value>
+  </data>
+  <data name="FindByX" xml:space="preserve">
+    <value>Find by {0}</value>
+  </data>
+  <data name="FindX" xml:space="preserve">
+    <value>Find {0}</value>
+  </data>
+  <data name="FindSpace" xml:space="preserve">
+    <value>Find Space</value>
+  </data>
+  <data name="Finished" xml:space="preserve">
+    <value>Finished</value>
+  </data>
+  <data name="First" xml:space="preserve">
+    <value>First</value>
+  </data>
+  <data name="FirstBooking" xml:space="preserve">
+    <value>First Booking</value>
+  </data>
+  <data name="FirstLastBooking" xml:space="preserve">
+    <value>First/Last Booking</value>
+  </data>
+  <data name="FiveMinutes" xml:space="preserve">
+    <value>5 Minutes</value>
+  </data>
+  <data name="Floor" xml:space="preserve">
+    <value>Floor</value>
+  </data>
+  <data name="FloorMap" xml:space="preserve">
+    <value>Floor Map</value>
+  </data>
+  <data name="Floors" xml:space="preserve">
+    <value>Floors</value>
+  </data>
+  <data name="FooterText" xml:space="preserve">
+    <value>Powered by</value>
+  </data>
+  <data name="FooterToolTip" xml:space="preserve">
+    <value>Room Scheduling Software Powered by EMS Software</value>
+  </data>
+  <data name="ForgotYourPassword" xml:space="preserve">
+    <value>Forgot your password?</value>
+  </data>
+  <data name="Format" xml:space="preserve">
+    <value>Format:</value>
+  </data>
+  <data name="Fourth" xml:space="preserve">
+    <value>Fourth</value>
+  </data>
+  <data name="Free" xml:space="preserve">
+    <value>Free</value>
+  </data>
+  <data name="FullLdapUserId" xml:space="preserve">
+    <value>Full LDAP User ID Format</value>
+  </data>
+  <data name="FullLdapUserIdHelp" xml:space="preserve">
+    <value>Leave blank unless authentication requires a full path. Example: cn={0},ou=staff,o=yourdomain, where {0} will be replaced with user input.</value>
+  </data>
+  <data name="FullWeek" xml:space="preserve">
+    <value>Full Week</value>
+  </data>
+  <data name="GenerateCustomLink" xml:space="preserve">
+    <value>Generate Custom Link</value>
+  </data>
+  <data name="GenerateLink" xml:space="preserve">
+    <value>Generate Link</value>
+  </data>
+  <data name="GetServices" xml:space="preserve">
+    <value>Get Services</value>
+  </data>
+  <data name="GoBack" xml:space="preserve">
+    <value>Go Back</value>
+  </data>
+  <data name="GrandTotalAmount" xml:space="preserve">
+    <value>Grand total:</value>
+  </data>
+  <data name="Grid" xml:space="preserve">
+    <value>Grid</value>
+  </data>
+  <data name="GridSummary" xml:space="preserve">
+    <value>available space</value>
+  </data>
+  <data name="Group" xml:space="preserve">
+    <value>{0}</value>
+  </data>
+  <data name="GroupBy" xml:space="preserve">
+    <value>Group By</value>
+  </data>
+  <data name="GroupColon" xml:space="preserve">
+    <value>{0}:</value>
+  </data>
+  <data name="GroupDetails" xml:space="preserve">
+    <value>{0} Details</value>
+  </data>
+  <data name="GroupHasntCheckedIn" xml:space="preserve">
+    <value>{0} has not checked in</value>
+  </data>
+  <data name="GroupIsCheckedOut" xml:space="preserve">
+    <value>{0} is currently {1}</value>
+  </data>
+  <data name="GroupIsCurrently" xml:space="preserve">
+    <value>{0} is currently {1} into {2}</value>
+  </data>
+  <data name="GroupName" xml:space="preserve">
+    <value>{0} Name</value>
+  </data>
+  <data name="GroupNameContains" xml:space="preserve">
+    <value>{0} name starts with</value>
+  </data>
+  <data name="GroupsBillingReferences" xml:space="preserve">
+    <value>{0}'s {1}</value>
+  </data>
+  <data name="GroupsGridSummary" xml:space="preserve">
+    <value>This table contains group names, number of bookings for today, and check-in status.</value>
+  </data>
+  <data name="GroupsMatchingYourSearch" xml:space="preserve">
+    <value>{0} matching your search</value>
+  </data>
+  <data name="GroupsPoNumbers" xml:space="preserve">
+    <value>{0}'s {1}</value>
+  </data>
+  <data name="GroupsYouCanBookFor" xml:space="preserve">
+    <value>{0} you can book for</value>
+  </data>
+  <data name="GroupType" xml:space="preserve">
+    <value>{0} Type</value>
+  </data>
+  <data name="HasServices" xml:space="preserve">
+    <value>Has Services</value>
+  </data>
+  <data name="HelpIcoAltText" xml:space="preserve">
+    <value>Help</value>
+  </data>
+  <data name="HideFilters" xml:space="preserve">
+    <value>Hide Filters</value>
+  </data>
+  <data name="HideServices" xml:space="preserve">
+    <value>Hide Services</value>
+  </data>
+  <data name="Historical" xml:space="preserve">
+    <value>Historical</value>
+  </data>
+  <data name="Holidays" xml:space="preserve">
+    <value>Holidays</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="Host" xml:space="preserve">
+    <value>Host</value>
+  </data>
+  <data name="HostAttendanceAndSetupType" xml:space="preserve">
+    <value>Host, Attendance &amp; Setup Type</value>
+  </data>
+  <data name="Hours" xml:space="preserve">
+    <value>Hours</value>
+  </data>
+  <data name="Id" xml:space="preserve">
+    <value>Id</value>
+  </data>
+  <data name="IdUppercase" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="IgnoreChanges" xml:space="preserve">
+    <value>Ignore Changes</value>
+  </data>
+  <data name="IgnoreDisplayOnWeb" xml:space="preserve">
+    <value>Ignore Display On Web</value>
+  </data>
+  <data name="IHaveReadAndAgreeToThe" xml:space="preserve">
+    <value>I have read and agree to the </value>
+  </data>
+  <data name="IKnowWhatRoomIWant" xml:space="preserve">
+    <value>I Know What {0} I Want</value>
+  </data>
+  <data name="Images" xml:space="preserve">
+    <value>Images</value>
+  </data>
+  <data name="In" xml:space="preserve">
+    <value>In</value>
+  </data>
+  <data name="Inactivate" xml:space="preserve">
+    <value>Inactivate</value>
+  </data>
+  <data name="IncludeCancelledBookings" xml:space="preserve">
+    <value>Include cancelled bookings</value>
+  </data>
+  <data name="IncludeCancelledReservations" xml:space="preserve">
+    <value>Include cancelled reservations</value>
+  </data>
+  <data name="Information" xml:space="preserve">
+    <value>Information</value>
+  </data>
+  <data name="Instructor" xml:space="preserve">
+    <value>Instructor</value>
+  </data>
+  <data name="IntegrationToExchange" xml:space="preserve">
+    <value>Integration To Exchange</value>
+  </data>
+  <data name="InvalidBillingReference" xml:space="preserve">
+    <value>{0} is required and must be valid</value>
+  </data>
+  <data name="InvalidPONumber" xml:space="preserve">
+    <value>{0} is required and must be valid</value>
+  </data>
+  <data name="IsCheckedIn" xml:space="preserve">
+    <value>Checked In</value>
+  </data>
+  <data name="IsDefault" xml:space="preserve">
+    <value>Default?</value>
+  </data>
+  <data name="IsUnavailableForTheOccurencesShownBelow" xml:space="preserve">
+    <value> is unavailable for the occurrences shown below.</value>
+  </data>
+  <data name="Item" xml:space="preserve">
+    <value>Item</value>
+  </data>
+  <data name="ItemLookup" xml:space="preserve">
+    <value>Item Lookup</value>
+  </data>
+  <data name="IveForgottenMyPassword" xml:space="preserve">
+    <value>I've forgotten my password.</value>
+  </data>
+  <data name="JobTitle" xml:space="preserve">
+    <value>Job Title</value>
+  </data>
+  <data name="KeepEditing" xml:space="preserve">
+    <value>Keep Editing</value>
+  </data>
+  <data name="KeepWorking" xml:space="preserve">
+    <value>Keep Working</value>
+  </data>
+  <data name="Last" xml:space="preserve">
+    <value>Last</value>
+  </data>
+  <data name="LastBooking" xml:space="preserve">
+    <value>Last Booking</value>
+  </data>
+  <data name="LdapAccountUserId" xml:space="preserve">
+    <value>LDAP Account/User ID Property</value>
+  </data>
+  <data name="LdapAccountUserIdHelp" xml:space="preserve">
+    <value>Specify a filter to enable the app to load individual users. For example, if the filter should be: &lt;b&gt;sameaccountname&lt;/b&gt;=xxxx then you should enter &lt;b&gt;sameaccountname&lt;/b&gt;.  Common properties are sameaccountname (Active Directory) and cn (eDirectory, Domino).</value>
+  </data>
+  <data name="LDAPConfiguration" xml:space="preserve">
+    <value>LDAP Configuration</value>
+  </data>
+  <data name="LDAPConfigurationHelp" xml:space="preserve">
+    <value>This option lets you configure and test your LDAP authentication. (This option only applies if you have an EMS authentication license and if you have chosen LDAP.)</value>
+  </data>
+  <data name="LdapDomainList" xml:space="preserve">
+    <value>List of Domains</value>
+  </data>
+  <data name="LdapDomainListHelp" xml:space="preserve">
+    <value>Leave blank if your environment is a single domain or if your authentication does not require specifying a domain. If you enter multiple domains, separate them with a comma.</value>
+  </data>
+  <data name="LdapGroupCategory" xml:space="preserve">
+    <value>LDAP Group Category</value>
+  </data>
+  <data name="LdapGroupCategoryHelp" xml:space="preserve">
+    <value>Specify a filter to enable the app to load groups. For example, if the filter should be "objectClass=&lt;b&gt;groupOfNames&lt;/b&gt;", then this property should be &lt;b&gt;groupOfNames&lt;/b&gt;.  Common properties are group (Active Directory) and groupOfNames (eDirectory, Domino).</value>
+  </data>
+  <data name="LdapGroupMemberName" xml:space="preserve">
+    <value>LDAP Group Member Name</value>
+  </data>
+  <data name="LdapGroupMemberNameHelp" xml:space="preserve">
+    <value>Specify a filter to enable the app to load a single member of the group. For example, if the member property of your groups is "&lt;b&gt;member&lt;/b&gt;=jdoe", then this property should be &lt;b&gt;member&lt;/b&gt;.  A common property is member (Active Directory, eDirectory, Domino).</value>
+  </data>
+  <data name="LdapGroupMemberUserName" xml:space="preserve">
+    <value>LDAP Group Member User Name Attribute</value>
+  </data>
+  <data name="LdapGroupMemberUserNameHelp" xml:space="preserve">
+    <value>Specify the property of the user object that corresponds to the group's member property to determine group membership. For example, if your directory service stores members as "member=&lt;b&gt;cn&lt;/b&gt;=user,o=Domain", then this property should be &lt;b&gt;cn&lt;/b&gt;.</value>
+  </data>
+  <data name="LdapGroupName" xml:space="preserve">
+    <value>LDAP Group Name</value>
+  </data>
+  <data name="LdapGroupNameHelp" xml:space="preserve">
+    <value>This filter lets the app get a group object by applying this filter to the group name.  For example, if the query should be "(&amp; (|(objectClass=groupOfNames))(|&lt;b&gt;cn&lt;/b&gt;=administrators)))", then this property should be &lt;b&gt;cn&lt;/b&gt;.  Common properties are name (Active Directory) and cn (eDirectory, Domino).</value>
+  </data>
+  <data name="LdapNameHelp" xml:space="preserve">
+    <value>Examples: displayname, distinguishedname, name, givenname</value>
+  </data>
+  <data name="LdapPasswordHelp" xml:space="preserve">
+    <value>Enter &lt;i&gt;only&lt;/i&gt; if you are updating. (We'll encrypt your entry to protect it.)</value>
+  </data>
+  <data name="LdapPhoneHelp" xml:space="preserve">
+    <value>Examples: telephonenumber, homephone, facimiletelephonenumber</value>
+  </data>
+  <data name="LDAPQueries" xml:space="preserve">
+    <value>LDAP Queries</value>
+  </data>
+  <data name="LdapQueryForSecurityGroups" xml:space="preserve">
+    <value>LDAP query for security groups</value>
+  </data>
+  <data name="LdapQueryForSecurityGroupsHelp" xml:space="preserve">
+    <value>{0} will be replaced by user input</value>
+  </data>
+  <data name="LdapQueryToFindUsers" xml:space="preserve">
+    <value>LDAP query to find users</value>
+  </data>
+  <data name="LdapQueryToFindUsersHelp" xml:space="preserve">
+    <value>{0} will be replaced by user input</value>
+  </data>
+  <data name="LdapQueryToFindUsersWithSpace" xml:space="preserve">
+    <value>LDAP query to find users with space</value>
+  </data>
+  <data name="LdapQueryToFindUsersWithSpaceHelp" xml:space="preserve">
+    <value>{0} will be replaced by user supplied input &lt;br/&gt; {1} before space &lt;br /&gt; {2} after space</value>
+  </data>
+  <data name="LdapUser" xml:space="preserve">
+    <value>Network UserId Without Domain Name</value>
+  </data>
+  <data name="LdapUserHelp" xml:space="preserve">
+    <value>The user ID of the account that this app will use when it contacts Directory Services.</value>
+  </data>
+  <data name="LdapUserPassword" xml:space="preserve">
+    <value>LDAP Password</value>
+  </data>
+  <data name="LdapWebUserFieldToUseForAuthentication" xml:space="preserve">
+    <value>Field for LDAP Group Lookup</value>
+  </data>
+  <data name="LdapWebUserFieldToUseForAuthenticationHelp" xml:space="preserve">
+    <value>If you use LDAP solely to assign templates, and if you want the app to look up group membership using a field other than the login name, then you must enter that field's name here.</value>
+  </data>
+  <data name="LetMeSearchForARoom" xml:space="preserve">
+    <value>Let Me Search For A {0}</value>
+  </data>
+  <data name="LicensedFor" xml:space="preserve">
+    <value>Licensed For</value>
+  </data>
+  <data name="LicenseInformation" xml:space="preserve">
+    <value>License Information</value>
+  </data>
+  <data name="LikeToReset" xml:space="preserve">
+    <value>Would you like to reset your password?</value>
+  </data>
+  <data name="Link" xml:space="preserve">
+    <value>Link</value>
+  </data>
+  <data name="LinkedTemplates" xml:space="preserve">
+    <value>Linked Templates</value>
+  </data>
+  <data name="List" xml:space="preserve">
+    <value>List</value>
+  </data>
+  <data name="ListView" xml:space="preserve">
+    <value>List View</value>
+  </data>
+  <data name="LoadFilter" xml:space="preserve">
+    <value>Load Filter</value>
+  </data>
+  <data name="Loading" xml:space="preserve">
+    <value>Loading...</value>
+  </data>
+  <data name="Locate" xml:space="preserve">
+    <value>Locate</value>
+  </data>
+  <data name="LocateGroup" xml:space="preserve">
+    <value>Locate {0}</value>
+  </data>
+  <data name="LocatePeopleHelpText" xml:space="preserve">
+    <value>To get started, type in the name of the {0} you're trying to locate</value>
+    <comment>group label</comment>
+  </data>
+  <data name="Location" xml:space="preserve">
+    <value>Location</value>
+  </data>
+  <data name="LocationDetails" xml:space="preserve">
+    <value>Location Details</value>
+  </data>
+  <data name="LocationPickNotAvailable" xml:space="preserve">
+    <value>The location you selected is not available for all of your dates</value>
+  </data>
+  <data name="Locations" xml:space="preserve">
+    <value>Locations</value>
+  </data>
+  <data name="LocationsInYourFavorite" xml:space="preserve">
+    <value>Locations in your favorites</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>Sign In</value>
+  </data>
+  <data name="Logo" xml:space="preserve">
+    <value>Logo</value>
+  </data>
+  <data name="LogoAlternateText" xml:space="preserve">
+    <value>EMS Web App logo</value>
+  </data>
+  <data name="LogoLinkTitle" xml:space="preserve">
+    <value>Go to Web App's home page</value>
+  </data>
+  <data name="Logout" xml:space="preserve">
+    <value>Logout</value>
+  </data>
+  <data name="Lookup" xml:space="preserve">
+    <value>Lookup</value>
+  </data>
+  <data name="LookupTitle" xml:space="preserve">
+    <value>{0} Lookup</value>
+  </data>
+  <data name="MakeCalendarItem" xml:space="preserve">
+    <value>Add to Calendar/Send Invitations</value>
+  </data>
+  <data name="MakeDefault" xml:space="preserve">
+    <value>Make Default</value>
+  </data>
+  <data name="ManageAttendees" xml:space="preserve">
+    <value>Manage Attendees</value>
+  </data>
+  <data name="ManageMyReservations" xml:space="preserve">
+    <value>Manage My Reservations</value>
+  </data>
+  <data name="Manager" xml:space="preserve">
+    <value>Manager</value>
+  </data>
+  <data name="ManageServices" xml:space="preserve">
+    <value>Manage Services</value>
+  </data>
+  <data name="Match" xml:space="preserve">
+    <value>Match</value>
+  </data>
+  <data name="Max" xml:space="preserve">
+    <value>max</value>
+  </data>
+  <data name="MaxBookingViolation" xml:space="preserve">
+    <value>You've exceeded the maximum number of bookings allowed for the reservation.</value>
+  </data>
+  <data name="MaxCapacity" xml:space="preserve">
+    <value>Max Capacity</value>
+  </data>
+  <data name="MaximumCapacity" xml:space="preserve">
+    <value>Maximum Capacity</value>
+  </data>
+  <data name="MaximumNumberOfBookingsAllowedPerReservation" xml:space="preserve">
+    <value>Maximum number of bookings allowed per reservation</value>
+  </data>
+  <data name="MaximumNumberOfBookingsPerDateRange" xml:space="preserve">
+    <value>Maximum number of bookings per date range</value>
+  </data>
+  <data name="MaximumNumberOfBookingsPerDay" xml:space="preserve">
+    <value>Maximum number of bookings per day</value>
+  </data>
+  <data name="MaximumNumberOfBookingsPriorToSpecifiedDate" xml:space="preserve">
+    <value>Maximum number of bookings prior to specified date</value>
+  </data>
+  <data name="MaximumNumberOfMinutesAllowed" xml:space="preserve">
+    <value>Maximum number of minutes allowed</value>
+  </data>
+  <data name="MaxInventoryOfItem" xml:space="preserve">
+    <value>Maximum inventory of item</value>
+  </data>
+  <data name="MenuText" xml:space="preserve">
+    <value>Menu Text</value>
+  </data>
+  <data name="Message" xml:space="preserve">
+    <value>Message</value>
+  </data>
+  <data name="Min" xml:space="preserve">
+    <value>min</value>
+  </data>
+  <data name="MinCapacity" xml:space="preserve">
+    <value>Min Capacity</value>
+  </data>
+  <data name="MinimumCapacity" xml:space="preserve">
+    <value>Minimum Capacity</value>
+  </data>
+  <data name="MinimumQty" xml:space="preserve">
+    <value>Minimum Qty.</value>
+  </data>
+  <data name="MinMaxFormat" xml:space="preserve">
+    <value>Select minimum of {0} and maximum of {1}</value>
+  </data>
+  <data name="Minutes" xml:space="preserve">
+    <value>Minutes</value>
+  </data>
+  <data name="MissingBillingReference" xml:space="preserve">
+    <value>{0} is required</value>
+  </data>
+  <data name="MissingEventName" xml:space="preserve">
+    <value>{0} name is required</value>
+  </data>
+  <data name="MissingPONumber" xml:space="preserve">
+    <value>{0} is required</value>
+  </data>
+  <data name="MobileBrowseDateListFormat" xml:space="preserve">
+    <value>{0} {1}</value>
+  </data>
+  <data name="MobileBrowseTTDateListFormat" xml:space="preserve">
+    <value>{0} ({1})</value>
+  </data>
+  <data name="MobileFriendly" xml:space="preserve">
+    <value>Mobile Friendly</value>
+  </data>
+  <data name="MobilePhone" xml:space="preserve">
+    <value>Mobile</value>
+  </data>
+  <data name="Month" xml:space="preserve">
+    <value>Month</value>
+  </data>
+  <data name="Monthly" xml:space="preserve">
+    <value>Monthly</value>
+  </data>
+  <data name="MonthlyByDay" xml:space="preserve">
+    <value>Day</value>
+  </data>
+  <data name="MonthlyCalendar" xml:space="preserve">
+    <value>Monthly Calendar</value>
+  </data>
+  <data name="MonthlyDayInterval" xml:space="preserve">
+    <value>Occurs day {0} of every month effective {1:d} until {2:d} from {3} to {4}</value>
+  </data>
+  <data name="MonthlyDayNonInterval" xml:space="preserve">
+    <value>Occurs day {0} of every {1} months effective {2:d} until {3:d} from {4} to {5}</value>
+  </data>
+  <data name="MonthlyList" xml:space="preserve">
+    <value>Monthly List</value>
+  </data>
+  <data name="MonthlyNonDayInterval" xml:space="preserve">
+    <value>Occurs the {0} {1} of every month effective {2:d} until {3:d} from {4} to {5}</value>
+  </data>
+  <data name="MonthlyNonDayNonInterval" xml:space="preserve">
+    <value>Occurs the {0} {1} of every {2} months effective {3:d} until {4:d} from {5} to {6}</value>
+  </data>
+  <data name="MonthlyRecurrence" xml:space="preserve">
+    <value>Occurs on {6} of every {5}, effective {4} until {3} from {2} to {1} {0}.</value>
+  </data>
+  <data name="MonthlyTypeOfDay" xml:space="preserve">
+    <value>The</value>
+  </data>
+  <data name="MonthPlural" xml:space="preserve">
+    <value>months</value>
+  </data>
+  <data name="Months" xml:space="preserve">
+    <value>month(s)</value>
+  </data>
+  <data name="MonthSingular" xml:space="preserve">
+    <value>month</value>
+  </data>
+  <data name="More" xml:space="preserve">
+    <value>more</value>
+  </data>
+  <data name="MultiBooking" xml:space="preserve">
+    <value>multi-booking</value>
+  </data>
+  <data name="MultipleBookingsExist" xml:space="preserve">
+    <value>multiple bookings</value>
+  </data>
+  <data name="MultipleHolidays" xml:space="preserve">
+    <value>Multiple Holidays</value>
+  </data>
+  <data name="MultipleSelected" xml:space="preserve">
+    <value>(Multiple Selected)</value>
+  </data>
+  <data name="MyBookings" xml:space="preserve">
+    <value>My Bookings</value>
+  </data>
+  <data name="MyCart" xml:space="preserve">
+    <value>My Cart</value>
+  </data>
+  <data name="MyEvents" xml:space="preserve">
+    <value>My Events</value>
+  </data>
+  <data name="MyExistingBooking" xml:space="preserve">
+    <value>My Existing Booking</value>
+  </data>
+  <data name="MyFavorites" xml:space="preserve">
+    <value>My Favorites</value>
+  </data>
+  <data name="MyHome" xml:space="preserve">
+    <value>My Home</value>
+  </data>
+  <data name="MyInfographics" xml:space="preserve">
+    <value>My Infographics</value>
+  </data>
+  <data name="MyNewBooking" xml:space="preserve">
+    <value>My New Booking</value>
+  </data>
+  <data name="MyReservations" xml:space="preserve">
+    <value>My Reservations</value>
+  </data>
+  <data name="MyReservationTemplates" xml:space="preserve">
+    <value>My Reservation Templates</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="NameOnCard" xml:space="preserve">
+    <value>Name on card:</value>
+  </data>
+  <data name="NameProperty" xml:space="preserve">
+    <value>LDAP Name Property</value>
+  </data>
+  <data name="NearEnd" xml:space="preserve">
+    <value>Host</value>
+  </data>
+  <data name="New" xml:space="preserve">
+    <value>New</value>
+  </data>
+  <data name="NewBooking" xml:space="preserve">
+    <value>New Booking</value>
+  </data>
+  <data name="NewBookingCutoffHours" xml:space="preserve">
+    <value>New booking cutoff hours</value>
+  </data>
+  <data name="NewBookingCutoffNumberOfDays" xml:space="preserve">
+    <value>New booking cutoff number of days</value>
+  </data>
+  <data name="NewBookingCutoffTime" xml:space="preserve">
+    <value>New booking cutoff time</value>
+  </data>
+  <data name="NewBookingFor" xml:space="preserve">
+    <value>New Booking for</value>
+  </data>
+  <data name="NewItem" xml:space="preserve">
+    <value>New Item</value>
+  </data>
+  <data name="NewPassword" xml:space="preserve">
+    <value>New Password</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>Next</value>
+  </data>
+  <data name="NextDay" xml:space="preserve">
+    <value>Next Day</value>
+  </data>
+  <data name="NextStep" xml:space="preserve">
+    <value>Next Step</value>
+  </data>
+  <data name="NextWeek" xml:space="preserve">
+    <value>Next week</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="NoAttachments" xml:space="preserve">
+    <value>No Attachments</value>
+  </data>
+  <data name="NoAttendees" xml:space="preserve">
+    <value>No Attendees</value>
+  </data>
+  <data name="NoAvailableResourcesForCategory" xml:space="preserve">
+    <value>No Resources Available</value>
+  </data>
+  <data name="NoAvailableServicesForCategory" xml:space="preserve">
+    <value>No Services Configured</value>
+  </data>
+  <data name="NoCancel" xml:space="preserve">
+    <value>No, Keep Booking</value>
+  </data>
+  <data name="NoCancelPlural" xml:space="preserve">
+    <value>No, Keep Bookings</value>
+  </data>
+  <data name="NoCancelReservation" xml:space="preserve">
+    <value>No, Keep Reservation</value>
+  </data>
+  <data name="NoChange" xml:space="preserve">
+    <value>(No Change)</value>
+  </data>
+  <data name="NoChangeDate" xml:space="preserve">
+    <value>No change to date</value>
+  </data>
+  <data name="NoChangeQuantity" xml:space="preserve">
+    <value>No, Change Quantity</value>
+  </data>
+  <data name="NoDontEnd" xml:space="preserve">
+    <value>No, Don't End</value>
+  </data>
+  <data name="NoChangeTime" xml:space="preserve">
+    <value>No change to time</value>
+  </data>
+  <data name="NoColonStatus" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="NoContacts" xml:space="preserve">
+    <value>No {0} currently belong to the {1}</value>
+  </data>
+  <data name="NoCurrentDelegates" xml:space="preserve">
+    <value>You have not named any delegates.</value>
+  </data>
+  <data name="NoExisitingServices" xml:space="preserve">
+    <value>This booking has no services.</value>
+  </data>
+  <data name="NoGoHome" xml:space="preserve">
+    <value>No, Go Home</value>
+  </data>
+  <data name="NoMatchingEvents" xml:space="preserve">
+    <value>No matching events found.</value>
+  </data>
+  <data name="NoMatchingGroups" xml:space="preserve">
+    <value>No matching groups found.</value>
+  </data>
+  <data name="NonADConfig" xml:space="preserve">
+    <value>Non-AD Config</value>
+  </data>
+  <data name="None" xml:space="preserve">
+    <value>(none)</value>
+  </data>
+  <data name="NoNotYet" xml:space="preserve">
+    <value>No, Not Yet</value>
+  </data>
+  <data name="NoPreference" xml:space="preserve">
+    <value>(no preference)</value>
+  </data>
+  <data name="NoRelatedBookings" xml:space="preserve">
+    <value>No related bookings</value>
+  </data>
+  <data name="NoReservationsToShow" xml:space="preserve">
+    <value>The are no {0} reservations to show.</value>
+  </data>
+  <data name="NoResponseReceived" xml:space="preserve">
+    <value>No Response Received</value>
+  </data>
+  <data name="NoResults" xml:space="preserve">
+    <value>No one matched your request</value>
+  </data>
+  <data name="NoRoomsCurrentlySelected" xml:space="preserve">
+    <value>No rooms currently selected</value>
+  </data>
+  <data name="NoRoomsInTemplate" xml:space="preserve">
+    <value>No {0} are in the template</value>
+  </data>
+  <data name="NoScript" xml:space="preserve">
+    <value>You must enable JavaScript.</value>
+  </data>
+  <data name="NoSelectedLocations" xml:space="preserve">
+    <value>You have not selected any locations.</value>
+  </data>
+  <data name="NoSetupTypes" xml:space="preserve">
+    <value>No matching setup types found. </value>
+  </data>
+  <data name="NoStatusInformation" xml:space="preserve">
+    <value>No Information</value>
+  </data>
+  <data name="NotCheckedInStatus" xml:space="preserve">
+    <value>Not Checked In</value>
+  </data>
+  <data name="NoTemplates" xml:space="preserve">
+    <value>No templates are available for customization</value>
+  </data>
+  <data name="Notes" xml:space="preserve">
+    <value>Notes</value>
+  </data>
+  <data name="NotifyAll" xml:space="preserve">
+    <value>Notify All</value>
+  </data>
+  <data name="NotifyAttendees" xml:space="preserve">
+    <value>Notify Attendees</value>
+  </data>
+  <data name="NotifyChanged" xml:space="preserve">
+    <value>Notify Changed</value>
+  </data>
+  <data name="NumberHours" xml:space="preserve">
+    <value>{0} Hours</value>
+  </data>
+  <data name="NumberOfAttendees" xml:space="preserve">
+    <value>No. of Attendees</value>
+  </data>
+  <data name="NumberOfBookingsToday" xml:space="preserve">
+    <value>Number Of Bookings Today</value>
+  </data>
+  <data name="NumberOfPeople" xml:space="preserve">
+    <value>Number of People</value>
+  </data>
+  <data name="OccurrencePlural" xml:space="preserve">
+    <value>occurrences</value>
+  </data>
+  <data name="Occurrences" xml:space="preserve">
+    <value>occurrence(s)</value>
+  </data>
+  <data name="OccurrenceSingular" xml:space="preserve">
+    <value>occurrence</value>
+  </data>
+  <data name="OccurrencesRemaining" xml:space="preserve">
+    <value>Occurrence(s) Remaining</value>
+  </data>
+  <data name="ofEvery" xml:space="preserve">
+    <value>of every</value>
+  </data>
+  <data name="OfficeLocation" xml:space="preserve">
+    <value>Office Location</value>
+  </data>
+  <data name="On" xml:space="preserve">
+    <value>On</value>
+  </data>
+  <data name="OnDay" xml:space="preserve">
+    <value>On day</value>
+  </data>
+  <data name="OneDay" xml:space="preserve">
+    <value>1 Day</value>
+  </data>
+  <data name="OneHour" xml:space="preserve">
+    <value>1 Hour</value>
+  </data>
+  <data name="OnlineHelp" xml:space="preserve">
+    <value>Online Help</value>
+  </data>
+  <data name="OnlyAllowNewBookingsOnOrAfterThisDate" xml:space="preserve">
+    <value>Only allow new bookings on or after this date</value>
+  </data>
+  <data name="OnlyAllowNewBookingsPriorToThisDate" xml:space="preserve">
+    <value>Only allow new bookings prior to this date</value>
+  </data>
+  <data name="OnlyAllowNewBookingsWithinRangeOfThisManyDays" xml:space="preserve">
+    <value>Only allow new bookings within this number of days</value>
+  </data>
+  <data name="OnThe" xml:space="preserve">
+    <value>On the</value>
+  </data>
+  <data name="Options" xml:space="preserve">
+    <value>Options</value>
+  </data>
+  <data name="OptOutOfEmail" xml:space="preserve">
+    <value>I do not wish to receive emails from EMS Software.</value>
+  </data>
+  <data name="OrderDescription" xml:space="preserve">
+    <value>Order description:</value>
+  </data>
+  <data name="OrderEditCutoffTime" xml:space="preserve">
+    <value>Order change cutoff time:</value>
+  </data>
+  <data name="OtherInformation" xml:space="preserve">
+    <value>Other Information</value>
+  </data>
+  <data name="OutOfOffice" xml:space="preserve">
+    <value>Out of Office</value>
+  </data>
+  <data name="PackageIncludes" xml:space="preserve">
+    <value>Package includes the following items:</value>
+  </data>
+  <data name="PageXofY" xml:space="preserve">
+    <value>Page {0} of {1}</value>
+  </data>
+  <data name="PamLocationDelimiter" xml:space="preserve">
+    <value>*****EMS*****</value>
+  </data>
+  <data name="ParentMenu" xml:space="preserve">
+    <value>Parent Menu</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="PasswordAssistance" xml:space="preserve">
+    <value>Password Assistance</value>
+  </data>
+  <data name="PasswordStrength" xml:space="preserve">
+    <value>Password Strength</value>
+  </data>
+  <data name="Past" xml:space="preserve">
+    <value>Past</value>
+  </data>
+  <data name="PathForLdapHelp" xml:space="preserve">
+    <value>Example: LDAP://yourdomain.com (NOTE: You probably need to have "LDAP" in all caps).  If using Communication Options, leave the LDAP:// off (i.e. youdomain.com:port)</value>
+  </data>
+  <data name="PathForLdapQuery" xml:space="preserve">
+    <value>Path for LDAP Query</value>
+  </data>
+  <data name="PauseToLoadTip" xml:space="preserve">
+    <value>Pause to load tool tip</value>
+  </data>
+  <data name="Personalization" xml:space="preserve">
+    <value>Personalization</value>
+  </data>
+  <data name="PersonalizationOptions" xml:space="preserve">
+    <value>Personalization Options</value>
+  </data>
+  <data name="Personalize" xml:space="preserve">
+    <value>Personalize</value>
+  </data>
+  <data name="Phone" xml:space="preserve">
+    <value>Phone</value>
+  </data>
+  <data name="Phone1" xml:space="preserve">
+    <value>Phone 1</value>
+  </data>
+  <data name="Phone2" xml:space="preserve">
+    <value>Phone 2</value>
+  </data>
+  <data name="PhoneField1" xml:space="preserve">
+    <value>Phone Field 1</value>
+  </data>
+  <data name="PhoneLabelFromParam" xml:space="preserve">
+    <value>{0}</value>
+  </data>
+  <data name="PhoneProperty" xml:space="preserve">
+    <value>LDAP Phone Property</value>
+  </data>
+  <data name="PONumber" xml:space="preserve">
+    <value>{0}</value>
+  </data>
+  <data name="POStartsWith" xml:space="preserve">
+    <value>Starts with text</value>
+  </data>
+  <data name="Preview" xml:space="preserve">
+    <value>Preview</value>
+  </data>
+  <data name="Previous" xml:space="preserve">
+    <value>Previous</value>
+  </data>
+  <data name="PreviousDay" xml:space="preserve">
+    <value>Previous Day</value>
+  </data>
+  <data name="Price" xml:space="preserve">
+    <value>Price</value>
+  </data>
+  <data name="Print" xml:space="preserve">
+    <value>Print</value>
+  </data>
+  <data name="Private" xml:space="preserve">
+    <value>{0}</value>
+  </data>
+  <data name="PrivateLabel" xml:space="preserve">
+    <value>Private</value>
+  </data>
+  <data name="ProccessToPersonalize" xml:space="preserve">
+    <value>Select process to personalize</value>
+  </data>
+  <data name="Process" xml:space="preserve">
+    <value>Process</value>
+  </data>
+  <data name="Processing" xml:space="preserve">
+    <value>Processing</value>
+  </data>
+  <data name="ProcessTemplateRules" xml:space="preserve">
+    <value>Info</value>
+  </data>
+  <data name="ProtocolAuthTypeHelp" xml:space="preserve">
+    <value>Authentication type to use during binding process (Basic is most common)</value>
+  </data>
+  <data name="ProtocolVersion" xml:space="preserve">
+    <value>Protocol Version</value>
+  </data>
+  <data name="ProtocolVersionHelp" xml:space="preserve">
+    <value>Current version should be 3</value>
+  </data>
+  <data name="Quantity" xml:space="preserve">
+    <value>Quantity</value>
+  </data>
+  <data name="QuantityAbbr" xml:space="preserve">
+    <value>Qty.</value>
+  </data>
+  <data name="QuickSearch" xml:space="preserve">
+    <value>Quick Search</value>
+  </data>
+  <data name="Random" xml:space="preserve">
+    <value>Random</value>
+  </data>
+  <data name="RandomRecur" xml:space="preserve">
+    <value>Occurs on the following dates:</value>
+  </data>
+  <data name="RandomRecurrence" xml:space="preserve">
+    <value>Occurs on various dates, effective {4} until {3} from {2} to {1} {0}.</value>
+  </data>
+  <data name="RangeOfRecurrence" xml:space="preserve">
+    <value>Range of Recurrence</value>
+  </data>
+  <data name="Read" xml:space="preserve">
+    <value>Read</value>
+  </data>
+  <data name="ReadyToContinue" xml:space="preserve">
+    <value>Ready To Continue?</value>
+  </data>
+  <data name="ReconfirmBookings" xml:space="preserve">
+    <value>Reconfirm Bookings</value>
+  </data>
+  <data name="ReconfirmBookingsNoData" xml:space="preserve">
+    <value>No bookings to reconfirm</value>
+  </data>
+  <data name="RecurEvery" xml:space="preserve">
+    <value>Recur every</value>
+  </data>
+  <data name="Recurrence" xml:space="preserve">
+    <value>Recurrence</value>
+  </data>
+  <data name="RecurrencePattern" xml:space="preserve">
+    <value>Recurrence Pattern</value>
+  </data>
+  <data name="Refresh" xml:space="preserve">
+    <value>Refresh</value>
+  </data>
+  <data name="RegisterNewCard" xml:space="preserve">
+    <value>Register New Card</value>
+  </data>
+  <data name="RegistrationUrl" xml:space="preserve">
+    <value>Registration URL</value>
+  </data>
+  <data name="RelatedBookingsCaption" xml:space="preserve">
+    <value>Related Bookings</value>
+  </data>
+  <data name="RelatedEvents" xml:space="preserve">
+    <value>Related {0}</value>
+  </data>
+  <data name="Remaining" xml:space="preserve">
+    <value>Remaining</value>
+  </data>
+  <data name="RemainingBookingsThisWeek" xml:space="preserve">
+    <value>Remaining bookings this week</value>
+  </data>
+  <data name="Reminder" xml:space="preserve">
+    <value>Reminder</value>
+  </data>
+  <data name="RemoveAttachment" xml:space="preserve">
+    <value>Remove Attachment</value>
+  </data>
+  <data name="RemoveAttendee" xml:space="preserve">
+    <value>Remove Attendee</value>
+  </data>
+  <data name="RemoveLocation" xml:space="preserve">
+    <value>Remove Location</value>
+  </data>
+  <data name="RemoveLocationConfirmation" xml:space="preserve">
+    <value>Are you sure you want to remove this location?</value>
+  </data>
+  <data name="RemoveRecurrence" xml:space="preserve">
+    <value>Remove Recurrence</value>
+  </data>
+  <data name="Repeats" xml:space="preserve">
+    <value>Repeats</value>
+  </data>
+  <data name="Request" xml:space="preserve">
+    <value>Request</value>
+  </data>
+  <data name="RequestAccount" xml:space="preserve">
+    <value>Request An Account</value>
+  </data>
+  <data name="RequestCreated" xml:space="preserve">
+    <value>Request Created</value>
+  </data>
+  <data name="RequestDate" xml:space="preserve">
+    <value>Request Date</value>
+  </data>
+  <data name="RequestDetails" xml:space="preserve">
+    <value>Request Details</value>
+  </data>
+  <data name="Requested" xml:space="preserve">
+    <value>Requested</value>
+  </data>
+  <data name="RequestedDeliveryTime" xml:space="preserve">
+    <value>Requested delivery time:</value>
+  </data>
+  <data name="RequestRoom" xml:space="preserve">
+    <value>Request A Room</value>
+  </data>
+  <data name="RequestType" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="RequiresCheckIn" xml:space="preserve">
+    <value>Requires Check-in</value>
+  </data>
+  <data name="ResBillingLegend" xml:space="preserve">
+    <value>Billing Information</value>
+  </data>
+  <data name="RescheduleBookingEarlier" xml:space="preserve">
+    <value>Reschedule Booking Earlier</value>
+  </data>
+  <data name="RescheduleBookingLater" xml:space="preserve">
+    <value>Reschedule Booking Later</value>
+  </data>
+  <data name="RescheduleBookingToSpecificDate" xml:space="preserve">
+    <value>Reschedule Booking To Specific Date</value>
+  </data>
+  <data name="RescheduleBookingToSpecificTime" xml:space="preserve">
+    <value>Reschedule Booking To Specific Time</value>
+  </data>
+  <data name="ResDetailsDownloadIcs" xml:space="preserve">
+    <value>Add this booking to your personal calendar.</value>
+  </data>
+  <data name="ResDetailsTabsList" xml:space="preserve">
+    <value>Reservation Details,Additional Information</value>
+  </data>
+  <data name="ResDetailsTabsListNoUdq" xml:space="preserve">
+    <value>Reservation Details</value>
+  </data>
+  <data name="Reservation" xml:space="preserve">
+    <value>Reservation:</value>
+  </data>
+  <data name="ReservationAttachments" xml:space="preserve">
+    <value>Reservation Attachments</value>
+  </data>
+  <data name="ReservationCreated" xml:space="preserve">
+    <value>Reservation Created</value>
+  </data>
+  <data name="ReservationDetails" xml:space="preserve">
+    <value>Reservation Details</value>
+  </data>
+  <data name="ReservationId" xml:space="preserve">
+    <value>Reservation ID:</value>
+  </data>
+  <data name="ReservationIdColon" xml:space="preserve">
+    <value>Reservation ID:</value>
+  </data>
+  <data name="ReservationNoColon" xml:space="preserve">
+    <value>Reservation</value>
+  </data>
+  <data name="Reservations" xml:space="preserve">
+    <value>reservations</value>
+  </data>
+  <data name="ReservationSummary" xml:space="preserve">
+    <value>Reservation Summary</value>
+  </data>
+  <data name="ReservationSummaryGridCaption" xml:space="preserve">
+    <value>Bookings</value>
+  </data>
+  <data name="ReservationSummaryNoData" xml:space="preserve">
+    <value>No results</value>
+  </data>
+  <data name="ReservationSummaryTabList" xml:space="preserve">
+    <value>All,Current,Historical</value>
+  </data>
+  <data name="ReservationTasks" xml:space="preserve">
+    <value>Reservation Tasks</value>
+  </data>
+  <data name="ReservationTimedOut" xml:space="preserve">
+    <value>Reservation Timed Out</value>
+  </data>
+  <data name="Reserve" xml:space="preserve">
+    <value>Reserve</value>
+  </data>
+  <data name="Reserved" xml:space="preserve">
+    <value>Reserved</value>
+  </data>
+  <data name="ReservedTime" xml:space="preserve">
+    <value>Reserved Time</value>
+  </data>
+  <data name="Reset" xml:space="preserve">
+    <value>Reset</value>
+  </data>
+  <data name="ResetMyPasswordX" xml:space="preserve">
+    <value>Reset My Password ({0})</value>
+  </data>
+  <data name="ResetPassword" xml:space="preserve">
+    <value>Reset Password</value>
+  </data>
+  <data name="ResourceNotes" xml:space="preserve">
+    <value>Resource Notes</value>
+  </data>
+  <data name="ResourceUnavailable" xml:space="preserve">
+    <value>Resource Unavailable</value>
+  </data>
+  <data name="Result" xml:space="preserve">
+    <value>Result.</value>
+  </data>
+  <data name="Results" xml:space="preserve">
+    <value>Results.</value>
+  </data>
+  <data name="ResultTableHeading" xml:space="preserve">
+    <value>Result</value>
+  </data>
+  <data name="ReturnToTheHomePage" xml:space="preserve">
+    <value>Return to the home page.</value>
+  </data>
+  <data name="RollUpToReservation" xml:space="preserve">
+    <value>Roll Up To Reservation</value>
+  </data>
+  <data name="Room" xml:space="preserve">
+    <value>{0}</value>
+  </data>
+  <data name="RoomCart" xml:space="preserve">
+    <value>{0}</value>
+  </data>
+  <data name="RoomCode" xml:space="preserve">
+    <value>{0} Code</value>
+  </data>
+  <data name="RoomColon" xml:space="preserve">
+    <value>{0}:</value>
+  </data>
+  <data name="RoomDetails" xml:space="preserve">
+    <value>{0} Details</value>
+  </data>
+  <data name="RoomName" xml:space="preserve">
+    <value>{0} Name</value>
+  </data>
+  <data name="RoomRequestNoMatchingEvents" xml:space="preserve">
+    <value>No matching space found.</value>
+  </data>
+  <data name="RoomsAndAttendees" xml:space="preserve">
+    <value>{0} &amp; Attendees</value>
+  </data>
+  <data name="RoomSearch" xml:space="preserve">
+    <value>{0} Search</value>
+  </data>
+  <data name="RoomSearchResults" xml:space="preserve">
+    <value>{0} Search Results</value>
+  </data>
+  <data name="RoomSetupsGridSummary" xml:space="preserve">
+    <value>Table of rooms with setup types and capacities</value>
+  </data>
+  <data name="RoomSetupTypes" xml:space="preserve">
+    <value>Setup types by {0}</value>
+  </data>
+  <data name="RoomsMatchingYourFilter" xml:space="preserve">
+    <value>Top 500 {0} matching your filter</value>
+  </data>
+  <data name="RoomsMatchingYourSearchCriteriaWillAppearHere" xml:space="preserve">
+    <value>{0} matching your search criteria will appear here.</value>
+  </data>
+  <data name="RoomsYouCanRequest" xml:space="preserve">
+    <value>{0} You Can Request</value>
+  </data>
+  <data name="RoomsYouCanReserve" xml:space="preserve">
+    <value>{0} You Can Reserve</value>
+  </data>
+  <data name="RoomTipGridSummary" xml:space="preserve">
+    <value>A table of setup types that are configured on the room</value>
+  </data>
+  <data name="RoomType" xml:space="preserve">
+    <value>{0} Type</value>
+  </data>
+  <data name="RoomTypes" xml:space="preserve">
+    <value>{0} Types</value>
+  </data>
+  <data name="SalesCategory" xml:space="preserve">
+    <value>{0}:</value>
+  </data>
+  <data name="SalesPerson" xml:space="preserve">
+    <value>{0}</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="SaveAttendees" xml:space="preserve">
+    <value>Save Attendees</value>
+  </data>
+  <data name="SaveBookingQuestion" xml:space="preserve">
+    <value>Save Booking?</value>
+  </data>
+  <data name="SaveChanges" xml:space="preserve">
+    <value>Save Changes</value>
+  </data>
+  <data name="Saved" xml:space="preserve">
+    <value>Saved</value>
+  </data>
+  <data name="SavedFilters" xml:space="preserve">
+    <value>Saved Filters</value>
+  </data>
+  <data name="SaveFailed" xml:space="preserve">
+    <value>There was a problem saving your reservation.</value>
+  </data>
+  <data name="SaveFilter" xml:space="preserve">
+    <value>Save Filter</value>
+  </data>
+  <data name="SaveFilters" xml:space="preserve">
+    <value>Save Filters</value>
+  </data>
+  <data name="SavePreferences" xml:space="preserve">
+    <value>Save Preferences</value>
+  </data>
+  <data name="SaveReservationDetails" xml:space="preserve">
+    <value>Save Reservation Details</value>
+  </data>
+  <data name="Schedule" xml:space="preserve">
+    <value>Schedule</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="SearchBookings" xml:space="preserve">
+    <value>Search Bookings</value>
+  </data>
+  <data name="SearchBox" xml:space="preserve">
+    <value>Enter text to search for delegate</value>
+  </data>
+  <data name="SearchFor" xml:space="preserve">
+    <value>Search For</value>
+  </data>
+  <data name="SearchRemainingDates" xml:space="preserve">
+    <value>Search Remaining Dates</value>
+  </data>
+  <data name="SearchReservations" xml:space="preserve">
+    <value>Search Reservations</value>
+  </data>
+  <data name="SearchResults" xml:space="preserve">
+    <value>Users matching your search</value>
+  </data>
+  <data name="SearchRoot" xml:space="preserve">
+    <value>Search Root</value>
+  </data>
+  <data name="SearchRootHelp" xml:space="preserve">
+    <value>OU for the root of the search (i.e. DC=youdomain,DC=com or o=LDAPRoot)</value>
+  </data>
+  <data name="Second" xml:space="preserve">
+    <value>Second</value>
+  </data>
+  <data name="Security" xml:space="preserve">
+    <value>Security</value>
+  </data>
+  <data name="Select" xml:space="preserve">
+    <value>Select</value>
+  </data>
+  <data name="SelectANewTemplate" xml:space="preserve">
+    <value>Select A New Template</value>
+  </data>
+  <data name="SelectARoom" xml:space="preserve">
+    <value>Select a {0}</value>
+  </data>
+  <data name="SelectedDate" xml:space="preserve">
+    <value>Selected Date</value>
+  </data>
+  <data name="SelectedLocations" xml:space="preserve">
+    <value>Selected Locations</value>
+  </data>
+  <data name="SelectedRooms" xml:space="preserve">
+    <value>Selected {0}</value>
+  </data>
+  <data name="SelectEventType" xml:space="preserve">
+    <value>(select {0} type)</value>
+  </data>
+  <data name="SelectFacility" xml:space="preserve">
+    <value>(select facility)</value>
+  </data>
+  <data name="SelectItem" xml:space="preserve">
+    <value>Select Item</value>
+  </data>
+  <data name="SelectMonth" xml:space="preserve">
+    <value>Select Month</value>
+  </data>
+  <data name="SelectOptionAbove" xml:space="preserve">
+    <value>Select a template above to customize your selections</value>
+  </data>
+  <data name="SelectServices" xml:space="preserve">
+    <value>Select Services</value>
+  </data>
+  <data name="Send" xml:space="preserve">
+    <value>Send</value>
+  </data>
+  <data name="SendIcsTo" xml:space="preserve">
+    <value>Send Invite To (comma separated)</value>
+  </data>
+  <data name="SendInvitation" xml:space="preserve">
+    <value>Send Invitation</value>
+  </data>
+  <data name="SendToAddedOrDeleted" xml:space="preserve">
+    <value>Send updates only to added or deleted attendees</value>
+  </data>
+  <data name="SendToAll" xml:space="preserve">
+    <value>Send updates to all attendees (changing date, time, location, subject or message body will always send updates to all attendees)</value>
+  </data>
+  <data name="Serves" xml:space="preserve">
+    <value>Serves</value>
+  </data>
+  <data name="ServesX" xml:space="preserve">
+    <value> (Serves {0:.##})</value>
+  </data>
+  <data name="ServesXWithMinQuantity" xml:space="preserve">
+    <value> (Serves {0:.##}; Minimum Qty. {1:.##})</value>
+  </data>
+  <data name="ServiceAvailability" xml:space="preserve">
+    <value>Service Availability</value>
+  </data>
+  <data name="ServiceEnd" xml:space="preserve">
+    <value>Service End</value>
+  </data>
+  <data name="ServiceOrdersCaption" xml:space="preserve">
+    <value>Current service orders</value>
+  </data>
+  <data name="Services" xml:space="preserve">
+    <value>Services</value>
+  </data>
+  <data name="ServicesAdjustYourSelection" xml:space="preserve">
+    <value>adjust your selections</value>
+  </data>
+  <data name="ServicesForYourReservation" xml:space="preserve">
+    <value>Services For Your Reservation</value>
+  </data>
+  <data name="ServiceSingular" xml:space="preserve">
+    <value>Service</value>
+  </data>
+  <data name="ServicesNextStep" xml:space="preserve">
+    <value>next step</value>
+  </data>
+  <data name="ServicesSubtotal" xml:space="preserve">
+    <value>Services Sub-Total</value>
+  </data>
+  <data name="ServicesSummary" xml:space="preserve">
+    <value>Services Summary</value>
+  </data>
+  <data name="ServiceStart" xml:space="preserve">
+    <value>Service Start</value>
+  </data>
+  <data name="ServicesUnavailable" xml:space="preserve">
+    <value>{0} Unavailable</value>
+  </data>
+  <data name="ServiceTime" xml:space="preserve">
+    <value>Service Time</value>
+  </data>
+  <data name="ServiceType" xml:space="preserve">
+    <value>Service Type</value>
+  </data>
+  <data name="Setup" xml:space="preserve">
+    <value>Setup</value>
+  </data>
+  <data name="SetupCount" xml:space="preserve">
+    <value>Setup Count</value>
+  </data>
+  <data name="SetupHours" xml:space="preserve">
+    <value>Setup Hours</value>
+  </data>
+  <data name="SetupInfo" xml:space="preserve">
+    <value>Setup Information</value>
+  </data>
+  <data name="SetupInformation" xml:space="preserve">
+    <value>Setup Type</value>
+  </data>
+  <data name="SetupTearDown" xml:space="preserve">
+    <value>Setup/Teardown</value>
+  </data>
+  <data name="SetupType" xml:space="preserve">
+    <value>Setup Type</value>
+  </data>
+  <data name="SetupTypes" xml:space="preserve">
+    <value>Setup Types</value>
+  </data>
+  <data name="SetupTypesCaption" xml:space="preserve">
+    <value>Setup Types and Capacities</value>
+  </data>
+  <data name="SetupTypesEmptyText" xml:space="preserve">
+    <value>No setup types defined</value>
+  </data>
+  <data name="SetupTypesNoPreference" xml:space="preserve">
+    <value>(setup types - no preference)</value>
+  </data>
+  <data name="SetupTypesSummary" xml:space="preserve">
+    <value>Table contains setup type and room capacity for the setup type.</value>
+  </data>
+  <data name="Share" xml:space="preserve">
+    <value>Share</value>
+  </data>
+  <data name="ShowCancelled" xml:space="preserve">
+    <value>Show Cancelled</value>
+  </data>
+  <data name="ShowEmail" xml:space="preserve">
+    <value>Email Options</value>
+  </data>
+  <data name="ShowHideFilters" xml:space="preserve">
+    <value>Show/Hide Filters</value>
+  </data>
+  <data name="ShowResultsAs" xml:space="preserve">
+    <value>Show Results As</value>
+  </data>
+  <data name="ShowTimeAs" xml:space="preserve">
+    <value>Show Time As</value>
+  </data>
+  <data name="SignOut" xml:space="preserve">
+    <value>Sign Out</value>
+  </data>
+  <data name="SignUp" xml:space="preserve">
+    <value>Sign Up</value>
+  </data>
+  <data name="SimpleSendToAll" xml:space="preserve">
+    <value>Send updates to all attendees</value>
+  </data>
+  <data name="SingleBooking" xml:space="preserve">
+    <value>single booking</value>
+  </data>
+  <data name="SiteHome" xml:space="preserve">
+    <value>Site Home</value>
+  </data>
+  <data name="Size" xml:space="preserve">
+    <value>Size</value>
+  </data>
+  <data name="SizeLabel" xml:space="preserve">
+    <value>{0}</value>
+  </data>
+  <data name="Skip" xml:space="preserve">
+    <value>Skip</value>
+  </data>
+  <data name="SkipLinkText" xml:space="preserve">
+    <value>Skip Navigation Links</value>
+  </data>
+  <data name="SkipOccurrences" xml:space="preserve">
+    <value>Skip Occurrences</value>
+  </data>
+  <data name="SkipRemainingOccurrencesQuestion" xml:space="preserve">
+    <value>Skip Remaining Occurrences?</value>
+  </data>
+  <data name="SkipServices" xml:space="preserve">
+    <value>Skip Services</value>
+  </data>
+  <data name="SkipTheseXOccurrences" xml:space="preserve">
+    <value>Skip These {0} Occurrences</value>
+  </data>
+  <data name="SocialNetworking" xml:space="preserve">
+    <value>Social Networking</value>
+  </data>
+  <data name="SomeoneElsesBooking" xml:space="preserve">
+    <value>Someone Else&amp;rsquo;s Booking</value>
+  </data>
+  <data name="SortAscAltText" xml:space="preserve">
+    <value>Sorted Ascending</value>
+  </data>
+  <data name="SortDescAltText" xml:space="preserve">
+    <value>Sorted Descending</value>
+  </data>
+  <data name="SpecialDate" xml:space="preserve">
+    <value>Special Date</value>
+  </data>
+  <data name="SpecialInstructions" xml:space="preserve">
+    <value>Special Instructions</value>
+  </data>
+  <data name="Start" xml:space="preserve">
+    <value>Start</value>
+  </data>
+  <data name="StartBookingEarlier" xml:space="preserve">
+    <value>Start Booking Earlier</value>
+  </data>
+  <data name="StartBookingLater" xml:space="preserve">
+    <value>Start Booking Later</value>
+  </data>
+  <data name="StartColon" xml:space="preserve">
+    <value>Start:</value>
+  </data>
+  <data name="StartDate" xml:space="preserve">
+    <value>Start Date</value>
+  </data>
+  <data name="StartOver" xml:space="preserve">
+    <value>Start Over?</value>
+  </data>
+  <data name="StartTime" xml:space="preserve">
+    <value>Start Time</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="StatusColon" xml:space="preserve">
+    <value>Status:</value>
+  </data>
+  <data name="StayHere" xml:space="preserve">
+    <value>Stay Here</value>
+  </data>
+  <data name="StillWorking" xml:space="preserve">
+    <value>Still Working?</value>
+  </data>
+  <data name="Strong" xml:space="preserve">
+    <value>Strong</value>
+  </data>
+  <data name="Subject" xml:space="preserve">
+    <value>Subject</value>
+  </data>
+  <data name="Submit" xml:space="preserve">
+    <value>Submit</value>
+  </data>
+  <data name="Summary" xml:space="preserve">
+    <value>Summary</value>
+  </data>
+  <data name="SummaryOfBookings" xml:space="preserve">
+    <value>Summary of Bookings</value>
+  </data>
+  <data name="SummaryView" xml:space="preserve">
+    <value>Summary View</value>
+  </data>
+  <data name="SystemRequirementsPage" xml:space="preserve">
+    <value>system requirements page</value>
+  </data>
+  <data name="TeardownHours" xml:space="preserve">
+    <value>Teardown Hours</value>
+  </data>
+  <data name="Template" xml:space="preserve">
+    <value>Template</value>
+  </data>
+  <data name="TemplateId" xml:space="preserve">
+    <value>Template ID</value>
+  </data>
+  <data name="TemplateName" xml:space="preserve">
+    <value>Template Name</value>
+  </data>
+  <data name="Templates" xml:space="preserve">
+    <value>Templates</value>
+  </data>
+  <data name="TenMinutes" xml:space="preserve">
+    <value>10 Minutes</value>
+  </data>
+  <data name="Tentative" xml:space="preserve">
+    <value>Tentative</value>
+  </data>
+  <data name="TermsAndConditions" xml:space="preserve">
+    <value>terms and conditions</value>
+  </data>
+  <data name="Test" xml:space="preserve">
+    <value>Test</value>
+  </data>
+  <data name="TestConfiguration" xml:space="preserve">
+    <value>Test Configuration</value>
+  </data>
+  <data name="ThankYou" xml:space="preserve">
+    <value>Thank You</value>
+  </data>
+  <data name="The" xml:space="preserve">
+    <value>the</value>
+  </data>
+  <data name="Third" xml:space="preserve">
+    <value>Third</value>
+  </data>
+  <data name="ThirtyMinutes" xml:space="preserve">
+    <value>30 Minutes</value>
+  </data>
+  <data name="ThisMonth" xml:space="preserve">
+    <value>This Month</value>
+  </data>
+  <data name="ThisRoomIsTheHost" xml:space="preserve">
+    <value>This {0} is the host.</value>
+  </data>
+  <data name="ThisWeek" xml:space="preserve">
+    <value>This Week</value>
+  </data>
+  <data name="Time" xml:space="preserve">
+    <value>Time</value>
+  </data>
+  <data name="TimePicker" xml:space="preserve">
+    <value>Time Picker</value>
+  </data>
+  <data name="TimeZone" xml:space="preserve">
+    <value>Time Zone</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="to" xml:space="preserve">
+    <value>to</value>
+  </data>
+  <data name="Today" xml:space="preserve">
+    <value>Today</value>
+  </data>
+  <data name="TokenGroupSearchFilter" xml:space="preserve">
+    <value>Group Search Filter</value>
+  </data>
+  <data name="TokenGroupSearchFilterHelp" xml:space="preserve">
+    <value>Active Directory Only.  Filter to use when loading Token Groups for a user  ---i.e (&amp;(objectClass=Person)(objectClass=user))  ---</value>
+  </data>
+  <data name="TokenizerBillingRefFormat" xml:space="preserve">
+    <value>{0} - {1} ({2}/{3})</value>
+  </data>
+  <data name="TokenizerResult" xml:space="preserve">
+    <value>Card Vault Status</value>
+  </data>
+  <data name="TokenizerTitle" xml:space="preserve">
+    <value>Add Card To Vault</value>
+  </data>
+  <data name="ToLabel" xml:space="preserve">
+    <value>To:</value>
+  </data>
+  <data name="Tomorrow" xml:space="preserve">
+    <value>Tomorrow</value>
+  </data>
+  <data name="TopXGroupsMatchingYourSearch" xml:space="preserve">
+    <value>Top {0} matching {1}</value>
+  </data>
+  <data name="TotalNumberBooking" xml:space="preserve">
+    <value>Total No. Bookings</value>
+  </data>
+  <data name="TwoHours" xml:space="preserve">
+    <value>2 Hours</value>
+  </data>
+  <data name="TwoWeeks" xml:space="preserve">
+    <value>Two Weeks</value>
+  </data>
+  <data name="TypeOfRecurrence" xml:space="preserve">
+    <value>Type of Recurrence</value>
+  </data>
+  <data name="TypeToSearch" xml:space="preserve">
+    <value>Type To Search</value>
+  </data>
+  <data name="TZ" xml:space="preserve">
+    <value>TZ</value>
+  </data>
+  <data name="TZColon" xml:space="preserve">
+    <value>TZ:</value>
+  </data>
+  <data name="Unavailable" xml:space="preserve">
+    <value>Unavailable</value>
+  </data>
+  <data name="UnavailableDates" xml:space="preserve">
+    <value>Unavailable Dates</value>
+  </data>
+  <data name="UnavailableDatesAndTimes" xml:space="preserve">
+    <value>Unavailable Dates &amp; Times</value>
+  </data>
+  <data name="Unknown" xml:space="preserve">
+    <value>Unknown</value>
+  </data>
+  <data name="Update" xml:space="preserve">
+    <value>Update</value>
+  </data>
+  <data name="UpdateAndNotify" xml:space="preserve">
+    <value>Update Subject/Message &amp; Notify Attendees</value>
+  </data>
+  <data name="UpdateBooking" xml:space="preserve">
+    <value>Update Booking</value>
+  </data>
+  <data name="UpdateBookingParenPlural" xml:space="preserve">
+    <value>Update Booking(s)</value>
+  </data>
+  <data name="UpdateBookingPlural" xml:space="preserve">
+    <value>Update Bookings</value>
+  </data>
+  <data name="UpdateBookings" xml:space="preserve">
+    <value>Update Booking(s)</value>
+  </data>
+  <data name="UpdateReservation" xml:space="preserve">
+    <value>Update Reservation</value>
+  </data>
+  <data name="UpdateSuccessful" xml:space="preserve">
+    <value>Update Successful</value>
+  </data>
+  <data name="Upload" xml:space="preserve">
+    <value>Upload</value>
+  </data>
+  <data name="Url" xml:space="preserve">
+    <value>URL</value>
+  </data>
+  <data name="UseCommunicationOptions" xml:space="preserve">
+    <value>Use advanced communication options (requires Communication Options configuration, typically NOT required for Active Directory)</value>
+  </data>
+  <data name="UseFullVersion" xml:space="preserve">
+    <value>Full version</value>
+  </data>
+  <data name="UseLadp" xml:space="preserve">
+    <value>Authenticate users via LDAP?</value>
+  </data>
+  <data name="UseLDAPForTemplateAssignment" xml:space="preserve">
+    <value>Use LDAP to assign Process Templates</value>
+  </data>
+  <data name="UseLDAPForTemplateAssignmentHelp" xml:space="preserve">
+    <value>= uncheck this to just use LDAP for authentication</value>
+  </data>
+  <data name="UseLdapHelp" xml:space="preserve">
+    <value>Check if you want this app to verify the configured directory service for the user.</value>
+  </data>
+  <data name="UseMobileLDAP" xml:space="preserve">
+    <value>Authenticate mobile users via LDAP?</value>
+  </data>
+  <data name="UserId" xml:space="preserve">
+    <value>{0}</value>
+  </data>
+  <data name="UserNotTiedToGroup" xml:space="preserve">
+    <value>Your user record is not tied to a {0}.</value>
+  </data>
+  <data name="UserSearchFilter" xml:space="preserve">
+    <value>User Search Filter</value>
+  </data>
+  <data name="UserSearchFilterHelp" xml:space="preserve">
+    <value>Filter to use when looking for a user ---i.e. (&amp;(objectClass=Person)(SAMAccountName={0})) or (&amp;(objectClass=Person)(uid={0}))  --- {0} will be replaced with user input</value>
+  </data>
+  <data name="UseSSL" xml:space="preserve">
+    <value>Use SSL</value>
+  </data>
+  <data name="UseSSLHelp" xml:space="preserve">
+    <value>Will force communication to use SSL</value>
+  </data>
+  <data name="UseTheCurrentTemplate" xml:space="preserve">
+    <value>Use The Current Template</value>
+  </data>
+  <data name="UsingAD" xml:space="preserve">
+    <value>Using Active Directory</value>
+  </data>
+  <data name="UsingADHelp" xml:space="preserve">
+    <value>If checked, this app uses Active Directory attributes for queries</value>
+  </data>
+  <data name="Value" xml:space="preserve">
+    <value>Value</value>
+  </data>
+  <data name="Vendor" xml:space="preserve">
+    <value>Vendor:</value>
+  </data>
+  <data name="VerifyNewPassword" xml:space="preserve">
+    <value>Re-enter New Password</value>
+  </data>
+  <data name="VerifyPassword" xml:space="preserve">
+    <value>Verify Password</value>
+  </data>
+  <data name="View" xml:space="preserve">
+    <value>View</value>
+  </data>
+  <data name="ViewOccurrences" xml:space="preserve">
+    <value>View Occurrences</value>
+  </data>
+  <data name="ViewOnMap" xml:space="preserve">
+    <value>View On Map</value>
+  </data>
+  <data name="ViewReservationSummary" xml:space="preserve">
+    <value>View Reservation Summary</value>
+  </data>
+  <data name="Views" xml:space="preserve">
+    <value>Views</value>
+  </data>
+  <data name="ViewServices" xml:space="preserve">
+    <value>View Services</value>
+  </data>
+  <data name="ViewServicesAltTag" xml:space="preserve">
+    <value>View Services</value>
+  </data>
+  <data name="ViewVariants" xml:space="preserve">
+    <value>View {0} Variants</value>
+  </data>
+  <data name="VirtualEmsVersion" xml:space="preserve">
+    <value>EMS Web App version</value>
+  </data>
+  <data name="Visitor" xml:space="preserve">
+    <value>Visitor</value>
+  </data>
+  <data name="WarningAltTag" xml:space="preserve">
+    <value>Warning: Booking in conflict status or had a resource quantity reset</value>
+  </data>
+  <data name="Weak" xml:space="preserve">
+    <value>Weak</value>
+  </data>
+  <data name="WebRequestDetailsTabsList" xml:space="preserve">
+    <value>Details,Additional Information</value>
+  </data>
+  <data name="WebUser" xml:space="preserve">
+    <value>Web User</value>
+  </data>
+  <data name="WebUserNotTiedToGroup" xml:space="preserve">
+    <value>Your web user account is not tied to a {0}</value>
+  </data>
+  <data name="Week" xml:space="preserve">
+    <value>Week</value>
+  </data>
+  <data name="Weekday" xml:space="preserve">
+    <value>Weekday</value>
+  </data>
+  <data name="WeekdaysOnly" xml:space="preserve">
+    <value>Weekdays Only</value>
+  </data>
+  <data name="WeekendDay" xml:space="preserve">
+    <value>Weekend Day</value>
+  </data>
+  <data name="Weekly" xml:space="preserve">
+    <value>Weekly</value>
+  </data>
+  <data name="WeeklyBookDifYearMonthFormat" xml:space="preserve">
+    <value>{0} {1}, {2} - {3} {4}, {5}</value>
+  </data>
+  <data name="WeeklyBookStartDateDifMonthFormat" xml:space="preserve">
+    <value>{0} {1} - {2} {3}, {4}</value>
+  </data>
+  <data name="WeeklyBookStartDateSameMonthFormat" xml:space="preserve">
+    <value>{0} {1} - {2}, {3}</value>
+  </data>
+  <data name="WeeklyCalendar" xml:space="preserve">
+    <value>Weekly Calendar</value>
+  </data>
+  <data name="WeeklyInterval" xml:space="preserve">
+    <value>Occurs every {0} week(s) on {1} effective {2:d} until {3:d} from {4} to {5}</value>
+  </data>
+  <data name="WeeklyList" xml:space="preserve">
+    <value>Weekly List</value>
+  </data>
+  <data name="WeeklyNonInterval" xml:space="preserve">
+    <value>Occurs every {0} week(s) effective {1:d} until {2:d} from {3} to {4}</value>
+  </data>
+  <data name="WeeklyRecurrence" xml:space="preserve">
+    <value>Occurs every {6} on {5}, effective {4} until {3} from {2} to {1} {0}.</value>
+  </data>
+  <data name="WeekPlural" xml:space="preserve">
+    <value>weeks</value>
+  </data>
+  <data name="Weeks" xml:space="preserve">
+    <value>week(s)</value>
+  </data>
+  <data name="WeekSingular" xml:space="preserve">
+    <value>week</value>
+  </data>
+  <data name="WeeksOn" xml:space="preserve">
+    <value>week(s) on:</value>
+  </data>
+  <data name="Welcome" xml:space="preserve">
+    <value>Welcome</value>
+  </data>
+  <data name="WelcomeFormat" xml:space="preserve">
+    <value>Welcome {0}</value>
+  </data>
+  <data name="WelcomeGuest" xml:space="preserve">
+    <value>Welcome, Guest.</value>
+  </data>
+  <data name="What" xml:space="preserve">
+    <value>What</value>
+  </data>
+  <data name="When" xml:space="preserve">
+    <value>When and Where</value>
+  </data>
+  <data name="WorkingElsewhere" xml:space="preserve">
+    <value>Working Elsewhere</value>
+  </data>
+  <data name="WorkWeek" xml:space="preserve">
+    <value>Work Week</value>
+  </data>
+  <data name="XBeginningY" xml:space="preserve">
+    <value>{0} beginning {1}</value>
+  </data>
+  <data name="XOfYOccurrences" xml:space="preserve">
+    <value>{0} of {1} occurrences</value>
+  </data>
+  <data name="WithXConflicts" xml:space="preserve">
+    <value>with {0} conflicts</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="YesCancel" xml:space="preserve">
+    <value>Yes, Cancel Booking</value>
+  </data>
+  <data name="YesCancelPlural" xml:space="preserve">
+    <value>Yes, Cancel Bookings</value>
+  </data>
+  <data name="YesCancelReservation" xml:space="preserve">
+    <value>Yes, Cancel Reservation</value>
+  </data>
+  <data name="YesCreateMyAccount" xml:space="preserve">
+    <value>Yes, create my account.</value>
+  </data>
+  <data name="YesEditReservation" xml:space="preserve">
+    <value>Yes, Edit Reservation</value>
+  </data>
+  <data name="YesKeepQuantity" xml:space="preserve">
+    <value>Yes, Keep Quantity</value>
+  </data>
+  <data name="YesRequestMyAccount" xml:space="preserve">
+    <value>Yes, request my account. </value>
+  </data>
+  <data name="YesEndBooking" xml:space="preserve">
+    <value>Yes, End Booking</value>
+  </data>
+  <data name="YouCannontCurrentlyBookForAnyGroup" xml:space="preserve">
+    <value>You currently do not have any {0} for which you can book</value>
+  </data>
+  <data name="YouveLoggedOut" xml:space="preserve">
+    <value>You have logged out</value>
+  </data>
+  <data name="ZeroMinutes" xml:space="preserve">
+    <value>0 Minutes</value>
+  </data>
+  <data name="FindABuilding" xml:space="preserve">
+    <value>Find A {0}</value>
+  </data>
+  <data name="NoMatchingAttendees" xml:space="preserve">
+    <value>No matching attendees found.</value>
+  </data>
+  <data name="NoMatchingItems" xml:space="preserve">
+    <value>No matching items found.</value>
+  </data>
+  <data name="EmailReservationSummary" xml:space="preserve">
+    <value>Email Reservation Summary</value>
+  </data>
+  <data name="EditAdditionalInformation" xml:space="preserve">
+    <value>Edit Additional Information</value>
+  </data>
+  <data name="YesCreateRequest" xml:space="preserve">
+    <value>Yes, Create Request</value>
+  </data>
+  <data name="ApplyToAdditionalBookings" xml:space="preserve">
+    <value>Apply To Additional Bookings</value>
+  </data>
+  <data name="StepX" xml:space="preserve">
+    <value>Step {0}</value>
+  </data>
+  <data name="TwoFactorStep1" xml:space="preserve">
+    <value>Get The App</value>
+  </data>
+  <data name="TwoFactorStep2" xml:space="preserve">
+    <value>Scan This Barcode</value>
+  </data>
+  <data name="TwoFactorStep3" xml:space="preserve">
+    <value>Enter Verification Code</value>
+  </data>
+  <data name="Ok" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="CollapseBookingsToReservationLevel" xml:space="preserve">
+    <value>Collapse Bookings to Reservation-Level</value>
+  </data>
+  <data name="CreateCustomLink" xml:space="preserve">
+    <value>Create Custom Link</value>
+  </data>
+  <data name="IgnoreEveryDayUserApplicationDisplaySettings" xml:space="preserve">
+    <value>Ignore Everyday User Application Display Settings</value>
+  </data>
+  <data name="CopyEmbed" xml:space="preserve">
+    <value>Copy Embed</value>
+  </data>
+  <data name="CopyURL" xml:space="preserve">
+    <value>Copy URL</value>
+  </data>
+  <data name="CustomLinkLogo" xml:space="preserve">
+    <value>Custom Link Logo</value>
+  </data>
+  <data name="CustomLinkLogoHelp" xml:space="preserve">
+    <value>Provide the full server path and the name of the logo.</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>Language</value>
+  </data>
+  <data name="LocationDetailsViewAllDetailsText" xml:space="preserve">
+    <value>View All {0} &amp; {1} Details</value>
+    <comment>building, room</comment>
+  </data>
+  <data name="NoMatchingRooms" xml:space="preserve">
+    <value>No matching {0} found.</value>
+    <comment>room title</comment>
+  </data>
+  <data name="TermsOfUse" xml:space="preserve">
+    <value>Terms of Use</value>
+  </data>
+  <data name="EnterNamePlaceholder" xml:space="preserve">
+    <value>Enter a name to search</value>
+  </data>
+  <data name="AddFilter" xml:space="preserve">
+    <value>Add Filter</value>
+  </data>
+  <data name="AllBuildings" xml:space="preserve">
+    <value>All {0}</value>
+    <comment>Building title plural</comment>
+  </data>
+  <data name="AllDay" xml:space="preserve">
+    <value>All Day</value>
+  </data>
+  <data name="LdapUserId" xml:space="preserve">
+    <value>Network UserId Without Domain Name</value>
+  </data>
+  <data name="XOutOfYResultsAreShown" xml:space="preserve">
+    <value>{0} out of {1} results are shown.</value>
+  </data>
+  <data name="Prev" xml:space="preserve">
+    <value>Prev</value>
+  </data>
+  <data name="FilterByArea" xml:space="preserve">
+    <value>Filter by Area</value>
+  </data>
+  <data name="ShowAllX" xml:space="preserve">
+    <value>Show All {0}</value>
+  </data>
+  <data name="SelectAllX" xml:space="preserve">
+    <value>Select All {0}</value>
+  </data>
+  <data name="SearchForAnX" xml:space="preserve">
+    <value>Search for {0}</value>
+  </data>
+  <data name="UngroupedX" xml:space="preserve">
+    <value>(Ungrouped {0})</value>
+  </data>
+  <data name="PersonalizeFilterHeader" xml:space="preserve">
+    <value>Personalize Filters or Template Defaults</value>
+  </data>
+  <data name="AddNew" xml:space="preserve">
+    <value>Add New {0}</value>
+  </data>
+  <data name="YourSaved" xml:space="preserve">
+    <value>Your Saved {0}</value>
+  </data>
+  <data name="SelectYourFiles" xml:space="preserve">
+    <value>Select your files</value>
+  </data>
+  <data name="DragDropFiles" xml:space="preserve">
+    <value>Drag and drop your files here</value>
+  </data>
+  <data name="SelectYourFile" xml:space="preserve">
+    <value>Select your file</value>
+  </data>
+  <data name="DragDropFile" xml:space="preserve">
+    <value>Drag and drop your file here</value>
+  </data>
+  <data name="Attribute" xml:space="preserve">
+    <value>Attribute</value>
+  </data>
+  <data name="WebAppInterfaceVersion" xml:space="preserve">
+    <value>EMS Web Application Interface Version</value>
+  </data>
+  <data name="SqlPatchNumber" xml:space="preserve">
+    <value>SQL Patch Number</value>
+  </data>
+  <data name="ServerVersion" xml:space="preserve">
+    <value>Server Version</value>
+  </data>
+  <data name="ClientVersion" xml:space="preserve">
+    <value>Client Version</value>
+  </data>
+  <data name="ClientSqlInterfaceVersion" xml:space="preserve">
+    <value>Client SQL Interface Version</value>
+  </data>
+  <data name="RoomWizardSqlInterfaceVersion" xml:space="preserve">
+    <value>Room Wizard SQL Interface Version</value>
+  </data>
+  <data name="KioskSqlInterfaceVersion" xml:space="preserve">
+    <value>Kiosk SQL Interface Version</value>
+  </data>
+  <data name="MasterCalendarSqlInterfaceVersion" xml:space="preserve">
+    <value>Master Calendar SQL Interface Version</value>
+  </data>
+  <data name="ReadLicense" xml:space="preserve">
+    <value>Read License</value>
+  </data>
+  <data name="DefaultPhoneLabelOverride" xml:space="preserve">
+    <value />
+  </data>
+  <data name="DefaultFaxLabelOverride" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RoomSizeLabelOverride" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BuildingTitleSingularOverride" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BuildingTitlePluralOverride" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RoomTitleSingularOverride" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RoomTitlePluralOverride" xml:space="preserve">
+    <value />
+  </data>
+  <data name="AcademicUnitTitleSingularOverride" xml:space="preserve">
+    <value />
+  </data>
+  <data name="AcademicUnitTitlePluralOverride" xml:space="preserve">
+    <value />
+  </data>
+  <data name="SubjectTitleSingularOverride" xml:space="preserve">
+    <value />
+  </data>
+  <data name="SubjectTitlePluralOverride" xml:space="preserve">
+    <value />
+  </data>
+  <data name="DomainTitleSingularOverride" xml:space="preserve">
+    <value />
+  </data>
+  <data name="DomainTitlePluralOverride" xml:space="preserve">
+    <value />
+  </data>
+  <data name="EventsTitleSingularOverride" xml:space="preserve">
+    <value />
+  </data>
+  <data name="EventsTitlePluralOverride" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GroupTitleSingularOverride" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GroupTitlePluralOverride" xml:space="preserve">
+    <value />
+  </data>
+  <data name="FirstContactTitleOverride" xml:space="preserve">
+    <value />
+  </data>
+  <data name="AlternateContactTitleOverride" xml:space="preserve">
+    <value />
+  </data>
+  <data name="SalesCategoryTitleSingularOverride" xml:space="preserve">
+    <value />
+  </data>
+  <data name="EventCoordinatorTitleOverride" xml:space="preserve">
+    <value />
+  </data>
+  <data name="SalesCategoryTitlePluralOverride" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BillingReferenceTitleSingularOverride" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BillingReferenceTitlePluralOverride" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PONumberTitleOverride" xml:space="preserve">
+    <value />
+  </data>
+  <data name="AreaTitleSingularOverride" xml:space="preserve">
+    <value />
+  </data>
+  <data name="AreaTitlePluralOverride" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PrivateLabelOverride" xml:space="preserve">
+    <value />
+  </data>
+  <data name="UserIdLabelOverride" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ExternalReferenceTitleOverride" xml:space="preserve">
+    <value />
+  </data>
+  <data name="SisTitleOverride" xml:space="preserve">
+    <value />
+  </data>
+  <data name="OverrideLocationAndTimeZoneOnSearch" xml:space="preserve">
+    <value>Override location and time zone settings when I search for available space</value>
+  </data>
+  <data name="AttendeeCompanyLabelOverride" xml:space="preserve">
+    <value />
+  </data>
+  <data name="AttendeeEmailLabelOverride" xml:space="preserve">
+    <value />
+  </data>
+  <data name="AttendeeNameLabelOverride" xml:space="preserve">
+    <value />
+  </data>
+  <data name="AttendeeNotesLabelOverride" xml:space="preserve">
+    <value />
+  </data>
+  <data name="AttendeePhoneLabelOverride" xml:space="preserve">
+    <value />
+  </data>
+  <data name="AttendeeVisitorLabelOverride" xml:space="preserve">
+    <value />
+  </data>
+  <data name="WebAppLinkTextOverride" xml:space="preserve">
+    <value />
+  </data>
+  <data name="REST Admin" xml:space="preserve">
+    <value>REST Admin</value>
+  </data>
+  <data name="EMSNativeAuthentication" xml:space="preserve">
+    <value>EMS Native Authentication</value>
+  </data>
+  <data name="HeaderVariable" xml:space="preserve">
+    <value>Header Variable</value>
+  </data>
+  <data name="IntegratedAuthentication" xml:space="preserve">
+    <value>Integrated Authentication</value>
+  </data>
+  <data name="LDAP" xml:space="preserve">
+    <value>LDAP</value>
+  </data>
+  <data name="MobileAuthentication" xml:space="preserve">
+    <value>Mobile Authentication</value>
+  </data>
+  <data name="OpenIDUserInfoEndpoint" xml:space="preserve">
+    <value>User Info Endpoint</value>
+  </data>
+  <data name="OpenIDUserInfoRequestMethod" xml:space="preserve">
+    <value>User Info Request Method</value>
+  </data>
+  <data name="PersistentAuthentication" xml:space="preserve">
+    <value>Persistent Authentication</value>
+  </data>
+  <data name="RestAdmin" xml:space="preserve">
+    <value>Mobile App</value>
+  </data>
+  <data name="SSOCustom" xml:space="preserve">
+    <value>SSO (Custom)</value>
+  </data>
+  <data name="TokenDuration" xml:space="preserve">
+    <value>Token Duration</value>
+  </data>
+  <data name="UseOpenID" xml:space="preserve">
+    <value>Use Open ID Connect</value>
+  </data>
+  <data name="UsePersistentAuthentication" xml:space="preserve">
+    <value>Use Persistent Authentication</value>
+  </data>
+  <data name="WindowsAuthentication" xml:space="preserve">
+    <value>Windows Authentication</value>
+  </data>
+  <data name="SAMLHttpFormPostAttribute" xml:space="preserve">
+    <value>Form Post Field Name</value>
+  </data>
+  <data name="SAMLIdentityAttributeName" xml:space="preserve">
+    <value>Identity Attribute Name</value>
+  </data>
+  <data name="SAMLIdentityField" xml:space="preserve">
+    <value>Identity Field</value>
+  </data>
+  <data name="SAMLIdpCertPublicPath" xml:space="preserve">
+    <value>Path to Identity Provider Public Certificate</value>
+  </data>
+  <data name="SAMLIdpIssuer" xml:space="preserve">
+    <value>Identity Provider Issuer</value>
+  </data>
+  <data name="SAMLIdpRedirectURL" xml:space="preserve">
+    <value>Identity Provider Url for Service Provider Redirect</value>
+  </data>
+  <data name="SAMLSPCallbackURL" xml:space="preserve">
+    <value>Service Provider Callback URL</value>
+  </data>
+  <data name="SAMLSPCertPrivatePath" xml:space="preserve">
+    <value>Path to Service Provider Private Certificate</value>
+  </data>
+  <data name="SAMLSPCertPublicPath" xml:space="preserve">
+    <value>Path to Service Provider Public Certificate</value>
+  </data>
+  <data name="SAMLSPIssuer" xml:space="preserve">
+    <value>Service Provider Issuer</value>
+  </data>
+  <data name="DomainName" xml:space="preserve">
+    <value>Domain Name</value>
+  </data>
+  <data name="RequireDomain" xml:space="preserve">
+    <value>Require a Windows domain when signing in</value>
+  </data>
+  <data name="RequireTwoFactor" xml:space="preserve">
+    <value>Require Two-Factor Authentication</value>
+  </data>
+</root>

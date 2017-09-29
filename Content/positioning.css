@@ -1,0 +1,858 @@
+﻿html, body, select, textarea, form {
+    height: 100%;
+}
+
+/*input {
+    font-family: SourceSansPro;
+    height: 30px;
+    font-size: 1.2em;
+    padding: 0 5px;
+    color: #3f434a;
+    border: 1px solid #3f434a;
+}*/
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h3 {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+h3 {
+    clear: both;
+    margin-bottom: 0px;
+    display: block;
+}
+
+img {
+    border: 0;
+}
+
+label {
+    cursor: pointer;
+}
+
+.HeaderContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    clear: both;
+    width: 100%;
+    height: 50px;
+    z-index: 101;
+}
+
+/*header (above menu)*/
+.ApplicationTitle {
+    letter-spacing: -1px;
+    font-size: 2em;
+}
+
+h1.ApplicationTitle p {
+    margin: 0;
+    padding: 0;
+}
+
+#menu-name-container {
+    float: right;
+    text-align: center;
+    cursor: pointer;
+    height: 100%;
+}
+
+    #menu-name-container > #menu-name:hover > span {
+        -ms-opacity: 1;
+        opacity: 1;
+    }
+
+    #menu-name-container > div:not(#menu-users):not(#menu-admin):not(#menu-help) {
+        padding-top: 10px;
+        height: calc(100% - 10px);
+    }
+
+
+
+.menu-top-icon {
+    line-height: 30px;
+    float: left;
+    padding: 0 10px;
+}
+
+#menu-admin-anchor {
+    float: left;
+}
+
+#menu-initials {
+    float: left;
+    margin-right: 10px;
+    width: 30px;
+    line-height: 30px;
+    font-weight: bold;
+}
+
+#menu-help-anchor {
+    float: right;
+    padding: 0 20px;
+}
+
+#menu-guest-login {
+    border-left: 1px solid #3F434A;
+    margin-left: 10px;
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.menu-top-submenu {
+    position: absolute;
+    top: 50px;
+    width: 287px;
+    right: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+.menu-divider {
+    width: 1px;
+    float: left;
+    margin-top: 10px;
+    height: 20px !important;
+    background: #3f434a;
+    margin-right: -1px;
+    margin-left: 10px;
+}
+
+.my-requests-curtain {
+    width: 300px;
+    height: 100%;
+    display: block;
+    float: left;
+    margin-right: 50px;
+    overflow: hidden;
+}
+
+    .my-requests-curtain:hover > .my-requests-scroller {
+        visibility: visible;
+    }
+
+.my-requests-calendar-container {
+    padding-top: 10px;
+    width: 100%;
+    height: 290px;
+}
+
+.mobile-requests-calendar-container {
+    padding-top: 0;
+    height: 280px;
+    width: 100%;
+}
+
+.my-res-heading-container {
+    background-color: #3f434a;
+    padding: 55px 10px 0 10px;
+}
+
+.my-res-heading-subcontainer {
+    background-color: #282d37;
+    margin: 10px 10px 0 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.my-res-heading {
+    color: #fff;
+    font-size: 1.2em;
+}
+
+    .my-res-heading::before {
+        content: "My Bookings";
+    }
+
+.event-item-container,
+.event-item-container-mobile {
+    position: relative;
+    float: left;
+    padding-top: 20px;
+    width: 290px;
+    height: calc(100% - 434px);
+}
+
+.event-item-container-mobile {
+    height: calc(100% - 374px);
+    width: 300px;
+}
+
+.event-date {
+    margin-left: 20px;
+    font-size: 1.1em;
+}
+
+.event-item {
+    position: relative;
+    margin: 10px 0 10px 20px;
+    background-color: white;
+    color: #292D38;
+    width: 250px;
+    min-height: 40px;
+    display: none;
+}
+
+.event-item-color {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 100%;
+}
+
+.event-item-name {
+    -moz-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-left: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    width: 220px;
+}
+
+    .event-item-name:hover {
+        text-decoration: underline;
+    }
+
+.event-item-time {
+    -moz-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 220px;
+    margin-left: 10px;
+    padding-left: 10px;
+    font-weight: bold;
+}
+
+.event-item-location {
+    margin-left: 10px;
+    padding-left: 10px;
+    -moz-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 220px;
+}
+
+.event-item-status {
+    margin-left: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    width: 220px;
+}
+
+/* BEGIN Event Item Action Drawer */
+.drawer-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 100;
+}
+.pastevent{background-color: #b4b2b2}
+
+.drawer-actions {
+    width: 0;
+    display: none;
+    overflow: hidden;
+    height: 95px;
+    opacity: 1;
+    background: #f0f0f0;
+    box-shadow: 0 1px 1px 0 #808080;
+    padding-left: 20px;
+}
+
+.drawer-eventname {
+    padding-top: 10px;
+    height: 55px;
+    width: 220px;
+    overflow: hidden;
+}
+
+.drawer-buttons {
+    white-space: nowrap;
+    text-align: right;
+    padding-right: 20px;
+}
+
+.drawer-action-item {
+    display: inline-block;
+    padding: 5px 0;
+    cursor: pointer;
+}
+    .drawer-action-item:hover {
+        text-decoration: underline;
+    }
+    .drawer-action-item.action-endnow {
+        color:#e12626;
+        margin-left:5px;
+        font-weight:bold;
+    }
+    .drawer-action-item.action-checkin {
+        margin-right: 5px;
+    }
+    .drawer-action-item.action-cancel {
+        margin-right: 5px;
+    }
+
+.drawer-overlay {
+    position: absolute;
+    left: 10px;
+    top: 0%;
+    background-color: white;
+    width: calc(100% - 10px);
+    height: 100%;
+    z-index: 99;
+    opacity: 0;
+}
+/* END Event Item Action Drawer */
+
+.mobile-template-btn {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 20px;
+    visibility: hidden;
+}
+
+#downBtn.btn-circle-down {
+    margin-bottom: 10px;
+}
+
+.hot-button {
+    width: 100%;
+    height: 30px;
+    background-color: white;
+    color: #292D38;
+    margin: 5px 0 5px 0;
+    text-align: center;
+}
+
+.hot-button-item {
+    padding-top: 5px;
+}
+
+.check-in-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 5px 5px 0 0;
+    text-transform: uppercase;
+}
+
+.collapsed-icon {
+    cursor: pointer;
+}
+
+.default-page-help-text,
+.main-content-wrapper {
+    position: relative;
+    height: calc(100% - 50px);
+}
+
+/*.default-page-help-text-content {
+    padding-right: 30px;
+}*/
+
+.main-content-wrapper {
+    margin: 20px;
+    width: calc(100% - 300px);
+    float: left;
+}
+
+.default-page-template-btns {
+    bottom: 50px;
+    position: absolute;
+    right: 50px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.calendar-cell-container {
+    position: relative;
+}
+
+.calendar-circle {
+    position: absolute;
+    top: -5px;
+    left: -3px;
+    height: 26px;
+    width: 26px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.calendar-text {
+    position: relative;
+    color: #3f434a;
+    z-index: 100;
+}
+
+.calendar-event-indicator {
+    font-weight: bold;
+}
+
+.calendar-today-indicator {
+    position: absolute;
+    top: 17px;
+    left: 7px;
+    z-index: 100;
+    border: 1px solid #f0f0f0;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+}
+
+/********** BEGIN MENU STYLES **********/
+#my-request-menu {
+    cursor: pointer;
+    display: block;
+    top: 15px;
+    left: 120px;
+    position: absolute;
+    padding: 7px 23px 10px 0px;
+}
+
+    #my-request-menu span,
+    #my-request-menu span:before,
+    #my-request-menu span:after {
+        border-radius: 1px;
+        height: 4px;
+        width: 23px;
+        background: white;
+        position: absolute;
+        display: block;
+        content: '';
+    }
+
+        #my-request-menu span:before {
+            top: -7px;
+        }
+
+        #my-request-menu span:after {
+            bottom: -7px;
+        }
+
+        #my-request-menu span,
+        #my-request-menu span:before,
+        #my-request-menu span:after {
+            transition: all .5s ease-in-out;
+        }
+
+    #my-request-menu.active span {
+        background-color: transparent;
+    }
+
+        #my-request-menu.active span:before,
+        #my-request-menu.active span:after {
+            top: 0;
+        }
+
+        #my-request-menu.active span:before {
+            transform: rotateZ(225deg);
+            -webkit-transform: rotateZ(225deg);
+        }
+
+        #my-request-menu.active span:after {
+            transform: rotateZ(-45deg);
+            -webkit-transform: rotateZ(-45deg);
+        }
+
+    #my-request-menu.arrow span:before {
+        top: -5px;
+        width: 50%;
+        transform: rotateZ(-45deg);
+        -webkit-transform: rotateZ(-45deg);
+    }
+
+    #my-request-menu.arrow span:after {
+        bottom: -5px;
+        width: 50%;
+        transform: rotateZ(45deg);
+        -webkit-transform: rotateZ(45deg);
+    }
+
+#menu-wrapper /*hide the hamburger menu unless it's at the 'phone' breakpoint*/ {
+    display: none;
+}
+
+#menu-wrapper {
+    box-shadow: 2px 0px 7px rgba(0, 0, 0, 0.4), inset 0px 3px 6px 0px rgba(0,0,0,0.4);
+    border-top: 1px solid rgba(0, 0, 0, 0.43);
+    position: absolute;
+    width: 0;
+    left: 0;
+    top: 50px;
+    height: calc(100% - 51px); /* We do 51px to acocunt for the 1px border*/
+    z-index: 1001;
+    overflow: hidden;
+    display: block;
+}
+
+.menu-item {
+    width: calc(100% - 40px);
+    padding: 10px 5px;
+    display: block;
+    margin: 0 15px;
+    float: left;
+    left: 0;
+    position: relative;
+    cursor: pointer;
+    text-align: left;
+}
+
+    .menu-item > span,
+    a .menu-user-menu-item  {
+        position: relative;
+        left: 0;
+        color: white;
+    }
+
+        .menu-item > span > a,
+        .menu-item > a {
+            color: white;
+        }
+
+    .menu-item:hover span,
+    .menu-item:hover .parent-link,
+    .menu-item:hover a {
+        left: 6px !important;
+        opacity: .5;
+    }
+
+    .menu-item span,
+    .menu-item .parent-link,
+    .menu-item a {        
+        transition-property: left, opacity;
+        transition-duration: .3s;
+        transition-timing-function: ease-in-out;
+    }
+
+    .menu-item:hover .parent-link {
+        padding-left: 12px !important;
+    }
+
+    .menu-item .parent-link {
+        color: white;
+        transition-property: padding-left;
+        transition-duration: .3s;
+        transition-timing-function: ease-in-out;
+    }
+    .menu-item .arrow-container{
+        padding:4px;
+        cursor: pointer;
+        float: right;
+        position: relative;
+        color: white;
+    }
+    .menu-item .arrow-container:hover {
+        background-color: rgb(116, 122, 134)
+    }
+    .menu-item > .right-arrow {        
+        top: 3px;        
+    }
+    .menu-item .menu-item-spacer { width: 15px; cursor: default !important;}
+
+.menu-first-level:nth-child(n+3),
+.menu-user-menu-item:not(:first-child) {
+    border-top: 1px solid rgba(255,255,255, 0.2);
+}
+
+.menu-next-level {
+    height: 0;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+    width: calc(100% - 30px);
+}
+
+    .menu-next-level > .menu-item {
+        padding: 10px 0px 10px 20px;
+    }
+
+        .menu-next-level > .menu-item > i:not(.right-arrow) {
+            color: #E12626;
+            padding: 0;
+            top: 1px;
+        }
+
+.menu-item-mobile-only {
+    display: none;
+}
+
+#menu-cal {
+    margin: 20px 0 0 20px;
+}
+
+.menu-event-wrapper {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 300px;
+    left: 325px;
+}
+
+#nav-logo {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    height: 20px;
+    width: 80px;
+}
+
+#nav-logo-divider {
+    position: absolute;
+    left: 100px;
+    height: 50px;
+    width: 20px;
+}
+
+#nav-logo-img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/********** END MENU STYLES **********/
+.font-color-peagreen {
+    color: #DBCF28;
+}
+
+.font-color-orange {
+    color: #F8A01D;
+}
+
+.font-color-red {
+    color: #E12626;
+}
+
+.font-color-maroon {
+    color: #940A0A;
+}
+
+.font-color-brown {
+    color: #7B5546;
+}
+
+.font-color-dkblue {
+    color: #0C6FAE;
+}
+
+.font-color-ltblue {
+    color: #1CACEE;
+}
+
+.font-color-green {
+    color: #227D3C;
+}
+
+.overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, .2);
+    z-index: 1;
+    display: none;
+}
+
+.main-content {
+    padding: 90px 50px 0 50px;
+    height: calc(100% - 100px);
+}
+
+@media only screen and (max-width: 699px) {
+
+    .main-content {
+        padding: 40px 20px 0px 20px;
+        height: calc(100% - 20px);
+    }
+
+    .my-requests-curtain { /*hide the my request curtain on phones*/
+        display: none;
+    }
+
+    .action-btn-component-text { /*use elipsis truncation for web template text on default*/
+        width: 200px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .default-page-help-text { /* Change the padding on phones and remove the bottom height calc*/
+        height: 100%;
+    }
+
+    /*Make the header smaller on phones and handle names*/
+    .HeaderContainer {
+        height: 30px;
+    }
+
+    .my-res-heading-container {
+        padding-top: 5px;
+    }
+
+    #menu-wrapper {
+        top: 30px;
+        height: calc(100% - 31px);
+    }
+
+    #my-request-menu {
+        top: 6px;
+        left: 50px;
+    }
+
+    #nav-logo {
+        top: 5px;
+        left: 10px;
+        height: 20px;
+        width: 20px;
+    }
+
+    #nav-logo-divider {
+        left: 30px;
+        height: 30px;
+    }
+
+    #menu-initials {
+        font-size: .7em;
+        width: 21px;
+        height: 21px;
+        line-height: 20px;
+        margin-right: 5px;
+    }
+
+    #menu-name {
+        line-height: 20px;
+    }
+
+    .menu-item-mobile-only {
+        display: block;
+    }
+
+    .menu-first-level:nth-child(n+2) {
+        border-top: 1px solid rgba(255,255,255, 0.2);
+    }
+
+    #menu-name-container > div:not(#menu-users):not(#menu-admin):not(#menu-help) {
+        padding-top: 5px;
+        height: calc(100% - 5px);
+    }
+
+    #menu-guest-login {
+        margin-top: 5px;
+        margin-left: 0;
+        padding-left: 10px;
+    }
+
+    #menu-help-anchor {
+        padding: 0 10px;
+    }
+
+    .menu-top-icon {
+        line-height: 20px;
+    }
+
+    .menu-top-submenu {
+        top: 30px;
+    }
+
+    .menu-divider {
+        margin-top: 5px;
+        margin-left: 0;
+        padding: 0 !important;
+    }
+
+    /*Begin Reservation Summary data view*/
+    .fixedDetailView {
+        width: 18em;
+    }
+
+    .tipHeader {
+        width: 10em !important;
+    }
+    /*End Reservation Summary data view*/
+
+    /*BEGIN My Reservations*/
+    .drawer-anchor {
+        display: inline-block;
+    }
+
+    /*END My Reservations*/
+}
+
+.emsCon {
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hide {
+    display: none;
+}
+
+.clear {
+    clear: both;
+}
+
+.float {
+    float: left;
+}
+
+.floatRight {
+    float: right;
+}
+
+.block {
+    display: block;
+}
+
+.inline {
+    display: inline;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.center {
+    text-align: center;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {
+    display: inline-block;
+}
+
+a, a:link, a:visited, a:hover, a:active {
+    cursor: pointer;
+}
+
+span.ak {
+    text-decoration: underline;
+}
+
+.imageTable {
+    margin-top: 10px;
+}
+
+    .imageTable > tbody > tr > td {
+        padding: 0 5px 0 5px !important;
+    }

@@ -1,0 +1,24 @@
+﻿/*positioning*/
+#content{clear:both;}
+.lineHeight{margin-top:.6em;}
+#roomRequestContainer{position:relative;}
+#leftColumn{position:absolute;left:2px;width:22em;top:41px;vertical-align:top;z-index:4;}
+.leftColumnHeaderOffset{margin-top:.6em;}
+.filterPadding{padding-left:.5em;}
+.inputMargin{margin-bottom:.5em;}
+.padBottom{padding-bottom:1.5em;}
+.leftCol{float:left;width:21em;}
+#roomRequestCore{padding-left:20.5em;}
+.padToImage{margin-top:1.7em;}
+.padToBox{margin-top:1.3em;}
+#resultsHolder{overflow:auto;height:350px;}
+h3 {margin-bottom:.5em;}
+.catMargin{margin-top:.5em;}
+
+/*formatting*/
+#leftColumn{border-right: 2px groove grey;border-bottom: 2px groove grey;}
+th {font-size:1em;text-transform:none;}
+.ui-datepicker 
+{
+    z-index:26!important
+}

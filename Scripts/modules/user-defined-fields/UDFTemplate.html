@@ -1,0 +1,82 @@
+﻿<!--
+    FieldTypes
+        Undefined = 0,
+        Text = 1,
+        Date = 2,
+        Numeric = 3,
+        List = 4
+-->
+<!--<pre data-bind="text: ko.toJSON($data, null, 2)"></pre>-->
+<div id="reservation-udf-container" class="udf-container" data-bind="foreach: $data">
+    <!-- ko if: FieldType() == 1  -->
+    <!-- ko if: !MultiLine() -->
+    <div class="form-group udf" data-bind="css: { child: ParentUDFTypeID() > 0 }">
+        <label data-bind="html: Prompt, attr: { for: Id }, css: { required: Required() }"></label>
+        <input type="text" class="form-control" data-bind="attr: { id: Id, required: Required() ? 'required': null }, textInput: Answer, uniqueName: true">
+        <div class="udf-child-container"></div>
+    </div>
+    <!-- /ko -->
+    <!-- ko if: MultiLine() -->
+    <div class="form-group udf" data-bind="css: { child: ParentUDFTypeID() > 0 }">
+        <label data-bind="html: Prompt, attr: { for: Id }, css: { required: Required() }"></label>
+        <textarea class="form-control" data-bind="attr: { id: Id, required: Required() ? 'required': null }, value: Answer, uniqueName: true" />
+        <div class="udf-child-container"></div>
+    </div>
+    <!-- /ko -->
+    <!-- /ko -->
+    <!-- ko if: FieldType() == 2  -->
+    <div class="form-group udf" style="margin-bottom: 30px;" data-bind="css: { child: ParentUDFTypeID() > 0 }">
+        <label data-bind="html: Prompt, attr: { for: Id }, css: { required: Required() }"></label>
+        <div class='date input-group' style='float: none;' data-bind="attr: { id: Id, 'data-date': Answer }">
+            <input type='text' class='form-control' data-bind="attr: { required: Required() ? 'required': null }" />
+            <span class="input-group-addon"><span class="fa fa-calendar"></span></span>
+        </div>
+        <div class="udf-child-container"></div>
+    </div>
+    <!-- /ko -->
+    <!-- ko if: FieldType() == 3  -->
+    <div class="form-group udf" data-bind="css: { child: ParentUDFTypeID() > 0 }">
+        <label data-bind="html: Prompt, attr: { for: Id }, css: { required: Required() }"></label>
+        <input type="number" class="form-control numeric" data-bind="attr: { id: Id, required: Required() ? 'required': null }, value: Answer, uniqueName: true">
+        <div class="udf-child-container"></div>
+    </div>
+    <!-- /ko -->
+    <!-- ko if: FieldType() == 4  -->
+    <!-- ko if: AllowMultiSelect() -->
+    <div class="form-group udf" data-bind="css: { child: ParentUDFTypeID() > 0 }">
+        <label data-bind="html: Prompt(), attr: { for: Id }, css: { required: Required() }"></label>
+        <div class="multiselect-container" data-bind="attr: { required: Required() ? 'required' : null }">
+            <div class="multiselect-value-label"></div>
+            <div class="multiselect-value-container" data-bind="attr: { id: Id }">
+                <a class="multiselect-add-btn" data-bind="text: vems.decodeHtml(vems.browse.addRemoveLabel)"></a>
+                <div class="popover-markup dynamic-filter-popover">
+                    <div class="title hide"><a class="popover-close fa fa-close"></a></div>
+                    <div class="content hide form-group" data-bind="foreach: Items">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" class="filter-checkbox" data-bind="value: ID, attr: { Id: ID, 'parent-id': $parent.Id }">
+                                <span data-bind="text: vems.decodeHtml(ItemDescription())"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="udf-child-container"></div>
+    </div>
+    <!-- /ko -->
+    <!-- ko if: !AllowMultiSelect() -->
+    <div class="form-group udf" data-bind="css: { child: ParentUDFTypeID() > 0 }">
+        <label data-bind="html: Prompt, attr: { for: Id }, css: { required: Required() }"></label>
+        <select class="form-control" data-bind="event: { change: vems.udfValueChanged }, attr: {id: Id, required: Required() ? 'required': null }, options: Items,
+                            optionsText: 'ItemDescription',
+                            optionsValue: 'ID',
+                            value: Answer,
+                            optionsCaption: 'Choose one',
+                            uniqueName: true" />
+        <div class="udf-child-container"></div>
+    </div>
+    <!-- /ko -->
+    <!-- /ko -->
+</div>
+<div data-bind="template: { afterRender: vems.udfInit }"></div>

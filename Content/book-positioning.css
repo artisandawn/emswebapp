@@ -1,0 +1,90 @@
+﻿.OnDateLabel{display:block;line-height:1.6em;margin-left:.5em;}
+#bookWrapper{clear:both;padding-bottom:5;width:100%;}
+.bookScroll{clear:both;padding-top:1.1em;}
+.f{float:left;}
+.arrowImages{margin-top:.4em;margin-left:.5em; margin-right:.5em; }
+.pr1{padding-right:.1em;}
+.hoursHolder, .filterLink{display:block;line-height:2.0em;}
+.nextHours, .pamHoursHolder{display:block;margin-right:.5em;margin-top:.4em;}
+.comboEventColor, .ce {z-index:5}
+.dateRow{padding-left:1em;}
+.headerRow, .z{	clear:both;	position:relative;z-index:2;}
+.buildingRow, .v{clear:both;position: relative;	line-height:1.2em;}
+/*Block positioning*/
+.bp, .p{float:left;display:block;position:absolute;border-left: solid 1px #dcdcdc;border-right: solid 1px #dcdcdc;border-bottom: solid 1px #dcdcdc;text-align: center;overflow:hidden;white-space:nowrap; z-index:2;}
+.rdPos{position:absolute;height:20px;z-index:2;}
+.b{position:absolute;height:20px;z-index:1;}
+/*sets the position of the the building label*/
+.buildingLabel, .t{float:left;display:block;overflow:hidden;height:1.51em;padding-left:.2em;}
+/*sets the display for a room*/
+.roomWidth, .r{float:left;overflow:hidden;white-space:nowrap;}
+.capacityLabel, .cl{display:block;float:left;overflow:hidden;text-align:center;white-space:nowrap;}
+/*position of room label text*/
+.roomLabel, .rl{float:left;white-space:nowrap;overflow:hidden;}
+.lw{margin-left:.2em;padding:0;overflow:hidden;}
+.roomRow, .s{clear:left;position:relative;}
+.ep, .e{float:left;position:absolute;display:block;height:19px;}
+.eventBar, .eb{overflow:hidden;white-space:nowrap;z-index:3;}
+.aBar, .ab{height:.5em;margin-top:.4em;overflow:hidden;white-space:nowrap;z-index:2;}
+.bhBar, .bh{z-index:3;margin-top:.1em;overflow:hidden;}
+/*setup type bar*/
+.stBar, .sb{height:.5em;margin-top:.4em;z-index:2;}
+.bookLegend{margin-right:1em;}
+/*change for height of room block */
+.rh, .h{height:19px;}
+.filterLink{display:block;float:left;margin-right:.5em;}
+.p, .c, .rl, .e, .cl{font-size:.8em;}
+
+/*room underline*/
+.g{border-top:1px solid #DCDCDC;}
+.gb{border-bottom: 1px solid #DCDCDC;}
+.OnDateLabel{font-size:1.25em;}
+.tbColor, .w{background-color:white;}
+/*background color or room*/
+.roomWidth, .r{border-left: solid 1px #dcdcdc;background-color:White;}
+
+/*BOOK COLORS*/
+
+/*color for header row and building colors*/
+.c, .cam, .cpm{border: 1px solid #aaaaaa/*{borderColorHeader}*/; background: #cccccc/*{bgColorHeader}*/ 50%/*{bgHeaderXPos}*/ 50%/*{bgHeaderYPos}*/ repeat-x/*{bgHeaderRepeat}*/; color: #222222/*{fcHeader}*/;}
+/*time block for header color for date other than start date of book*/
+.thndColor, .btbndColor, .u, .uam, .upm{border:1px solid #aaaaaa;background-color:#E9eccd;}
+
+/*capacity label*/
+.capacityLabel, .cl{border-left:1px solid #DCDCDC;background-color:#eeeeee;}
+/*color of block if block drawn due to a component of the room being booked*/
+/*.comboEventColor, .ce{background-color:gray;color:white;}*/
+.comboEventColor, .ce{background-image:url("../Images/ComboRoomEvent.gif");background-repeat:repeat-x; color:White;}
+/*color of the building hours*/
+.buildingHoursColor, .bhc{background-image:url(../Images/bh.png);background-repeat:repeat; opacity:0.5;filter:alpha(opacity=50)}
+
+/*Color of the event bars*/
+.eventColor, .ec{background-image:url(../Images/ebar.png);background-repeat:repeat-x; color:white;}
+/*color of the setup type bars*/
+.stColor, .stc{background-image:url(../Images/ebar.png);background-repeat:repeat-x; color:white;}
+/*color of the availability bars*/
+.availabilityColor, .ac{background-image:url(../Images/ebar.png);background-repeat:repeat-x; color:white;}
+
+.rb{background-image:url(../Images/rbar.png);background-repeat:repeat-x; color:white;}
+
+/*requesting vertical bars*/
+.rdBgColor, .a{ pointer-events: none; background-color: #EAF4FF;border-left:solid 1px red;border-right:solid 1px red;z-index:3;opacity:0.5;filter:alpha(opacity=50)}
+
+/*
+To enable tool tips (in IE) when the requesting bars are over the event, you will need to implement these styles below their 
+liked named counter parts in book-positioning.css
+
+.eventColor, .ec{background-image:url(../Images/ebar.png);background-repeat:repeat-x; color:white;opacity:0.9;filter:alpha(opacity=90)}
+.stColor, .stc{background-image:url(../Images/ebar.png);background-repeat:repeat-x; color:white;opacity:0.1;filter:alpha(opacity=10)}
+.availabilityColor, .ac{background-image:url(../Images/ebar.png);background-repeat:repeat-x; color:white;opacity:0.1;filter:alpha(opacity=10)}
+.rdBgColor, .a{ pointer-events: none; background-color: #EAF4FF;border-left:solid 1px red;border-right:solid 1px red;z-index:2;}
+*/
+
+.bookScroll 
+{
+    overflow-x:hidden;
+    overflow-y:scroll;
+}
+.zi{z-index:4;}
+
+

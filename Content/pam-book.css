@@ -1,0 +1,31 @@
+﻿#pamBookWrapper{clear:both;padding-bottom:2em;}
+#pamBookHeaderContainer{clear:both;line-height:1.2em;}
+#pamBookContainer{clear:both;position:relative;}
+
+.pamAttendees{clear:both;line-height:1.2em; position:relative;}
+
+.abr{float:left;display:block;text-align: center;overflow:hidden;white-space:nowrap;}
+.raWidth{width:22px;}
+.attendeeRow, .ar{position:relative;clear:both;}
+.rdPos{height:19px;}
+.pambp{position:absolute;display:inline-block;text-align: center;	overflow:hidden;white-space:nowrap;}
+.prh{height:19px;}
+.pamHeaderRow{clear:both;position:relative;z-index:10;}
+.alcontainer{float:left;display:block;}
+.aw{display:block;}
+.attendeeLabel{overflow:hidden;float:left;display:inline;margin-left:.2em;white-space:nowrap;}
+
+.abr, .pambp, .prh{font-size:.8em;}
+.abr, .pambp{border: solid 1px #dcdcdc;}
+.errorLoading{color:red;}
+
+.pamBookScroll{overflow-x:hidden; overflow-y:scroll; height:150px;}
+
+/*Colors of book*/
+.busyColor{background-image:url(../Images/busy.png);background-repeat:repeat-x;}
+.oofColor{background-image:url(../Images/oof.png);background-repeat:repeat;}
+.tentativeColor{ background-image:url(../Images/tent.png);background-repeat:repeat-x;}
+.unavailableColor{background-image:url(../Images/unavail.png);background-repeat:repeat-x;}
+
+
+

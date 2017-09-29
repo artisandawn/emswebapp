@@ -1,0 +1,95 @@
+﻿/*positioning*/
+.offsetLeft {
+    margin-left: 1em;
+}
+
+#featureScroll {
+    overflow: auto;
+    width: 18em;
+    max-height: 16em;
+}
+
+.padToBox {
+    padding-top: 0em;
+}
+
+.pc {
+    overflow: auto;
+    height: 25em;
+    width: 20em;
+    margin-bottom: 1em;
+}
+
+.rl {
+    padding-left: .4em;
+}
+
+#filterSaveContainer {
+    float: right;
+    margin-right: 100px;
+}
+
+    #filterSaveContainer label {
+        position: relative;
+        top: -10px;
+        padding-left: 5px;
+    }
+
+/*formatting*/
+#featureScroll {
+    border: 1px solid lightgrey;
+}
+
+#bookHeaderContainer {
+    /*width: 903px;*/
+    width: calc(100% - 17px);
+}
+
+.bookScroll {
+    /*width: 920px;*/
+    height: 100%;
+}
+
+.buildingRow, .v {
+    line-height: 1.25em !important;
+}
+
+.eventColor, .ec {
+    background: #3F9DE2 !important;
+}
+
+.availabilityColor, .ac {
+    background: #3F9DE2 !important;
+}
+
+.comboEventColor, .ce {
+    background: #3F9DE2 !important;
+}
+
+.aBar, .ab {
+    height: .8em !important;
+    margin-top: .325em !important;
+}
+
+.pr1 {
+    width: 99.5% !important;
+}
+
+.pad-dropdown-image {
+    margin: 25px 0 0 10px;
+}
+
+.ui-widget-header, caption {
+    background: #282d37;
+    color: white;
+}
+
+.bookScroll a, .bookScroll a:link {
+    color: #656c77;
+    text-decoration: underline;
+}
+
+    .bookScroll a:visited, .bookScroll a:hover, .bookScroll a:active {
+        color: #269de2;
+        text-decoration: underline;
+    }

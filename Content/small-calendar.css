@@ -1,0 +1,243 @@
+﻿/* smaller right side of main content area - right align, fixed width */
+#sidebar {
+	float: left;
+	position: relative;
+	width: 225px;
+	margin: 0 0 0 0;
+	z-index: 20;
+}
+#sidebar_calview {
+	float: left;
+	right: 0px;
+	width: 225px;
+	margin: 0 0 0 0;
+	z-index: 20;
+}
+/* header for small calendar on right - spans to fill sidebar width */
+#sm_cal_head {
+	height: 30px;
+	margin: 0px;
+	padding: 0px;
+}
+#sm_cal_mid 
+{
+	left: 0px;
+	right: 0px;
+	width: 225px;
+	background-repeat: repeat-y;
+	background-position: top;
+	background-image: url(../images/Calendar/bg/sm_cal_mid.jpg);
+}
+
+#sm_cal_mid:after 
+{   content: "."; 
+    display: block; 
+    height: 0; 
+    clear: both; 
+    visibility: hidden;
+}
+
+#sm_cal_body 
+{
+	margin: 0px;
+	padding: 0px;
+}
+
+.sm_cal_top_mid {
+	position: absolute;
+	left: 10px;
+	right: 0px;
+	height: 30px;
+	width: 205px;
+	background-repeat: repeat-x;
+	background-position: top;
+	background-image: url(../images/Calendar/bg/sm_cal_top_mid.jpg);
+}
+#sm_cal_btm {
+	position: relative;
+	left: 0px;
+	right: 0px;
+	height: 15px;
+	width: 225px;
+	background-image: url(../images/Calendar/bg/sm_cal_btm.jpg);
+}
+
+
+.sm_cal_top_left {
+	float: left;
+	height: 30px;
+	width: 10px;
+	background-image: url(../images/Calendar/bg/sm_cal_top_left.jpg);
+	background-position: left top;
+}
+.sm_cal_top_right {
+	float: right;
+	height: 30px;
+	width: 10px;
+	background-image: url(../images/Calendar/bg/sm_cal_top_right.jpg);
+	background-position: right top;
+}
+.cal_month {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #000000;
+	text-decoration: none;
+	padding-top: 2px;
+	font-weight: bold;
+	vertical-align: text-top;
+	text-align: left;
+}
+/* wrap for sm cal arrow buttons */
+.sm_cal_arrows {
+	height: 30px;
+	width: 42px;
+	top: 0px;
+	left: 0px;
+	margin: 0;
+	white-space: nowrap;
+}
+/* arrow buttons by menu name sm cal */
+.menu_btn_month_sm {
+	padding: 9px 4px 0 0;
+	white-space: nowrap;
+}
+/* wrap for sm cal month name */
+.sm_cal_name {
+	position: absolute;
+	left: 40px;
+	top: 0px;
+	height: 15px;
+	width: 150px;
+	margin: 11px 0 0 5px;
+	white-space: nowrap;
+}
+
+
+
+/* wrap for small weekday names */
+.cal_row
+{
+	height: auto;
+	width: auto;
+	white-space: nowrap;
+	margin:  0;
+	padding: 0;
+}
+
+/* small weekday names */
+#cal_weekday {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	color: #000000;
+	text-align: center;
+	list-style-type:  none;
+	margin:  0;
+	padding: 0;
+}
+#cal_weekday ul  {
+	float: left;
+	width: 100%;
+	margin:  0;
+	padding: 0;
+}
+#cal_weekday ul li {
+	float: left;
+	width: 14.1%;
+	list-style-type:  none;
+	margin:  0;
+	padding: 12px 0 8px 0;
+}
+
+/* small weekday numbers */
+.cal_day{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	text-align: center;
+	list-style-type:  none;
+	margin:  0;
+	padding: 0;
+	white-space: nowrap;
+}
+#sm_cal_body ul  {
+	float: left;
+	width: 100%;
+	margin:  0;
+	padding: 0;
+}
+#sm_cal_body ul li {
+	float: left;
+	width: 14.1%;
+	list-style-type:  none;
+	height: auto;
+	padding: 9px 0 8px 0;
+}
+#sm_cal_body ul li a:link {
+	color: #6095c1;
+	text-decoration: underline;
+	font-weight: bold;
+	vertical-align: text-top;
+	white-space: nowrap;
+}
+#sm_cal_body ul li a:visited {
+	color: #6095c1;
+	text-decoration: underline;
+}
+#sm_cal_body ul li a:hover {
+	color: #000000;
+	text-decoration: underline;
+}
+
+.cal_today {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #666666;
+	text-align: center;
+	list-style-type:  none;
+	margin:  0;
+	padding: 0;
+	background-color: #FFFFFF;
+	white-space: nowrap;
+}
+li.cal_today  {
+	float: left;
+	width: 14.1%;
+	list-style-type:  none;
+	height: auto;
+	padding: 9px 0 8px 0;
+	background-color: #FFFFFF;
+}
+
+
+.cal_selected
+{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    color: #666666;
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #CCCCFF;
+    white-space: nowrap;
+}
+li.cal_selected  {
+	float: left;
+	width: 14.1%;
+	list-style-type:  none;
+	height: auto;
+	padding: 9px 0 8px 0;
+	background-color: #CCCCFF;
+}
+
+
+
+
+/* SMALL CAL SHADOW  - - - - - - - - - - - - SMALL CAL SHADOW - - - - - - - - - - - - SMALL CAL SHADOW - - - - - - - - - - - - SMALL CAL SHADOW */
+/* small calendar on right - shadow when the calendar body is collapsed */
+#sm_cal_shadow {
+	margin: 0px;
+	padding: 0px;
+	height: auto;
+	background-image: url(../images/Calendar/bg/search_bar_mid.jpg);
+}

@@ -1,0 +1,1214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AbandonBookingEdit" xml:space="preserve">
+    <value>You've made changes to the booking. Would you like to save the changes before proceeding, proceed without saving the changes, or stay here?</value>
+  </data>
+  <data name="AccountFormFailedValidation" xml:space="preserve">
+    <value>You must fix the highlighted problems before we can create your account.</value>
+  </data>
+  <data name="AccountManagementAccountInactive" xml:space="preserve">
+    <value>Your entries were saved, but your account is inactive.</value>
+  </data>
+  <data name="AccountManagementAccountPending" xml:space="preserve">
+    <value>Your entries were saved, but your account is pending approval.</value>
+  </data>
+  <data name="AccountManagementActionSuccessful" xml:space="preserve">
+    <value>Your account changes are saved.</value>
+  </data>
+  <data name="AccountManagementUpdateFailedDuplicateEmail" xml:space="preserve">
+    <value>Another account already uses this email address.</value>
+  </data>
+  <data name="AccountManagementUpdateFailedInvalidPassword" xml:space="preserve">
+    <value>The password provided is not correct</value>
+  </data>
+  <data name="AccountManagementUpdateFailedSteppedOn" xml:space="preserve">
+    <value>Someone else updated your user record while you were on the page</value>
+  </data>
+  <data name="AccountManagementUserAlreadyExists" xml:space="preserve">
+    <value>Another account already uses this email address.</value>
+  </data>
+  <data name="AccountRequestReceivedHeader" xml:space="preserve">
+    <value>We've Received Your Request</value>
+  </data>
+  <data name="AConfirmationHasBeenSentTo" xml:space="preserve">
+    <value>A confirmation email has been sent to {0}</value>
+  </data>
+  <data name="ActionFailed" xml:space="preserve">
+    <value>There was a problem cancelling your request.  Please try later.</value>
+  </data>
+  <data name="ActionSuccessful" xml:space="preserve">
+    <value>Request cancelled successfully</value>
+  </data>
+  <data name="AddBookingSuccess" xml:space="preserve">
+    <value>Booking successfully added</value>
+  </data>
+  <data name="AddServicesAvailableQuantityViolation" xml:space="preserve">
+    <value>The quantity you entered exceeds the quantity available</value>
+  </data>
+  <data name="AddServicesCheckButNoQuantity" xml:space="preserve">
+    <value>You did not specify a quantity for the resource {0}</value>
+  </data>
+  <data name="AddServicesConfirmCancel" xml:space="preserve">
+    <value>Are you sure you wish to cancel this item?</value>
+  </data>
+  <data name="AddServicesFailed" xml:space="preserve">
+    <value>Your request failed. Someone else saved the item while you were viewing it.</value>
+  </data>
+  <data name="AddServicesMaxQuantityViolation" xml:space="preserve">
+    <value>{0} violates the maximum available quantity of {1}</value>
+  </data>
+  <data name="AddServicesMinAmountViolation" xml:space="preserve">
+    <value>Removing this resource would violate the minimum amount for the category ({0})</value>
+  </data>
+  <data name="AddServicesMinQuantityViolation" xml:space="preserve">
+    <value>{0} requires a minimum quantity of {1}</value>
+  </data>
+  <data name="AddServicesNotesMaxLength" xml:space="preserve">
+    <value>Notes must be shorter than 10,000 characters</value>
+  </data>
+  <data name="AddServicesResourceRequireEndTime" xml:space="preserve">
+    <value>{0} requires a service end time</value>
+  </data>
+  <data name="AddServicesResourceRequiresEstimatedCount" xml:space="preserve">
+    <value>{0} requires an estimated count</value>
+  </data>
+  <data name="AddServicesResourceRequiresService" xml:space="preserve">
+    <value>{0} requires a service type</value>
+  </data>
+  <data name="AddServicesResourceRequireStartTime" xml:space="preserve">
+    <value>{0} requires a service start time</value>
+  </data>
+  <data name="AddServicesSOTimeViolation" xml:space="preserve">
+    <value>Service start and end times must occur within the event start and end times</value>
+  </data>
+  <data name="AddServicesSOTimeViolationWithTime" xml:space="preserve">
+    <value>The service start and end times must be between {0} and {1} for {2}.</value>
+  </data>
+  <data name="AddServicesSubItemMaxViolation" xml:space="preserve">
+    <value>You may only select {0} items</value>
+  </data>
+  <data name="AddServicesSuccess" xml:space="preserve">
+    <value>Services Added</value>
+  </data>
+  <data name="AdjustYour" xml:space="preserve">
+    <value>Please adjust your {0}.</value>
+  </data>
+  <data name="AgreeToTerms" xml:space="preserve">
+    <value>You must agree to the terms and conditions</value>
+  </data>
+  <data name="AllRequiredFormFieldsMustBeFilledOutUnderTheReservationDetailsTab" xml:space="preserve">
+    <value>Complete all the required fields (highlighted on the Reservation Details tab).</value>
+  </data>
+  <data name="AlmostDoneHeader" xml:space="preserve">
+    <value>You're Almost Done!</value>
+  </data>
+  <data name="ApplyingSelection" xml:space="preserve">
+    <value>Applying Selection</value>
+  </data>
+  <data name="AtLeastOneRoomIsRequired" xml:space="preserve">
+    <value>At least one {0} is required</value>
+  </data>
+  <data name="AttachmentAdded" xml:space="preserve">
+    <value>The attachment was successfully saved.</value>
+  </data>
+  <data name="AttachmentRemoved" xml:space="preserve">
+    <value>The attachment was successfully removed.</value>
+  </data>
+  <data name="AttachmentsSaved" xml:space="preserve">
+    <value>The attachments were successfully updated.</value>
+  </data>
+  <data name="AttachmentUploadError" xml:space="preserve">
+    <value>There was a problem uploading and saving your attachment(s).</value>
+  </data>
+  <data name="AttendanceAndSetupModalMessage" xml:space="preserve">
+    <value>To continue, please enter the number of attendees and desired setup type for this {0}.</value>
+  </data>
+  <data name="AttendeeSearchNoString" xml:space="preserve">
+    <value>You must supply a search string to find attendees</value>
+  </data>
+  <data name="AttendeeUpdatedSuccess" xml:space="preserve">
+    <value>Attendees Successfully Notified</value>
+  </data>
+  <data name="AvailableQuantityExceeded" xml:space="preserve">
+    <value>You cannot exceed the available inventory.</value>
+  </data>
+  <data name="BadBrowserMessage" xml:space="preserve">
+    <value>We've noticed that you're using an older web browser. For the best experience, upgrade to the latest version of one of the browsers listed on the </value>
+  </data>
+  <data name="BillingInvalidMessage" xml:space="preserve">
+    <value>{0} is required and must be valid</value>
+  </data>
+  <data name="BookingDetailsNoBookings" xml:space="preserve">
+    <value>No bookings exist for this event.</value>
+  </data>
+  <data name="BookingDetailsUpdateFromMobile" xml:space="preserve">
+    <value>Booking details have been updated.  Would you like to edit reservation details as well?</value>
+  </data>
+  <data name="BookingInConflict" xml:space="preserve">
+    <value>Conflicts with another location you are requesting. There could be additional Setup and Teardown time needed. </value>
+  </data>
+  <data name="BrowseEventsNoResultsDaily" xml:space="preserve">
+    <value>There are no results that match your filter settings for {0}.</value>
+  </data>
+  <data name="BrowseEventsNoResultsMonthly" xml:space="preserve">
+    <value>There are no results that match your filter settings for the month of {0}.</value>
+  </data>
+  <data name="BrowseEventsNoResultsMonthlyLink" xml:space="preserve">
+    <value>Take me to the next month with a matching event.</value>
+  </data>
+  <data name="BrowseEventsNoResultsNextLink" xml:space="preserve">
+    <value>Take me to the next day with a matching event.</value>
+  </data>
+  <data name="BrowseEventsNoResultsWeekly" xml:space="preserve">
+    <value>There are no results that match your filter settings for the week of {0} - {1}.</value>
+  </data>
+  <data name="BrowseEventsNoResultsWeeklyLink" xml:space="preserve">
+    <value>Take me to the next week with a matching event.</value>
+  </data>
+  <data name="BuildingClosureViolationMessage" xml:space="preserve">
+    <value>Booking is on a date with a building closure</value>
+  </data>
+  <data name="CacheCleared" xml:space="preserve">
+    <value>Cache successfully cleared</value>
+  </data>
+  <data name="CancelAllConfirm" xml:space="preserve">
+    <value>Are you sure you want to cancel all bookings?</value>
+  </data>
+  <data name="CancelAllSuccess" xml:space="preserve">
+    <value>Bookings were cancelled.</value>
+  </data>
+  <data name="CancelBookingsConfirmMessage" xml:space="preserve">
+    <value>Click Cancel Booking(s) to confirm the cancellation of the bookings.  Click cancel to abort the cancellation.</value>
+  </data>
+  <data name="CancelBookingsSuccessMessage" xml:space="preserve">
+    <value>Bookings were cancelled.</value>
+  </data>
+  <data name="CancelConfirm" xml:space="preserve">
+    <value>Are you sure you want to cancel this booking?</value>
+  </data>
+  <data name="CancelNotesButNoReason" xml:space="preserve">
+    <value>You must enter a reason for your cancellation</value>
+  </data>
+  <data name="CancelNotesIsRequired" xml:space="preserve">
+    <value>You must enter Cancel Notes</value>
+  </data>
+  <data name="CancelPamOccurrenceFailed" xml:space="preserve">
+    <value>One or more of the locations could not be cancelled. We could not complete your request.</value>
+  </data>
+  <data name="CancelReasonTooLong" xml:space="preserve">
+    <value>Cancel notes must be 255 characters or less</value>
+  </data>
+  <data name="CancelReservationConfirmMessage" xml:space="preserve">
+    <value>Both the reservation and bookings will be cancelled. Are you sure you want to proceed?</value>
+  </data>
+  <data name="CancelServicesSuccess" xml:space="preserve">
+    <value>Services cancelled for {0}.</value>
+  </data>
+  <data name="AddServicesSuccessMessage" xml:space="preserve">
+    <value>Services added to {0}.</value>
+  </data>
+  <data name="CancelSuccessfulMessage" xml:space="preserve">
+    <value>The {0} booking was cancelled.</value>
+  </data>
+  <data name="CannotLeapOverNextBooking" xml:space="preserve">
+    <value>You cannot change this occurrence so that it skips over or occurs on the same date of another occurence.</value>
+  </data>
+  <data name="CategoyMinimumAmoutViolation" xml:space="preserve">
+    <value>The total price of the resources ({0}) does not meet the required minimum amount for the category ({1:f2})</value>
+  </data>
+  <data name="ClosingHoursViolationMessage" xml:space="preserve">
+    <value>Booking violates closing hours</value>
+  </data>
+  <data name="ConactNameRequired" xml:space="preserve">
+    <value>Name is required</value>
+  </data>
+  <data name="ConfirmationHasBeenSent" xml:space="preserve">
+    <value>A confirmation email has been sent to {0}. To complete the sign up process and create your account, click the account confirmation link in the email.</value>
+  </data>
+  <data name="ConfirmationLinkExpiredHeader" xml:space="preserve">
+    <value>Account Confirmation Link Expired</value>
+  </data>
+  <data name="ConfirmationOnlyAvailableAsHTML" xml:space="preserve">
+    <value>The confirmation email is only available in HTML format.</value>
+  </data>
+  <data name="ConfirmCancel" xml:space="preserve">
+    <value>Are you sure you wish to cancel this item?</value>
+  </data>
+  <data name="ConfirmCheckin" xml:space="preserve">
+    <value>Are you sure you want to check in now?</value>
+  </data>
+  <data name="ConfirmProceed" xml:space="preserve">
+    <value>Are you sure you want to proceed?</value>
+  </data>
+  <data name="ConflictInCart" xml:space="preserve">
+    <value>You cannot save a reservation that has a conflict.</value>
+  </data>
+  <data name="CouldNotGenerateIcs" xml:space="preserve">
+    <value>We could not generate an ICS message for this reservation.</value>
+  </data>
+  <data name="CreateANewReservation" xml:space="preserve">
+    <value>Create A New Reservation</value>
+  </data>
+  <data name="CustomJsDisabled" xml:space="preserve">
+    <value>Custom JavaScript is now disabled</value>
+  </data>
+  <data name="CustomJsEnabled" xml:space="preserve">
+    <value>Custom JavaScript is now enabled</value>
+  </data>
+  <data name="DateAndTimeAreRequired" xml:space="preserve">
+    <value>Date and Time are required</value>
+  </data>
+  <data name="DateTimeOverlayLockText" xml:space="preserve">
+    <value>Note:
+You cannot change the date or time after you've added a {0} to the cart.
+If you need to change the date or time, first remove the {0} by clicking the minus button next to the {0}.</value>
+  </data>
+  <data name="DelegateListEmpty" xml:space="preserve">
+    <value>You don't have any saved {0}. Search above to add one.</value>
+  </data>
+  <data name="DelegateSearchNoMatch" xml:space="preserve">
+    <value>There are no names that match your search criteria.</value>
+  </data>
+  <data name="DeleteConfirm" xml:space="preserve">
+    <value>Click ok to confirm the deletion of this view.</value>
+  </data>
+  <data name="DetailedErrorModeDisabled" xml:space="preserve">
+    <value>Detailed Error Mode is now disabled</value>
+  </data>
+  <data name="DetailedErrorModeEnabled" xml:space="preserve">
+    <value>Detailed Error Mode is now enabled</value>
+  </data>
+  <data name="DoYouWantToSkipRemainingOccurrences" xml:space="preserve">
+    <value>Are you sure you want to leave this screen without selecting {0} for the remaining occurrences?</value>
+  </data>
+  <data name="EditBookingBuildingHoursViolation" xml:space="preserve">
+    <value>Your booking violates building hours. We did not update your booking.</value>
+  </data>
+  <data name="EditBookingCategoryWindowViolation" xml:space="preserve">
+    <value>Your booking violates the category window. We did not update your booking.</value>
+  </data>
+  <data name="EditBookingLastDateViolation" xml:space="preserve">
+    <value>Your booking violates the last allowed booking date. We did not update your booking.</value>
+  </data>
+  <data name="EditBookingMaxCapacityViolation" xml:space="preserve">
+    <value>Your attendance violates the maximum capacity for the room. We did not update your booking.</value>
+  </data>
+  <data name="EditBookingMinCapacityViolation" xml:space="preserve">
+    <value>Your attendance violates the minimum capacity for the room.  We did not update your booking.</value>
+  </data>
+  <data name="EditBookingNoChange" xml:space="preserve">
+    <value>No changes were made to your booking.</value>
+  </data>
+  <data name="EditBookingsBookingConflict" xml:space="preserve">
+    <value>Your booking conflicts with another booking.</value>
+  </data>
+  <data name="EditBookingsBookingWouldExceed24Hours" xml:space="preserve">
+    <value>Your booking exceeds 24 hours.</value>
+  </data>
+  <data name="EditBookingsBuildingIsClosed" xml:space="preserve">
+    <value>{0} is closed</value>
+  </data>
+  <data name="EditBookingsCategoryCutoffViolation" xml:space="preserve">
+    <value>Violation of category cutoff rules</value>
+  </data>
+  <data name="EditBookingsCategoryWeekendViolation" xml:space="preserve">
+    <value>Your booking contains a category that's unavailable on weekends.</value>
+  </data>
+  <data name="EditBookingsChangeSuccessful" xml:space="preserve">
+    <value>Success</value>
+  </data>
+  <data name="EditBookingsCutoffMinuteViolation" xml:space="preserve">
+    <value>Violation of template cutoff hours</value>
+  </data>
+  <data name="EditBookingsCutoffViolation" xml:space="preserve">
+    <value>Violation of template cutoff hours</value>
+  </data>
+  <data name="EditBookingsDateNoDays" xml:space="preserve">
+    <value>You must specify the number of days to reschedule</value>
+  </data>
+  <data name="EditBookingsDateSpecific" xml:space="preserve">
+    <value>You must specify the date to reschedule</value>
+  </data>
+  <data name="EditBookingSetupNotOnRoom" xml:space="preserve">
+    <value>The setup type you selected is not available for the {0}</value>
+  </data>
+  <data name="EditBookingsEventTimeWouldBeInvalid" xml:space="preserve">
+    <value>Event Time would be invalid</value>
+  </data>
+  <data name="EditBookingsLastDateViolation" xml:space="preserve">
+    <value>Your booking does not occur within the "window" of time permitted. We did not update your booking.</value>
+  </data>
+  <data name="EditBookingsMaxNumberPerDateViolation" xml:space="preserve">
+    <value>Your booking has too many bookings on a date. We did not update your booking.</value>
+  </data>
+  <data name="EditBookingsMaxNumberPerRangeViolation" xml:space="preserve">
+    <value>Your booking has too many bookings for the range of dates. We did not update your booking.</value>
+  </data>
+  <data name="EditBookingsNoBookings" xml:space="preserve">
+    <value>You did not select any bookings</value>
+  </data>
+  <data name="EditBookingsUpdateSuccessful" xml:space="preserve">
+    <value>Your bookings have been successfully updated!</value>
+  </data>
+  <data name="EditBookingsUpdateFailed" xml:space="preserve">
+    <value>Sorry, your booking update was unsuccessful.</value>
+  </data>
+  <data name="EditBookingsTimeNoHorM" xml:space="preserve">
+    <value>You must specify the hours/minutes to reschedule</value>
+  </data>
+  <data name="EditBookingsTimeSpecificEnd" xml:space="preserve">
+    <value>You must specify End Time to reschedule</value>
+  </data>
+  <data name="EditBookingsTimeSpecificStart" xml:space="preserve">
+    <value>You must specify Start Time to reschedule</value>
+  </data>
+  <data name="EditBookingSuccess" xml:space="preserve">
+    <value>Booking updated</value>
+  </data>
+  <data name="EditBookingSuccessButQuantityReset" xml:space="preserve">
+    <value>Booking updated, but one of your resources is no longer available</value>
+  </data>
+  <data name="EditBookingUpdateUnsuccessful" xml:space="preserve">
+    <value>Booking failed to update. Another user might have changed this booking or taken its location.</value>
+  </data>
+  <data name="EditBookingWindowViolation" xml:space="preserve">
+    <value>Your booking does not occur within the "window" of time permitted. We did not update your booking.</value>
+  </data>
+  <data name="EditReservationContactNameRequired" xml:space="preserve">
+    <value>Name is required</value>
+  </data>
+  <data name="EditServicesNoChange" xml:space="preserve">
+    <value>No changes were made to your Service(s).</value>
+  </data>
+  <data name="EditSodSubItemMinViolation" xml:space="preserve">
+    <value>The grouping {0} requires that you select at least {1} item(s)</value>
+  </data>
+  <data name="EmailAsUserName" xml:space="preserve">
+    <value>Your email address will be your user name.</value>
+  </data>
+  <data name="EmailBody" xml:space="preserve">
+    <value>Your password is {0}</value>
+  </data>
+  <data name="EmailRequired" xml:space="preserve">
+    <value>Email address is required to email your password</value>
+  </data>
+  <data name="EmailSent" xml:space="preserve">
+    <value>The request information has been sent</value>
+  </data>
+  <data name="EndNowConfirm" xml:space="preserve">
+    <value>Are you sure you want to end this booking now?</value>
+  </data>
+  <data name="EndNowConfirmationMessage" xml:space="preserve">
+    <value>The {0} booking has been ended.</value>
+  </data>
+  <data name="EnterValid" xml:space="preserve">
+    <value>Please enter a valid {0}.</value>
+  </data>
+  <data name="EnterValidAfterOccurrences" xml:space="preserve">
+    <value>Please enter the number of occurrences for this booking.</value>
+  </data>
+  <data name="EnterValidCode" xml:space="preserve">
+    <value>Please enter a valid code</value>
+  </data>
+  <data name="EnterValidEveryDays" xml:space="preserve">
+    <value>Please select the days for this booking.</value>
+  </data>
+  <data name="EnterValidEveryMonths" xml:space="preserve">
+    <value>Please select the month and day for this booking.</value>
+  </data>
+  <data name="EnterValidEveryWeeks" xml:space="preserve">
+    <value>Please select the weeks for this booking.</value>
+  </data>
+  <data name="ErrorCancellingAllBookings" xml:space="preserve">
+    <value>Your bookings in EMS were cancelled, however there was a problem cancelling the meeting in your calendaring system.</value>
+  </data>
+  <data name="ErrorCreatingCalendarItem" xml:space="preserve">
+    <value>Your reservation was created, but there was a problem creating the meeting in your calendaring system.</value>
+  </data>
+  <data name="ErrorLoadingCallbackXml" xml:space="preserve">
+    <value>Error loading XML document from server</value>
+  </data>
+  <data name="ErrorSendingEmail" xml:space="preserve">
+    <value>There was a problem sending your confirmation</value>
+  </data>
+  <data name="EventNameMaxLengthViolation" xml:space="preserve">
+    <value>Event name is longer than the maximum length of {0}</value>
+  </data>
+  <data name="FailedChangeCounter" xml:space="preserve">
+    <value>Your request failed. Someone else saved the item while you were viewing it.</value>
+  </data>
+  <data name="FailedToRetrieveBookings" xml:space="preserve">
+    <value>Failed to retrieve booking list</value>
+  </data>
+  <data name="FavoriteRoomListEmpty" xml:space="preserve">
+    <value>You don't have any {0} saved. Search above to add a {1}.</value>
+  </data>
+  <data name="FavoriteRoomSearchNoMatch" xml:space="preserve">
+    <value>There are no {0} that match your search criteria.</value>
+  </data>
+  <data name="FileTypeNotAllowed" xml:space="preserve">
+    <value>Selected file type is not allowed</value>
+  </data>
+  <data name="FilterListEmpty" xml:space="preserve">
+    <value>You don't have any saved filters.</value>
+  </data>
+  <data name="FiltersHaveBeenSavedAs" xml:space="preserve">
+    <value>Filters have been saved as {0}.</value>
+  </data>
+  <data name="NoFloormapsForYourFilter" xml:space="preserve">
+    <value>Sorry, there are no available floor maps that match your search criteria.</value>
+  </data>
+  <data name="FirstBookingDateViolation" xml:space="preserve">
+    <value>Your booking date(s) violate the first date allowed.</value>
+  </data>
+  <data name="FirstDateViolation" xml:space="preserve">
+    <value>Your booking date violates the first date allowed.</value>
+  </data>
+  <data name="ForgotPasswordTitleMessage" xml:space="preserve">
+    <value>Enter the email address for this account. We'll send you an email with a link to create a new password.</value>
+  </data>
+  <data name="GenerateCustomLinkItemRequired" xml:space="preserve">
+    <value>Item is required</value>
+  </data>
+  <data name="GenericCallbackErrorMsg" xml:space="preserve">
+    <value>There was a problem processing your request.</value>
+  </data>
+  <data name="GotoString" xml:space="preserve">
+    <value>Go to the current month</value>
+  </data>
+  <data name="HelpTextEditModeDisabled" xml:space="preserve">
+    <value>Help Text Edit Mode is now disabled</value>
+  </data>
+  <data name="HelpTextEditModeEnabled" xml:space="preserve">
+    <value>Help Text Edit Mode is now enabled</value>
+  </data>
+  <data name="HostAttendanceAndSetupModalMessage" xml:space="preserve">
+    <value>To continue, please indicate whether this {0} is the host for the video conference, and enter the number of attendees and setup type. Host can be modified from the cart.</value>
+  </data>
+  <data name="HostModalMessage" xml:space="preserve">
+    <value>To continue, please indicate whether this {0} is the host for the video conference. Host can be modified from the cart.</value>
+  </data>
+  <data name="InitDotNetCSSXDetection" xml:space="preserve">
+    <value>Detected a potentially dangerous character in a .NET hidden field value. Field and HtmlEncoded value was {0} = {1}</value>
+  </data>
+  <data name="InvalidDate" xml:space="preserve">
+    <value>Invalid Date</value>
+  </data>
+  <data name="InvalidEmailFormat" xml:space="preserve">
+    <value>Email address is not valid</value>
+  </data>
+  <data name="InvalidTime" xml:space="preserve">
+    <value>Invalid Time</value>
+  </data>
+  <data name="IsRequiredFormat" xml:space="preserve">
+    <value>{0} is required</value>
+  </data>
+  <data name="IsRequiredForFormat" xml:space="preserve">
+    <value>{0} is required for {1}</value>
+  </data>
+  <data name="LastBookingDateViolation" xml:space="preserve">
+    <value>Your booking date(s) violate the late date allowed.</value>
+  </data>
+  <data name="LastDateViolation" xml:space="preserve">
+    <value>Your booking date violates the late date allowed.</value>
+  </data>
+  <data name="LoginAccountInactive" xml:space="preserve">
+    <value>Your user account is inactive</value>
+  </data>
+  <data name="LoginAccountPending" xml:space="preserve">
+    <value>You can access your account after an administrator approves it.</value>
+  </data>
+  <data name="LoginAmbigous" xml:space="preserve">
+    <value>User ID already in use.</value>
+  </data>
+  <data name="LoginDirectoryServiceFailure" xml:space="preserve">
+    <value>Invalid login.</value>
+  </data>
+  <data name="LoginInvalidDefaultSecurityTemplate" xml:space="preserve">
+    <value>Invalid default security template parameter. Please contact the EMS system administrator.</value>
+  </data>
+  <data name="LoginInvalidPassword" xml:space="preserve">
+    <value>Invalid user ID or password.</value>
+  </data>
+  <data name="LoginUserNotFound" xml:space="preserve">
+    <value>Invalid user ID or password.</value>
+  </data>
+  <data name="LoginUserNotValidated" xml:space="preserve">
+    <value>You must confirm your account. Check your email for the link {0}, or we can re-send it.</value>
+  </data>
+  <data name="LoginUserNotValidatedLink" xml:space="preserve">
+    <value>we can send it to you again</value>
+  </data>
+  <data name="MaxBookingsPerDateViolation" xml:space="preserve">
+    <value>You are only allowed {0} booking(s) per date</value>
+  </data>
+  <data name="MaxBookingsPerRangeViolation" xml:space="preserve">
+    <value>You are only allowed to make {0} booking(s) on or before {1:d}</value>
+  </data>
+  <data name="MaxNumberOfBookingsViolation" xml:space="preserve">
+    <value>Your booking violates the maximum number allowed.</value>
+  </data>
+  <data name="MaxNumberOfBookingViolation" xml:space="preserve">
+    <value>Your booking's recurrence violates the maximum number allowed.</value>
+  </data>
+  <data name="MessageSent" xml:space="preserve">
+    <value>Message Sent</value>
+  </data>
+  <data name="MinimumQuantityExceeded" xml:space="preserve">
+    <value>This resource requires at least {0} units.</value>
+  </data>
+  <data name="MobileBookingEditLocationUnavail" xml:space="preserve">
+    <value>Your selected location is unavailable at the time requested.  Please select a new location</value>
+  </data>
+  <data name="MobileNoAttendance" xml:space="preserve">
+    <value>You must supply a valid setup count to continue</value>
+  </data>
+  <data name="MobileNoBuildingSelected" xml:space="preserve">
+    <value>You must select a {0} to continue</value>
+  </data>
+  <data name="MustBeGreaterThan" xml:space="preserve">
+    <value>{0} must be greater than {1}.</value>
+  </data>
+  <data name="NoBookingsForDate" xml:space="preserve">
+    <value>There are no bookings for {0}</value>
+  </data>
+  <data name="NoBookingsToday" xml:space="preserve">
+    <value>{0} has no bookings today</value>
+  </data>
+  <data name="NoCategoriesAvailableForThisLocation" xml:space="preserve">
+    <value>No services are available for this location</value>
+  </data>
+  <data name="NoDatesInRecurrence" xml:space="preserve">
+    <value>The recurrence you requested does not contain any dates</value>
+  </data>
+  <data name="NoItemSelected" xml:space="preserve">
+    <value>You must select an item first</value>
+  </data>
+  <data name="NoLocations" xml:space="preserve">
+    <value>You have not selected any locations</value>
+  </data>
+  <data name="NoPasswordFound" xml:space="preserve">
+    <value>We could not locate your account</value>
+  </data>
+  <data name="NoServiceOrdersSelected" xml:space="preserve">
+    <value>You did not select any services.  No action taken.</value>
+  </data>
+  <data name="NoSetupTypesConfigured" xml:space="preserve">
+    <value>There are no setup types configured for this location</value>
+  </data>
+  <data name="NoSpaceAvailable" xml:space="preserve">
+    <value>No space available</value>
+  </data>
+  <data name="NothingSelected" xml:space="preserve">
+    <value>You did not select any bookings to cancel</value>
+  </data>
+  <data name="NothingWasFoundForSearchString" xml:space="preserve">
+    <value>Nothing was found for "{0}".</value>
+  </data>
+  <data name="NotifyAttendeesModalMessage" xml:space="preserve">
+    <value>Do you want to send a notification only to changed attendees, or to all attendees?</value>
+  </data>
+  <data name="NoTimesSpecifiedForRecurrence" xml:space="preserve">
+    <value>You must enter start and end times.</value>
+  </data>
+  <data name="NoToAddresses" xml:space="preserve">
+    <value>You have not selected anyone to send the message to</value>
+  </data>
+  <data name="NoViewSelected" xml:space="preserve">
+    <value>Please save your view first</value>
+  </data>
+  <data name="OpeningHoursViolationMessage" xml:space="preserve">
+    <value>Your booking occurs outside the hours that the room is open.</value>
+  </data>
+  <data name="PamErrorAccessingService" xml:space="preserve">
+    <value>There was a problem accessing the Attendee services.</value>
+  </data>
+  <data name="PamManageBookingsCalendaringCancelError" xml:space="preserve">
+    <value>There was a problem cancelling the meeting in the calendaring system</value>
+  </data>
+  <data name="PamManageBookingsCalendaringUpdateError" xml:space="preserve">
+    <value>There was a problem updating the meeting in the calendaring system</value>
+  </data>
+  <data name="PamManageBookingsErrorSaving" xml:space="preserve">
+    <value>There was a problem updating your meeting</value>
+  </data>
+  <data name="PamManageResAttendeesError" xml:space="preserve">
+    <value>There was a problem updating the attendees on the reservation</value>
+  </data>
+  <data name="PamManageResAttendeesSuccess" xml:space="preserve">
+    <value>Attendees updated.</value>
+  </data>
+  <data name="PasswordLinkExpiredHeader" xml:space="preserve">
+    <value>Password Reset Link Expired</value>
+  </data>
+  <data name="PasswordRequestReceivedHeader" xml:space="preserve">
+    <value>Request Received</value>
+  </data>
+  <data name="PasswordsDoNotMatch" xml:space="preserve">
+    <value>Passwords don't match, type them again.</value>
+  </data>
+  <data name="PleaseSelectA" xml:space="preserve">
+    <value>Please select a</value>
+  </data>
+  <data name="PleaseTypeAStrongPassword" xml:space="preserve">
+    <value>Please type a strong password.</value>
+  </data>
+  <data name="PleaseTypeAValidEmailAddress" xml:space="preserve">
+    <value>Email address must be in the form user@email.com.</value>
+  </data>
+  <data name="PleaseVerifyYourPasswordByTypeingItAgain" xml:space="preserve">
+    <value>Enter your password again.</value>
+  </data>
+  <data name="PreferencesSaved" xml:space="preserve">
+    <value>Preferences saved.  Select a template above to customize your selections</value>
+  </data>
+  <data name="ProblemSending" xml:space="preserve">
+    <value>There was a problem sending the requested information</value>
+  </data>
+  <data name="ProblemSendingInvitation" xml:space="preserve">
+    <value>There was a problem sending your invitation</value>
+  </data>
+  <data name="ProblemSendingMessage" xml:space="preserve">
+    <value>There was a problem sending your message</value>
+  </data>
+  <data name="ProblemSendingResSummary" xml:space="preserve">
+    <value>There was a problem processing your request.  The email was not sent.  Please validate the email addresses you entered.</value>
+  </data>
+  <data name="QuantityMustBeNumber" xml:space="preserve">
+    <value>The quantity must be a valid number</value>
+  </data>
+  <data name="QuantityServesWarning" xml:space="preserve">
+    <value>Quantity specified for {0} will serve {1} people. Are you sure that you want to continue?</value>
+  </data>
+  <data name="QuantityWarning" xml:space="preserve">
+    <value>The quantity specified for {0} will serve {1} people.</value>
+  </data>
+  <data name="QuickAddWithoutFavorites" xml:space="preserve">
+    <value>Quick add is only available if you have defined favorite {0}</value>
+  </data>
+  <data name="ReceivedPasswordRequest" xml:space="preserve">
+    <value>We've received your password assistance request. If you're a valid user, you'll receive an email containing instructions for resetting your password. Please allow for a few minutes to receive this email, and check your spam folder if it doesn't appear in your inbox.</value>
+  </data>
+  <data name="ReconfirmBookingsInstructionsMessage" xml:space="preserve">
+    <value>Select the booking(s) you would like to reconfirm below, then click the Reconfirm button.</value>
+  </data>
+  <data name="ReconfirmBookingsSuccessMessage" xml:space="preserve">
+    <value>The bookings have been reconfirmed</value>
+  </data>
+  <data name="RememberOnlyBookingTitleAndLocationAreSearchable" xml:space="preserve">
+    <value>Remember, only booking title and location are searchable.</value>
+  </data>
+  <data name="RequestedInformation" xml:space="preserve">
+    <value>Requested Information</value>
+  </data>
+  <data name="RequestedRoomAvailable" xml:space="preserve">
+    <value>The location you requested is available</value>
+  </data>
+  <data name="RequestNewConfirmation" xml:space="preserve">
+    <value>If you don't receive the confirmation email, check your spam folder. You can request a new confirmation email by clicking the button below.</value>
+  </data>
+  <data name="RequestWillNowBeProcessed" xml:space="preserve">
+    <value>Your request for an account will now be processed. An email has been sent to {0} confirming your request, and you will receive an additional email once your request has been completed.</value>
+  </data>
+  <data name="ResendConfirmationEmail" xml:space="preserve">
+    <value>Resend Confirmation Email</value>
+  </data>
+  <data name="ReservationCreatedOnRoomRequest" xml:space="preserve">
+    <value>Your request has been submitted!  Please allow 2 business days for processing. You will be contacted directly by the managing department with a confirmation and/or additional questions regarding your request.</value>
+  </data>
+  <data name="ReservationEndTimeCannotBeBeforeStartTime" xml:space="preserve">
+    <value>Reservation can't end before it starts.</value>
+  </data>
+  <data name="ReservationStartTimeCannotBeBeforeCurrentTime" xml:space="preserve">
+    <value>Reservation can't start in the past.</value>
+  </data>
+  <data name="ReservationUpdatedSuccess" xml:space="preserve">
+    <value>Reservation successfully updated</value>
+  </data>
+  <data name="ReservationUpdateFailed" xml:space="preserve">
+    <value>Could not update reservation. Please try your request again</value>
+  </data>
+  <data name="ReservationValidationFailed" xml:space="preserve">
+    <value>Could not validate reservation. Please try your request again</value>
+  </data>
+  <data name="ResourceRequiresBillingRef" xml:space="preserve">
+    <value>{0} requires a {1}</value>
+  </data>
+  <data name="ResourceRequiresPONumber" xml:space="preserve">
+    <value>{0} requires a {1}</value>
+  </data>
+  <data name="ResourceUnavailable" xml:space="preserve">
+    <value>The resource needed for your booking is unavailable</value>
+  </data>
+  <data name="ResSummaryLocationInConflictAlert" xml:space="preserve">
+    <value>A {0} you selected is no longer available</value>
+  </data>
+  <data name="ReturnToPasswordAssistance" xml:space="preserve">
+    <value>return to password assistance</value>
+  </data>
+  <data name="RoomHasAMinimumCapacityOfXPersonAndAMaximumOfY" xml:space="preserve">
+    <value>{0} has a minimum capacity of {1} person(s), and a maximum of {2}.</value>
+  </data>
+  <data name="RoomRequestCannontRemoveHost" xml:space="preserve">
+    <value>You may not remove the host location</value>
+  </data>
+  <data name="RoomRequestedUnavailable" xml:space="preserve">
+    <value>The location you requested is unavailable</value>
+  </data>
+  <data name="RoomRequestFilterOverlayMessage" xml:space="preserve">
+    <value>Note:
+Before you can find a {0}, you need to enter a valid date and/or time above.</value>
+  </data>
+  <data name="RoomRequestMaxCapacityViolation" xml:space="preserve">
+    <value>Violates the maximum capacity of {0}</value>
+  </data>
+  <data name="RoomRequestMinCapacityVioliation" xml:space="preserve">
+    <value>Violates the minimum capacity of {0}</value>
+  </data>
+  <data name="RoomRequestNoLocations" xml:space="preserve">
+    <value>You have not selected any locations</value>
+  </data>
+  <data name="RoomRequestNoTempRoomDescription" xml:space="preserve">
+    <value>You must supply a location</value>
+  </data>
+  <data name="RoomRequestTotalMinuteViolation" xml:space="preserve">
+    <value>Your request violates the maximum duration for a reservation ({0} minutes)</value>
+  </data>
+  <data name="RoomRequestTwoLocationsSameBuilding" xml:space="preserve">
+    <value>Only one location per {0} can be selected</value>
+  </data>
+  <data name="RoomUnavailableBuildingHoursEnd" xml:space="preserve">
+    <value>End time violates {0} hours</value>
+  </data>
+  <data name="RoomUnavailableBuildingHoursStart" xml:space="preserve">
+    <value>Start time violates {0} hours</value>
+  </data>
+  <data name="RoomUnavailableClosure" xml:space="preserve">
+    <value>Violates building hours</value>
+  </data>
+  <data name="RoomUnavailableConflict" xml:space="preserve">
+    <value>Another booking is in the room</value>
+  </data>
+  <data name="RoomUnavailableCutoffHoursRestriction" xml:space="preserve">
+    <value>Would violate cutoff hours restriction on template</value>
+  </data>
+  <data name="RoomUnavailableCutoffTimeRestriction" xml:space="preserve">
+    <value>Would violate cutoff time restriction on template</value>
+  </data>
+  <data name="RoomUnavailableExceeds24Hours" xml:space="preserve">
+    <value>Booking would exceed 24 hours</value>
+  </data>
+  <data name="RoomUnavailableInPast" xml:space="preserve">
+    <value>Cannot create booking in the past</value>
+  </data>
+  <data name="RoomUnavailableNoTimezone" xml:space="preserve">
+    <value>No time zone, check your configuration</value>
+  </data>
+  <data name="RoomUnavailableRules" xml:space="preserve">
+    <value>Violates the booking rules on the template</value>
+  </data>
+  <data name="Saved" xml:space="preserve">
+    <value>Your request was completed.</value>
+  </data>
+  <data name="SavedButInventoryReset" xml:space="preserve">
+    <value>One or more of the items you added are unavailable at this time. Click OK to view the status of your requested items.</value>
+  </data>
+  <data name="SavedButResourceNotValidOnRoom" xml:space="preserve">
+    <value>Your request was saved, but one of the resources was not available for the room</value>
+  </data>
+  <data name="ScrollLeftMessage" xml:space="preserve">
+    <value>Click to scroll to previous month. Hold mouse button to scroll automatically.</value>
+  </data>
+  <data name="ScrollRightMessage" xml:space="preserve">
+    <value>Click to scroll to next month. Hold mouse button to scroll automatically.</value>
+  </data>
+  <data name="SearchForBookingsByTitleOrLocation" xml:space="preserve">
+    <value>Search for bookings by name or location.</value>
+  </data>
+  <data name="SelectDateMessage" xml:space="preserve">
+    <value>Select [date] as date.</value>
+  </data>
+  <data name="SelectionInstructions" xml:space="preserve">
+    <value>Select a minimum of {0} and a maximum of {1}</value>
+  </data>
+  <data name="SelectMonthMessage" xml:space="preserve">
+    <value>Click to select a month.</value>
+  </data>
+  <data name="SelectOneDate" xml:space="preserve">
+    <value>Please select at least one date.</value>
+  </data>
+  <data name="SelectOneDay" xml:space="preserve">
+    <value>Please select at least one day of the week.</value>
+  </data>
+  <data name="SelectYearMessage" xml:space="preserve">
+    <value>Click to select a year.</value>
+  </data>
+  <data name="ServiceOrderLockoutMessage" xml:space="preserve">
+    <value>You can change the service order details by clicking the {0} icon next to {1} in the {2}.</value>
+  </data>
+  <data name="ServiceReset" xml:space="preserve">
+    <value>One or more of your services was unavailable</value>
+  </data>
+  <data name="ServicesUnavailableCutoffDaysMissed" xml:space="preserve">
+    <value>{0} is not available because it needs {1} days of lead time.</value>
+  </data>
+  <data name="ServicesUnavailableCutoffHoursMissed" xml:space="preserve">
+    <value>{0} is not available because it needs {1} hours of lead time.</value>
+  </data>
+  <data name="ServicesUnavailableDuringCheckout" xml:space="preserve">
+    <value>{0} is not available during initial booking, but can be added later.</value>
+  </data>
+  <data name="ServicesUnavailableMessage" xml:space="preserve">
+    <value>Your selected room(s) and date(s) do not allow for additional {0}. Please {1} or continue to the {2}. </value>
+  </data>
+  <data name="ServicesUnavailableMissedCutoffTime" xml:space="preserve">
+    <value>This booking misses the cutoff time for {0}.</value>
+  </data>
+  <data name="SessionTimedOut" xml:space="preserve">
+    <value>Session timed out. You must log in again.</value>
+  </data>
+  <data name="SetupCountMustBeSpecified" xml:space="preserve">
+    <value>The setup count in the cart must be greater than zero for all locations</value>
+  </data>
+  <data name="SetUpNewAccount" xml:space="preserve">
+    <value>set up a new EMS account</value>
+  </data>
+  <data name="SetupTypeNotAvailableForThisLocation" xml:space="preserve">
+    <value>The Setup Type you selected is not available for this location.</value>
+  </data>
+  <data name="SomeMonthsFewerDays" xml:space="preserve">
+    <value>Some months have fewer than {0} days. For these months, the occurrence will fall on the last day of the month.</value>
+  </data>
+  <data name="SorryConfirmationLinkExpired" xml:space="preserve">
+    <value>We're sorry, but the link you clicked to confirm your account has expired.  You can still {0}.</value>
+  </data>
+  <data name="SorryPasswordLinkExpired" xml:space="preserve">
+    <value>We're sorry, but the link you clicked to reset your password has expired.  If you still need to reset your password, you can {0}.</value>
+  </data>
+  <data name="SpecialInstructionsMaxLength" xml:space="preserve">
+    <value>Special Instructions must be shorter than 10,000 characters</value>
+  </data>
+  <data name="StartTimeAfterEnd" xml:space="preserve">
+    <value>Your Start Time must be before the End Time</value>
+  </data>
+  <data name="StartWithASimpleSearch" xml:space="preserve">
+    <value>Start with a simple search; use less text.</value>
+  </data>
+  <data name="SubItemMinViolation" xml:space="preserve">
+    <value>The grouping {0} of resource {1} requires that you select at least {2} item(s)</value>
+  </data>
+  <data name="Success" xml:space="preserve">
+    <value>Success</value>
+  </data>
+  <data name="TemplateCloseStartOver" xml:space="preserve">
+    <value>If you start over, all the information you've entered for this reservation will be lost.
+Would you like to start over with a new template, start over with the current template, or stay here and keep all your changes?</value>
+  </data>
+  <data name="TemplateDefaultsSaved" xml:space="preserve">
+    <value>Template defaults have been saved.</value>
+  </data>
+  <data name="TemplateMaxBookings" xml:space="preserve">
+    <value>This template is for up to {0} bookings.</value>
+  </data>
+  <data name="TemplateMaxDate" xml:space="preserve">
+    <value>This template doesn't allow bookings after {0}.</value>
+  </data>
+  <data name="TemplateMinDate" xml:space="preserve">
+    <value>This template doesn't allow bookings before {0} at {1}.</value>
+  </data>
+  <data name="ThePasswordsDoNotMatch" xml:space="preserve">
+    <value>Passwords don't match, type them again.</value>
+  </data>
+  <data name="ThereWasAProblemSavingYourFilters" xml:space="preserve">
+    <value>There was a problem saving your filters. Please contact your administrator if this problem continues to occur.</value>
+  </data>
+  <data name="ThereWasAProblemSavingYourTemplateDefaults" xml:space="preserve">
+    <value>There was a problem saving your template defaults. Please contact your administrator if this problem continues to occur.</value>
+  </data>
+  <data name="TodayString" xml:space="preserve">
+    <value>Today is</value>
+  </data>
+  <data name="ToGetStartedRoomRequest" xml:space="preserve">
+    <value>To get started, type the name of the {0} you want, or search for {1} below.</value>
+  </data>
+  <data name="TokenizerSuccessMsg" xml:space="preserve">
+    <value>Your card was successfully added to the vault</value>
+  </data>
+  <data name="ToNextBooking" xml:space="preserve">
+    <value>Take me to the next day containing bookings.</value>
+  </data>
+  <data name="TwoFactorNoKey" xml:space="preserve">
+    <value>Your account is either not currently configured for Two-Factor Authentication or you have already successfully logged in with the EMS Mobile App.</value>
+  </data>
+  <data name="TwoFactorStep1" xml:space="preserve">
+    <value>Use the link in the EMS Mobile App to download and install {0} for your Android or iOS device.</value>
+  </data>
+  <data name="TwoFactorStep2a" xml:space="preserve">
+    <value>With {0} open, &lt;strong&gt;tap the icon in the top-right corner of the app and select "Scan A Barcode."&lt;/strong&gt;  On Android, if you are prompted to install "Barcode Scanner," please do so.  Lastly, use the {0} app to scan this barcode.</value>
+  </data>
+  <data name="TwoFactorStep2b" xml:space="preserve">
+    <value>Can't scan the barcode?  Select "Manual Entry" and enter {0}</value>
+  </data>
+  <data name="TwoFactorStep3" xml:space="preserve">
+    <value>Once the barcode above is scanned, copy the 6-digit verification code generated by {0} and enter the code in the EMS Mobile App.  Press "Verify and Activate" to complete the process.</value>
+  </data>
+  <data name="UnableToEditMobileExchange" xml:space="preserve">
+    <value>Multiple-location Exchange bookings cannot be edited on mobile web. Use the web app to edit.</value>
+  </data>
+  <data name="UnableToEditMobileHasServices" xml:space="preserve">
+    <value>Bookings with services cannot be edited on mobile web. Use the web app to edit.</value>
+  </data>
+  <data name="UnableToEditMobileVideoConference" xml:space="preserve">
+    <value>Video conference bookings cannot be edited on mobile web. Use the web app to edit.</value>
+  </data>
+  <data name="UnavailableBookingConflict" xml:space="preserve">
+    <value>Request would create a conflict with another booking.</value>
+  </data>
+  <data name="ConflictRoomSetup" xml:space="preserve">
+    <value>{0} Room requires {1} minutes of Setup time and {2} minutes of Teardown time.</value>
+  </data>
+  <data name="RelatedRoomConflictWithXRoom" xml:space="preserve">
+    <value>Possible conflicting rooms: {0}</value>
+  </data>
+  <data name="UnavailableBookingInPast" xml:space="preserve">
+    <value>Bookings not allowed to begin in the past</value>
+  </data>
+  <data name="UnavailableBuildingHoursViolvation" xml:space="preserve">
+    <value>Request violates building hours</value>
+  </data>
+  <data name="UnavailableExceedsTwentyFourHours" xml:space="preserve">
+    <value>Booking would exceed the twenty four hour limit</value>
+  </data>
+  <data name="UnavailableMinCutoffHours" xml:space="preserve">
+    <value>First available booking date violation</value>
+  </data>
+  <data name="UnavailableMinCutoffTime" xml:space="preserve">
+    <value>First available booking date violation</value>
+  </data>
+  <data name="UnavailableNoTimezone" xml:space="preserve">
+    <value>Problem with system timezone records</value>
+  </data>
+  <data name="UnexpectedError" xml:space="preserve">
+    <value>An unexpected error occurred, please try again later.</value>
+  </data>
+  <data name="UnhandledCallback" xml:space="preserve">
+    <value>Unhandled Callback.</value>
+  </data>
+  <data name="VerifyPassword" xml:space="preserve">
+    <value>Enter your password again.</value>
+  </data>
+  <data name="WantToSeeMore" xml:space="preserve">
+    <value>Want to see more? Continue searching in</value>
+  </data>
+  <data name="WebRequestDetailsCancelConfirm" xml:space="preserve">
+    <value>Are you certain you wish to cancel your request?</value>
+  </data>
+  <data name="WhatWouldYouLikeToDoNow" xml:space="preserve">
+    <value>What would you like to do now?</value>
+  </data>
+  <data name="WhatWouldYouLikeToNameThisSetOfFilters" xml:space="preserve">
+    <value>Give this set of filters a name.</value>
+  </data>
+  <data name="YouHaveNoTemplatesConfigured" xml:space="preserve">
+    <value>You have no templates configured.</value>
+  </data>
+  <data name="YouMustSelectALocation" xml:space="preserve">
+    <value>You must select a location</value>
+  </data>
+  <data name="YourSelectedRoomsWillAppearHere" xml:space="preserve">
+    <value>Your selected {0} will appear here.</value>
+  </data>
+  <data name="YourSessionIsAboutToExpire" xml:space="preserve">
+    <value>Your EMS Web App session is about to end.  Would you like to keep working, or sign out?&lt;div class="accented-text"&gt;If you do nothing, you will be signed out automatically in &lt;b&gt;&lt;span class="countdown"&gt;&lt;/span&gt;&lt;/b&gt; seconds.&lt;/div&gt;</value>
+  </data>
+  <data name="YourSessionTimedOut" xml:space="preserve">
+    <value>Your session timed out</value>
+  </data>
+  <data name="ZeroQuantityMessage" xml:space="preserve">
+    <value>You do not have this item</value>
+  </data>
+  <data name="AttendanceGreaterThanZero" xml:space="preserve">
+    <value>Attendance must be greater than zero.</value>
+  </data>
+  <data name="OnTheXTab" xml:space="preserve">
+    <value>on the {0} tab</value>
+  </data>
+  <data name="ClassicRequestConfirmationMessage" xml:space="preserve">
+    <value>Are you sure you would like to create this request?</value>
+  </data>
+  <data name="ApplyToAdditionalBookingsMessage" xml:space="preserve">
+    <value>Do you want to apply these service changes to additional bookings?</value>
+  </data>
+  <data name="CantCancelVideoConferenceHost" xml:space="preserve">
+    <value>This booking is the host and cannot be cancelled. Please change the host first if you wish to cancel this booking.</value>
+  </data>
+  <data name="RecurrenceLocationsUnavailableMessage" xml:space="preserve">
+    <value>Booking(s) added, but the location you selected is not available for all of your dates.</value>
+  </data>
+  <data name="BadBrowseCompatibilityModeMessage" xml:space="preserve">
+    <value>Note:  If you are using Internet Explorer, please also make sure that Compatibility View is disabled.</value>
+  </data>
+  <data name="PamManageConflictWarning" xml:space="preserve">
+    <value>You have a conflict. Please resolve the conflict before updating the booking(s).</value>
+  </data>
+  <data name="ReservationCreatedWithConflictMessage" xml:space="preserve">
+    <value>The reservation was created successfully, but one or more bookings are conflicted.
+Please edit the reservation to resolve.</value>
+  </data>
+  <data name="ResourceExcludedFromRoom" xml:space="preserve">
+    <value>This item will be excluded from: </value>
+  </data>
+  <data name="ResourcesExcludedFromRooms" xml:space="preserve">
+    <value>The following rooms have resources which will be excluded</value>
+  </data>
+  <data name="FavoriteRoomsMessage" xml:space="preserve">
+    <value>Your favorite rooms will override any template locations you have personalized.</value>
+  </data>
+  <data name="CheckinSuccessful" xml:space="preserve">
+    <value>You have successfully checked in.</value>
+  </data>
+  <data name="CheckinUnsuccessful" xml:space="preserve">
+    <value>You could not check in. It may have ended or the status may not allow checking in.</value>
+  </data>
+  <data name="NumberOfResultsTooLarge" xml:space="preserve">
+    <value>There were too many results for this selection, please use the filter to limit the number of results.</value>
+  </data>
+  <data name="SignUpComplete" xml:space="preserve">
+    <value>Sign Up Complete</value>
+  </data>
+  <data name="CongratsSignInBelow" xml:space="preserve">
+    <value>Congratulations! You have successfully signed up to use EMS! Sign in below.</value>
+  </data>
+  <data name="YourPasswordReset" xml:space="preserve">
+    <value>Your Password Has Been Reset</value>
+  </data>
+  <data name="SuccessSignInBelow" xml:space="preserve">
+    <value>Success, you can sign in below using your new password! A confirmation email regarding the password reset has been sent to {0}.</value>
+  </data>
+  <data name="SessionExpired" xml:space="preserve">
+    <value>Your session has expired, and you have been logged out.</value>
+  </data>
+  <data name="LogInAgain" xml:space="preserve">
+    <value>Please log in again to continue.</value>
+  </data>
+  <data name="DuplicateFilterName" xml:space="preserve">
+    <value>The name you've given for the filter already exists; please choose a different name.</value>
+  </data>
+</root>

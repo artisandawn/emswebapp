@@ -1,0 +1,402 @@
+a, a:link, a:visited, a:hover, a:active {
+    color: #269DE2;
+    text-decoration: none;
+}
+
+/*label {
+    font-size: 1.1em;
+}*/
+
+.lbl-secondary {
+    color: #F0F0F0;
+}
+
+caption {
+    font-size: 1.25em;
+    color: White;
+}
+
+.primary-color {
+    background-color: #282d37;
+    color: white;
+}
+
+.secondary-color {
+    background-color: #3f434a;
+    color: white;
+}
+
+.tertiary-color {
+    background-color: #656C77;
+    color: white;
+}
+
+.fixedDetailView {
+    width: 25em;
+    table-layout: fixed;
+}
+
+    .fixedDetailView td {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+/* Begin Buttons */
+.btn {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+    .btn:focus {
+        outline: 0 !important;
+    }
+
+    .btn:disabled {
+        background-color: #656C77;
+        cursor: not-allowed;
+    }
+
+.btn-text-rotate {
+    display: inline-block;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.btn:hover > .btn-text-rotate {
+    -webkit-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg);
+}
+
+
+
+.btn-cancel {
+    height: 30px;
+    border: 2px solid #F0F0F0;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: .7em;
+    color: white;
+    background-color: #656C77;
+    padding: 0 10px;
+}
+
+    .btn-cancel:hover:enabled {
+        background-color: #940A0A;
+    }
+
+.btn-circle-primary {
+    height: 44px;
+    width: 44px;
+    background-color: #269de2;
+    color: #F0F0F0;
+    border: 2px solid #F0F0F0;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    line-height: 38px;
+    text-align: center;
+}
+
+    .btn-circle-primary:hover:enabled {
+        background-color: #0C6FAE;
+    }
+
+    .btn-circle-primary:active {
+        background-color: #656C77;
+    }
+
+    .btn-circle-primary .plus-text {
+        font-size: 1.8em;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+.btn-circle-primary, .btn-small {
+    height: 34px;
+    width: 34px;
+    line-height: 23px;
+}
+
+.btn-circle-down {
+    height: 30px;
+    width: 30px;
+    background-color: #3f434a;
+    color: #F0F0F0;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    line-height: 20px;
+    text-align: center;
+    border: 0;
+}
+
+    .btn-circle-down:hover:enabled,
+    .btn-circle-down-hover {
+        background-color: #656C77;
+        cursor: pointer;
+    }
+
+    .btn-circle-down .plus-text {
+        font-size: 1.8em;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+
+.btn-large-square {
+    position: relative;
+    width: 200px;
+    height: 50px;
+    border: 0;
+    background-color: #3f434a;
+    color: #F0F0F0;
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: width .5s;
+}
+
+    .btn-large-square:hover {
+        width: 250px;
+    }
+
+        .btn-large-square:hover > .btn-large-square-anchor {
+            display: block;
+        }
+
+    .btn-large-square > .btn-text {
+        float: left;
+        width: 180px;
+        text-transform: uppercase;
+        font-size: .8em;
+    }
+
+.btn-large-square-anchor {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    background-color: #E12626;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+    .btn-large-square-anchor > .fa {
+        margin-top: 15px;
+    }
+
+.btnColumn > div { /*button columns on a DX grid*/
+    cursor: pointer;
+    text-align: center;
+}
+
+.grid-action-btn {
+    float: left;
+    margin: 0 3px 0 3px;
+}
+
+.link-glyph {
+    font-size: 1.2em;
+}
+/*End Buttons*/
+
+/* grids and detailviews */
+.DetailsView-detail-row {
+    border: 4px solid white;
+}
+
+.grid-link {
+    cursor: pointer;
+    color: #269de2;
+}
+/*end grids*/
+
+/* popup content */
+.cancel-label {
+    padding-right: 20px;
+}
+.cancel-left {
+    float: left;
+}
+.cancel-right {
+    float: right;
+}
+.cancel-reason {
+    margin-top: 10px;
+}
+.cancel-notes {
+    margin: 20px 0 110px 0;
+}
+/* end popup content */
+
+.opacity-1 {
+    -ms-opacity: 1;
+    opacity: 1;
+}
+
+.opacity-5 {
+    -ms-opacity: .5;
+    opacity: .5;
+}
+
+.requiredAsterisk {
+    color: #E12626;
+}
+
+.ApplicationTitle {
+    color: #225d92;
+}
+
+.callbackStatus {
+    border: black thin solid;
+    background-color: #fff8dc;
+}
+
+/* menu */
+#MenuContainer a {
+    color: #4D4D4F;
+    font-weight: 700;
+}
+
+.menuBack {
+    background-image: url(../Images/NavBar-bakgrd.gif);
+    background-repeat: no-repeat;
+}
+
+.staticMenuOver, .dropMenuOver {
+    background-color: #B2B2B3;
+}
+
+/* BEN 05/03/2012 
+.dropMenuOver a, .dropMenuOver a:hover{
+	height: inherit;
+	padding: 5px;
+}
+.dropMenuItemBase{
+	height: 25px;
+	padding: 5px;
+}
+*/
+.dropMenuItemBase {
+    line-height: 25px;
+}
+/*this should match the color of you menuBackImage*/
+div.ctl00_mainmenu_0, .dropMenu {
+    background-color: #DEDFE0!important;
+}
+
+.blueButton {
+    color: White;
+}
+
+.yellowButton {
+    color: black;
+}
+
+.tipHeader {
+    font-weight: bold;
+}
+
+.serviceOrder .ui-widget-header {
+    background: #3f434a;
+    color: white;
+}
+
+.white-widget-content {
+     padding: 0 20px 0 20px;
+}
+
+.white-widget-header {
+    padding: 0 20px 0 20px;
+}
+
+.ui-widget-header a {
+    color: White;
+}
+
+td.ui-widget-content {
+    border: 1px solid white;
+}
+
+th {
+    text-transform: uppercase;
+    background-color: White;
+    color: #717173;
+    font-weight: bold;
+    padding-left: .5em;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    vertical-align: top;
+}
+
+.serves {
+    font-size: .9em;
+}
+
+div.ui-timePicker li.tpSelected {
+    background-color: #316AC5;
+    background: none repeat scroll 0 0 #316AC5;
+    color: #FFFFFF;
+}
+
+#tipDiv, #helpDialog {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+a.tandc {
+    font-size: .6em;
+}
+
+.ui-datepicker td.hol a {
+    border: 1px solid #DEACA5;
+}
+
+.selectedRoomCR {
+    background-color: #CEF6CE;
+}
+
+.loginDiv {
+    max-width: 20em;
+    margin: 0 auto;
+    position:relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* text list / table */
+.text-table
+{
+    font-size: 1.1em;
+}
+
+.text-table > div
+{
+    padding: 5px 0;
+    border-bottom: solid 1px #f0f0f0;
+}
+
+/***** Help Text  *****/
+.help-text-icon {
+    color:#269de2;
+    transition-property: color;
+    transition-duration: .3s;
+}
+
+.help-text-icon:hover{
+    color:#0c6fae;
+}

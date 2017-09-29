@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AmbiguousUser" xml:space="preserve">
+    <value>Ambiguous user found in the system</value>
+  </data>
+  <data name="CouldNotFindCalendarItem" xml:space="preserve">
+    <value>We could not locate this booking in your calendaring system</value>
+  </data>
+  <data name="DatabaseConnectivityFailure" xml:space="preserve">
+    <value>There was a problem connecting to the EMS database, please check the error log for details.</value>
+  </data>
+  <data name="FileExceedsSize" xml:space="preserve">
+    <value>The most likely cause of this error is that the file is too big. Please contact your EMS administrator to increase the file size limit.</value>
+  </data>
+  <data name="GenericError" xml:space="preserve">
+    <value>There was a problem attempting to complete the action you requested. Please try again at a later time.</value>
+  </data>
+  <data name="IE6" xml:space="preserve">
+    <value>We’ve noticed that you’re using an older web browser. For the best experience, upgrade to the latest version of one of the browsers listed on the &lt;a href="https://www.emssoftware.com/tech-specs"&gt;system requirements page&lt;/a&gt;.</value>
+  </data>
+  <data name="InactiveUser" xml:space="preserve">
+    <value>Your account is currently inactive. Please contact your administrator to resolve this issue.</value>
+  </data>
+  <data name="InvalidDefaultTemplate" xml:space="preserve">
+    <value>The default web template parameter is invalid</value>
+  </data>
+  <data name="LicenseExpired" xml:space="preserve">
+    <value>Your license has expired. Please contact your administrator to resolve this issue.</value>
+  </data>
+  <data name="MissingOrInvalidExpectedQuerystring" xml:space="preserve">
+    <value>An expected query string parameter was missing</value>
+  </data>
+  <data name="NoAccessToItem" xml:space="preserve">
+    <value>You do not have access to this item</value>
+  </data>
+  <data name="NoLicense" xml:space="preserve">
+    <value>No Virtual Ems License</value>
+  </data>
+  <data name="NoMobileAccess" xml:space="preserve">
+    <value> The page you are attempting to access is not available on a mobile device.&lt;br&gt;&lt;br&gt;Please return to the previous page using your "Back" button, or click &lt;a href="Default.aspx"&gt;here&lt;/a&gt; to return to the home page.</value>
+  </data>
+  <data name="NoPageAccess" xml:space="preserve">
+    <value>You do not have access to the requested page</value>
+  </data>
+  <data name="NoPamIds" xml:space="preserve">
+    <value>The booking you selected does not appear to be a PAM reservation</value>
+  </data>
+  <data name="NoReportSetupId" xml:space="preserve">
+    <value>The confirmation associated with this reservation returned no data</value>
+  </data>
+  <data name="PamBookProblem" xml:space="preserve">
+    <value>There was a problem contacting your calendaring provider to load your availability</value>
+  </data>
+  <data name="PendingUser" xml:space="preserve">
+    <value>Your account is currently pending</value>
+  </data>
+  <data name="PortalValidationFailed" xml:space="preserve">
+    <value>Verification of the Portal failed.</value>
+  </data>
+  <data name="ProductCodeViolation" xml:space="preserve">
+    <value>Your license does not give you access to this feature</value>
+  </data>
+  <data name="RequestTimeViolation" xml:space="preserve">
+    <value>The violated the time allowed for your request.  The request will not be processed in EMS.</value>
+  </data>
+  <data name="SamlValidationFailure" xml:space="preserve">
+    <value>Single Sign On failure. Please contact your local Help Desk.</value>
+  </data>
+  <data name="SamlValidUnknownUser" xml:space="preserve">
+    <value>Access to this application is denied. Please contact your local Help Desk.</value>
+  </data>
+  <data name="ServerVersionMismatch" xml:space="preserve">
+    <value>Your version of this app is out of date. Upgrade it to match EMS Server Version {1}.</value>
+  </data>
+  <data name="UserValidationFailed" xml:space="preserve">
+    <value>Account activation failed</value>
+  </data>
+  <data name="ViolatedTemplateCount" xml:space="preserve">
+    <value>You have exceeded the maximum number of templates allowed</value>
+  </data>
+  <data name="ViolatedUserCount" xml:space="preserve">
+    <value>You have exceeded the maximum number of web users allowed</value>
+  </data>
+  <data name="VirtualRequiresPatch" xml:space="preserve">
+    <value>Your version of this app is out of date. Upgrade it to at least patch {0}.</value>
+  </data>
+  <data name="ConfirmationSendError" xml:space="preserve">
+    <value>The confirmation associated with this reservation could not be sent.</value>
+  </data>
+</root>

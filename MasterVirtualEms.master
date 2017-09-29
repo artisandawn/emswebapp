@@ -1,0 +1,639 @@
+<%@ Master Language="C#" AutoEventWireup="true"
+    Inherits="MasterEms" CodeBehind="MasterVirtualEms.master.cs" %>
+
+<%@ Import Namespace="Resources" %>
+<%@ Import Namespace="Dea.Ems.Web.Sites.VirtualEms.Constants" %>
+<%@ Import Namespace="System.Web.Optimization" %>
+
+<!DOCTYPE HTML>
+<html xmlns:wairole="http://www.w3.org/2005/01/wai-rdf/GUIRoleTaxonomy#"
+xmlns:waistate="http://www.w3.org/2005/07/aaa">
+<head id="Head1" runat="server">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="CACHE-CONTROL" content="NO-CACHE" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Content-Language" content="en" />
+    <meta name="viewport" content="width=device-width, user-scalable=1, initial-scale=1.0" />
+    <title></title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="ShortcutIcon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="images/virtual-iOS-icon.png" />
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600" rel="stylesheet" type="text/css">
+    <%# Styles.Render("~/Content/font-open-sans", "~/Content/jquery-ui", "~/Content/font-awesome",
+                "~/Content/dx", "~/Content/perfect-scrollbar", "~/Content/core", "~/Content/plugins") %>
+    <link href="Content/jHtmlArea.css" rel="stylesheet" />
+    <style>
+        #page-title {
+            width: 50%;
+        }
+
+            #page-title h1 {
+                overflow: hidden;
+                -ms-text-overflow: ellipsis;
+                -o-text-overflow: ellipsis;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                width: 100%;
+            }
+
+        .date-picker-today-btn::after {
+            content: "<%# ScreenText.Today %>";
+        }
+    </style>
+    <%# Styles.Render(CustomCssList.ToArray()) %>
+    <%# CustomCssText %>
+
+    <%# Scripts.Render("~/bundles/moment", "~/bundles/jquery", "~/bundles/bootstrap", "~/bundles/knockout",
+                "~/bundles/perfect-scrollbar", "~/bundles/dx", "~/bundles/touche", "~/bundles/hammer", "~/bundles/bleach", "~/bundles/vems", "~/bundles/vems-plugins") %>
+    <asp:ContentPlaceHolder ID="headContentHolder" runat="server" />
+</head>
+
+<body>
+
+    <form id="VirtualEmsForm" runat="server">
+        <div id="showMobile" class="hidden" style="vertical-align: middle; text-align: center; position: fixed; top: 0; left: 0; right: 0; width: auto; height: 80px; background-color: #F1F1F1; z-index: 998;">
+            <div class="container-fluid" style:"margin: auto; vertical-align: center;">
+                <div class="center-block" style="min-height: 100%; display: flex; align-items: center; vertical-align: middle; margin: auto;">
+                    <a id="dismissMobile" class="alert-link" style="vertical-align: middle; text-align: left; margin-right: 10px;">
+                        <h3 style="color: #929292;"><i class="fa fa-close"></i></h3>
+                    </a>
+                    <img src="Images/Icon-72@2x.png" alt="logo" style="max-width: 50px; height: auto; display: inline-block; text-align: right; vertical-align: middle;">
+                    <div class="col-xs-6" style="display: inline-block; vertical-align: middle;  text-align: left;">
+                        <h4>EMS Mobile App</h4>
+                    </div>
+                    <a id="launchMobile" class="intent alert-link" style="display: inline-block; vertical-align: middle; text-align: left; margin: 10px;" data-scheme="emssoftware://">
+                        <h3 style="color: #007AFF">Open</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="page-loading-overlay" style="display: none;">
+            <img class="loading-animation" src="Images/Loading.gif" />
+        </div>
+        <Dea:ApplicationLabelText ID="ApplicationTitle" runat="server" CssClass="ApplicationTitle hide" LookupKey="VemsApplicationTitle" ParentType="None" />
+        <nav id="vems-navbar-top" class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <div id="nav-logo-section" class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" onclick="vems.toggleSideBar();">
+                        <span class="sr-only">Toggle navigation</span>
+                        <i class="fa fa-navicon"></i>
+                    </button>
+                    <div class="navbar-brand">
+                        <a class="ems-logo-link" href="./">
+                            <img src="Images/<%= logoImg %>" class="ems-logo" alt="<%= PageTitles.DefaultTitle %>" title="<%= PageTitles.DefaultTitle %>">
+                        </a>
+                    </div>
+                </div>
+
+                <div id="page-title" class="navbar-header">
+                    <h1><%= Page.AppRelativeVirtualPath.ToLower().Contains("default.aspx") ? Regex.Replace(ApplicationTitleText, "<[^>]*(>|$)", string.Empty) : Page.Title.Split('/')[0] %></h1>
+                </div>
+
+                <div id="user-menu-section" class="navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li id="help-icon" class="help-icon dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-question-circle"></i></a>
+                            <ul class="dropdown-menu">
+                                <!-- ko foreach: helpMenuItems -->
+                                <li><a data-bind="text: vems.decodeHtml(Text), attr: {'href': NavigateUrl}, click: $root.menuItemClicked"></a></li>
+                                <!-- /ko -->
+
+                                <!-- ko if: customHelpMenuItems().length > 0 -->
+                                <li class="divider" role="separator"></li>
+                                <!-- ko foreach: customHelpMenuItems -->
+                                <li><a data-bind="text: vems.decodeHtml(Text), attr: {'href': NavigateUrl}, click: $root.menuItemClicked"></a></li>
+                                <!-- /ko -->
+                                <!-- /ko -->
+                            </ul>
+                        </li>
+
+                        <li class="dropdown" id="user-menu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                <div id="user-name-icons">
+                                    <i class="fa fa-user"></i>
+                                    <% if (HttpContext.Current.User.Identity.Name.Length > 0) %>
+                                    <% { %>
+                                    <i class="fa fa-angle-down"></i>
+                                    <% } %>
+                                </div>
+                                <div id="user-name" class="ellipsis-text">
+                                    <% if (HttpContext.Current.User.Identity.Name.Length > 0) %>
+                                    <% { %>
+                                    <%= (Dea.Ems.Web.Sites.VirtualEms.BasePage.GetIdentityForStaticContext().OriginalUserId > -1 ? "Acting As " : string.Empty) + HttpContext.Current.User.Identity.Name %>
+                                    <% }
+                                        else
+                                        { %>
+                                    <%= ScreenText.WelcomeGuest %>
+                                    <% } %>
+                                </div>
+                            </a>
+                            <ul class="dropdown-menu" id="user-menu-dropdown" data-bind="visible: showGuestUserMenu || (showAuthUserMenu && userMenuItems().length > 0)">
+                                <!-- ko if: showAuthUserMenu -->
+                                <!-- ko foreach: userMenuItems -->
+                                <!-- ko ifnot: Id === -48 -->
+                                <li><a data-bind="text: vems.decodeHtml(Text), attr: {'href': NavigateUrl}, click: $root.menuItemClicked"></a></li>
+                                <!-- /ko -->
+                                <!-- ko if: Id === -48 && showActAs -->
+                                <li><a data-bind="text: vems.decodeHtml(Text), attr: {'href': '#'}" data-toggle="modal" data-target="#actas-modal"></a></li>
+                                <!-- /ko -->
+                                <!-- /ko -->
+
+                                <!-- ko if: DevExpress.devices.real().phone -->
+                                <li role="separator" class="divider"></li>
+                                <!-- ko foreach: helpMenuItems -->
+                                <li><a data-bind="text: vems.decodeHtml(Text), attr: {'href': NavigateUrl}, click: $root.menuItemClicked"></a></li>
+                                <!-- /ko -->
+                                <!-- /ko -->
+
+                                <li role="separator" class="divider"></li>
+                                <!-- ko foreach: adminMenuItems -->
+                                <li><a data-bind="text: vems.decodeHtml(Text), attr: {'href': NavigateUrl}, click: $root.menuItemClicked"></a></li>
+                                <!-- /ko -->
+                                <!-- ko foreach: signOutMenuItems -->
+                                <li class="sign-out">
+                                    <a data-bind="html: '<i class=\'fa fa-sign-out\'></i>&nbsp;' + vems.decodeHtml(Text), attr: {'href': NavigateUrl}"></a>
+                                </li>
+                                <!-- /ko -->
+                                <!-- /ko -->
+
+                                <!-- ko if: showGuestUserMenu && !showAuthUserMenu -->
+                                <li><a href="<%= loginUrl %>"><%= ScreenText.Login %></a></li>
+                                <!-- /ko -->
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+        <div id="wrapper">
+
+            <!-- Sidebar -->
+            <div id="sidebar-wrapper">
+                <ul class="sidebar-nav" data-bind="foreach: mainMenuItems">
+                    <!-- HR before the Links menu -->
+                    <!-- ko if: Id == 4  -->
+                    <li>
+                        <hr />
+                    </li>
+                    <!-- /ko -->
+
+                    <!-- hide My Events on Mobile Web -->
+                    <!-- ko ifnot: DevExpress.devices.real().phone && Id === 9 -->
+                    <li data-bind="css: { 'no-click': NavigateUrl.length == 0 }">
+                        <a data-bind="css: { 'current-page': $root.OnMenuItemPage(NavigateUrl) }, attr: {'href': NavigateUrl.length > 0 ? NavigateUrl : '#', 'title': vems.decodeHtml(Text)}, click: $root.menuItemClicked">
+                            <i class="fa" data-bind="css: IconClass"></i>
+                            <span data-bind="text: vems.decodeHtml(Text)"></span>
+                        </a>
+                    </li>
+
+                    <div data-bind="foreach: ChildMenus">
+                        <li class="secondary" data-bind='css: { "resource-link": $parent.Id == 4 }'>
+                            <a data-bind="css: { 'current-page': $root.OnMenuItemPage(NavigateUrl) }, attr: {'href': NavigateUrl, 'title': vems.decodeHtml(Text)}, click: $root.menuItemClicked">
+                                <i class="fa" data-bind="css: IconClass"></i>
+                                <span data-bind="text: vems.decodeHtml(Text)"></span>
+                            </a>
+                        </li>
+                    </div>
+                    <!-- /ko -->
+                </ul>
+            </div>
+            <!-- end sidebar-wrapper -->
+
+            <div id="page-content-wrapper">
+                <div class="container-fluid main-content" id="page">
+
+                    <div id="page-title-responsive">
+                        <h1><%= Page.AppRelativeVirtualPath.ToLower().Contains("default.aspx") ? Regex.Replace(ApplicationTitleText, "<[^>]*(>|$)", string.Empty) : Page.Title.Split('/')[0] %></h1>
+                    </div>
+
+                    <asp:ValidationSummary ID="Summary" runat="server" ForeColor="Red" HeaderText="<%$ Resources:ScreenText, ErrorHeaderText %>"
+                        DisplayMode="bulletList" CssClass="errorSummary" />
+
+                    <div id="helpDialog" style="display: none;">
+                        <Dea:WebText ID="DefaultHelp" runat="server" ParentType="none" PersonalizationKey="VemsShowHelpText" IsHelpText="true" EditPage="EditWebText.aspx" CssClass="clear" />
+                    </div>
+                    <asp:ContentPlaceHolder ID="pc" runat="server">
+                    </asp:ContentPlaceHolder>
+
+                    <div id="CallbackStatus" style="display: none; z-index: 100" class="callbackStatus">
+                        <asp:Image runat="server" ID="LoadingImage" ImageUrl="~/Images/Loading.gif" AlternateText="" GenerateEmptyAlternateText="true" />
+                        <asp:Label ID="LoadingText" runat="server" Text="<%$ Resources:ScreenText, Loading %>" />
+                    </div>
+                </div>
+            </div>
+            <!-- end page-content-wrapper -->
+
+        </div>
+        <!-- end wrapper -->
+    </form>
+
+    <div class="modal fade" id="tou-modal" tabindex="-1" role="dialog" aria-labelledby="modal-title">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content" id="tou-modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h3 class="modal-title" data-bind="text: vems.screenText.termsOfUseText"></h3>
+                </div>
+                <div class="modal-body">
+                    <Dea:WebText ID="OnPageHelp" runat="server" ParentType="none" PersonalizationKey="VemsShowHelpText" IsHelpText="true"
+                        EditPage="EditWebText.aspx" LookupKey="VEMSTermsOfUse" AllowEmpty="true"></Dea:WebText>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" id="tou-print-btn"><%= ScreenText.Print %></button>
+                    <button type="button" class="btn btn-primary" id="tou-close-btn" data-dismiss="modal"><%= ScreenText.Close %></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="actas-modal" tabindex="-1" role="dialog" aria-labelledby="modal-title">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content" id="actas-modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h2 class="modal-title"><%= ScreenText.ActAsTitle %></h2>
+                </div>
+                <div class="modal-body">
+                    <!-- ko if: <%= Dea.Ems.Web.Sites.VirtualEms.BasePage.GetIdentityForStaticContext().OriginalUserId %> > -1 -->
+                    <div class="actas-modal-message" data-bind='attr: { "data-email" : "<%= EscapeQuotes(((AuthenticationField == Dea.Ems.Configuration.AuthenticationFields.NetworkId ? Dea.Ems.Web.Sites.VirtualEms.BasePage.GetIdentityForStaticContext().OriginalNetworkId : (AuthenticationField == Dea.Ems.Configuration.AuthenticationFields.ExternalReference ? Dea.Ems.Web.Sites.VirtualEms.BasePage.GetIdentityForStaticContext().OriginalExternalReference : Dea.Ems.Web.Sites.VirtualEms.BasePage.GetIdentityForStaticContext().OriginalEmail)) ?? string.Empty).Replace("\\", "\\\\")) %>" }'>
+                        <%= string.Format(ScreenText.ActAsActingMessage, "<strong>" + Dea.Ems.Web.Sites.VirtualEms.BasePage.GetIdentityForStaticContext().Name + "</strong>",
+                                        "<strong><a role='button' id='actas-stop-acting'>" + Dea.Ems.Web.Sites.VirtualEms.BasePage.GetIdentityForStaticContext().OriginalUserName + "</a></strong>") %>
+                    </div>
+                    <!-- /ko -->
+                    <!-- ko ifnot: <%= Dea.Ems.Web.Sites.VirtualEms.BasePage.GetIdentityForStaticContext().OriginalUserId %> > -1 -->
+                    <div class="actas-modal-message"><%= string.Format(ScreenText.ActAsMessage, "<strong>" + Dea.Ems.Web.Sites.VirtualEms.BasePage.GetIdentityForStaticContext().Name + "</strong>") %></div>
+                    <!-- /ko -->
+                    <div class="form-group has-feedback">
+                        <input type="text" class="form-control" placeholder="<%= string.Format(ScreenText.FindByX, ScreenText.Name.ToLowerInvariant()) %>" id="actas-search-input" />
+                        <i class="fa fa-search form-control-feedback"></i>
+                    </div>
+                    <div class="booking-grid" style="margin-bottom: -15px; height: 300px;">
+                        <div class="modal-grid">
+                            <!-- ko foreach: DelegatesSearchResults -->
+                            <div class="row row-selectable" data-bind="attr: { 'data-email': vems.decodeHtml(EmailAddress()) }">
+                                <div class="col-xs-6 ellipsis-text" data-bind="html: UserName"></div>
+                                <div class="col-xs-6 ellipsis-text"><a data-bind="text: vems.decodeHtml(EmailAddress()), attr: { href: 'mailto:' + vems.decodeHtml(EmailAddress()) }"></a></div>
+                            </div>
+                            <!-- /ko -->
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" id="actas-ok-btn" disabled><%= ScreenText.ActAsOkButton %></button>
+                    <button type="button" class="btn btn-primary" id="actas-cancel-btn" data-dismiss="modal"><%= ScreenText.ActAsCancelButton %></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="confirmation-modal" class="modal" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="smallModalLabel">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">&nbsp;</h4>
+                </div>
+                <div class="modal-body"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="help-text-modal" tabindex="-1" role="dialog" aria-labelledby="modal-title">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content" id="help-text-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h2 class="modal-title">
+                        <span><%= ScreenText.HelpIcoAltText %></span>
+                        <% if (showHelpTextEdit) %>
+                        <% { %>
+                        <span>(</span><a href="#" class="help-text-edit"><i class="fa fa-pencil"></i><%= ScreenText.Edit %></a><span>)</span>
+                        <% } %>
+                    </h2>
+                </div>
+                <div class="modal-body">
+                    <span id="help-text-body-content"></span>
+                    <div id="help-text-body-edit-content" style="display: none;">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="form-group">
+                                    <label for="webtext-culture-drop" class="form-label"><%= ScreenText.Language %></label>
+                                    <select id="webtext-culture-drop" class="form-control"></select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <textarea id="webtext-editor" style="width: 100%; height: 300px;"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" id="help-text-close-btn" data-dismiss="modal"><%= ScreenText.Ok %></button>
+                    <button type="button" class="btn btn-primary" id="help-text-save-btn" style="display: none;"><%= ScreenText.SaveChanges %></button>
+                    <button type="button" class="btn btn-default" id="help-text-cancel-btn" data-dismiss="modal" style="display: none;"><%= ScreenText.Cancel %></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- bad browser alert modal -->
+    <div class="modal fade" id="bad-browser-modal" tabindex="-1" role="dialog" aria-labelledby="modal-title">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content" id="bad-browser-modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h3 class="modal-title"><%= ScreenText.BrowserSupport %></h3>
+                </div>
+                <div class="modal-body">
+                    <br />
+                    <span class="pull-left">
+                        <%= Messages.BadBrowserMessage %>
+                        <a href="https://success.emssoftware.com/EMS_V44.1/Installing_and_Setting_Up_EMS/EMS_API/EMS_API_Reference_Guide/04-Hardware_and_Software_Requirements" target="_blank"><%= ScreenText.SystemRequirementsPage %></a>.
+                        <br />
+                        <br />
+                        <span><%= Messages.BadBrowseCompatibilityModeMessage %></span>
+                    </span>
+                    <br />
+                    <br />
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" id="bad-browser-btn-close" data-dismiss="modal"><%= ScreenText.Close %></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <%= StackExchange.Profiling.MiniProfiler.RenderIncludes() %>
+</body>
+
+<script type="text/javascript">
+    var outMsg = '<%= outMsg %>';
+    var outMsgTitle = '<%= outMsgTitle %>';
+    var menuJSON = <%= MenuJson %>;
+    var showAuthUserMenu = "<%= HttpContext.Current.User.Identity.Name.Replace("\"", "\\\"").Replace("\'", "\\\'") %>".length > 0;
+    var showGuestUserMenu = <%= Dea.Ems.Web.Sites.VirtualEms.BasePage.IsAvailableToGuest(Dea.Security.VemsRoles.login).ToString().ToLowerInvariant() %> && "<%= HttpContext.Current.User.Identity.Name.Replace("\"", "\\\"").Replace("\'", "\\\'") %>".length === 0;
+    var showActAs = <%= showActAs.ToString().ToLowerInvariant() %>;
+</script>
+<script type="text/html" id="myEventTemplate">
+    <div class="event-date lbl-secondary" data-bind="text: $root.buildMyRequestDateHeader(Date), attr: {'data-date': Date}"></div>
+    <div data-bind="foreach: { data: Events, as: 'ev', afterRender: $root.animateEvent } ">
+        <div class="event-item" data-bind="event: { mousedown: $root.eventClickStart, mouseup: $root.eventClickEnd, mouseover: $root.showDrawer, mouseout: $root.hideDrawer }">
+            <!-- data-bind="event: { mousedown: $root.eventClickStart, mouseup: $root.eventClickEnd }"> -->
+            <div class="event-item-color" data-bind="style: { backgroundColor: ev.Color } "></div>
+            <div class="event-item-name" data-bind="text: vems.decodeHtml(ev.EventName)"></div>
+            <div class="event-item-time" data-bind="text: moment(ev.EventStart).format('LT') + ' - ' + moment(ev.EventEnd).format('LT') "></div>
+            <div class="event-item-location">
+                <div class="float" data-bind="text: vems.decodeHtml(ev.Building)"></div>
+                <div class="float">- </div>
+                <div class="float" style="font-weight: bold;" data-bind="text: vems.decodeHtml(ev.Room)"></div>
+            </div>
+            <div class="event-item-status" data-bind="text: ev.Status"></div>
+            <div class="drawer-container">
+                <div class="drawer-actions">
+                    <div class="drawer-eventname">
+                        <span data-bind="html: vems.decodeHtml(ev.EventName)"></span>
+                        <!-- ko if: ev.AllowEndNow -->
+                        <a class="drawer-action-item action-endnow" data-bind="event: { click: $root.endNow }">End Now</a>
+                        <!-- /ko -->
+                    </div>
+                    <div class="drawer-buttons">
+                        <!-- ko if: ev.ShowCheckinButton -->
+                        <a class="drawer-action-item action-checkin" data-bind="event: { click: $root.checkIn }, checkinAnchorText: ev.IsCheckedIn"><span class="text"></span><i style="margin-left: 4px;" class="fa fa-check-circle"></i></a>
+                        <!-- /ko -->
+                        <!-- ko if: ev.AllowCancel -->
+                        <a class="drawer-action-item action-cancel" data-bind="event: { click: $root.cancel }">Cancel <i class="fa fa-trash"></i></a>
+                        <!-- /ko -->
+                        <a class="drawer-action-item" data-bind="event: { click: $root.goToSummary }">More <i class="fa fa-external-link-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="drawer-overlay"></div>
+        </div>
+    </div>
+</script>
+<script type="text/html" id="menuTemplate">
+    <%--Note: There are 2 sections for the parent menu item dpending on whether the parent item has a url or not. Couldn't have an anchor within an anchor. --%>
+    <!-- ko if: item.NavigateUrl.length > 0 && item.ChildMenus.length > 0  -->
+    <a class="menu-item vems-slide" data-bind="css: { 'menu-first-level' : item.Id > 0 }, attr: {'data-is-parent': $data.ChildMenus.length > 0, 'href': $data.NavigateUrl, 'target': $data.Target !== null ? $data.Target : '_self' }">
+        <span data-bind="html: item.Text, css: {'parent-link': item.ChildMenus.length > 0}, attr: {'href': $data.NavigateUrl.length > 0 ? $data.NavigateUrl : '#', 'target': $data.Target !== null ? $data.Target : '_self' }"></span>
+        <div style="float: right;">
+            <span class="menu-item-spacer">&nbsp;</span>
+            <div class="arrow-container"><i data-bind="css: { 'right-arrow fa fa-angle-down fa-3 vems-transition-all': item.ChildMenus.length > 0}"></i></div>
+        </div>
+    </a>
+    <!-- /ko -->
+    <!-- ko if: item.NavigateUrl.length == 0  -->
+    <div class="menu-item vems-slide" data-bind="css: { 'menu-first-level' : item.Id > 0 }, attr: {'data-is-parent': $data.ChildMenus.length > 0 }">
+        <span data-bind="html: item.Text, css: {'parent-link': item.ChildMenus.length > 0}"></span>
+        <div style="float: right;">
+            <span class="menu-item-spacer">&nbsp;</span>
+            <div class="arrow-container"><i data-bind="css: { 'right-arrow fa fa-angle-down fa-3 vems-transition-all': item.ChildMenus.length > 0}"></i></div>
+        </div>
+    </div>
+    <!-- /ko -->
+    <!-- ko if: item.NavigateUrl.length > 0 && item.ChildMenus.length == 0 -->
+    <a class="menu-item vems-slide" data-bind="css: { 'menu-first-level' : item.Id > 0 }, attr: { 'href': $data.NavigateUrl, 'target': $data.Target !== null ? $data.Target : '_self' }">
+        <span data-bind="html: item.Text"></span>
+        <%--<div style="float: right;"><span class="menu-item-spacer">&nbsp;</span><div class="arrow-container"><i data-bind="css: { 'right-arrow fa fa-angle-down fa-3 vems-transition-all': item.ChildMenus.length > 0}" ></i></div>
+            </div>--%>
+    </a>
+    <!-- /ko -->
+    <div class="menu-next-level vems-simple-slide" data-bind="template: { name: 'menuTemplate', foreach: ChildMenus, as: 'item'}" />
+    <!-- ko if: $index() == 0 && !$parentContext.$index && $root.isAuthenticatedUser -->
+    <div data-bind="css: { 'menu-item-mobile-only menu-item menu-first-level vems-slide': $index() == 0 }, attr: {'style'" data-mobile-view-requests="true">
+        <span>Upcoming Events</span>
+        <%--<div style="float: right;">
+            <span class="menu-item-spacer">&nbsp;</span>
+            <div class="arrow-container"><i class="right-arrow fa fa-angle-down fa-3 vems-transition-all"></i></div>
+        </div>--%>
+    </div>
+    <!-- /ko -->
+</script>
+<script type="text/html" id="topMenuTemplate">
+    <a class="menu-item menu-user-menu-item" data-bind="attr: { href: NavigateUrl, target: Target !== null ? Target : '_self' }">
+        <span data-bind="html: Text"></span>
+    </a>
+</script>
+<script type="text/html" id="cancelPopupTemplate">
+    <div class="cancel-reason">
+        <div class="cancel-left">
+            <span class="cancel-label">Reason:</span>
+        </div>
+        <div class="cancel-right">
+            <div id="cancelReason"></div>
+        </div>
+    </div>
+    <br />
+    <div class="cancel-notes">
+        <div class="cancel-left">
+            <span class="cancel-label">Notes:</span>
+        </div>
+        <div class="cancel-right">
+            <div id="cancelNotes"></div>
+        </div>
+    </div>
+</script>
+<script type="text/javascript">
+    var browserLang = window.navigator.languages || [window.navigator.language || window.navigator.userLanguage];
+    var locale = vems.userLanguage.length > 0 ? vems.userLanguage : browserLang[0];
+    moment.locale(locale);
+    var showBadBrowserAlert = <%= showBadBrowserAlert.ToString().ToLower() %> && !DevExpress.devices.real().phone;
+
+    var mobileLogo = '<%= logoImgMobile %>';
+
+    vems.screenText.checkinText = '<%= EscapeQuotes(ScreenText.Checkin) %>';
+    vems.screenText.checkOutText = '<%= EscapeQuotes(ScreenText.CheckOut) %>';
+    vems.screenText.checkedInText = '<%= EscapeQuotes(ScreenText.IsCheckedIn) %>';
+    vems.screenText.endNowConfirmPrompt = '<%= EscapeQuotes(Messages.EndNowConfirm) %>';
+    vems.screenText.endNowConfirmationMessage = '<%= EscapeQuotes(Messages.EndNowConfirmationMessage) %>';
+    vems.screenText.cancelNotesRequiredMessage = '<%= EscapeQuotes(Messages.CancelNotesIsRequired) %>';
+    vems.screenText.cancelSuccessMessage = '<%= EscapeQuotes(Messages.CancelSuccessfulMessage) %>';
+    vems.screenText.StillWorkingText = '<%= EscapeQuotes(ScreenText.StillWorking) %>';
+    vems.screenText.KeepWorkingText = '<%= EscapeQuotes(ScreenText.KeepWorking) %>';
+    vems.screenText.SignOutText = '<%= EscapeQuotes(ScreenText.SignOut) %>';
+    vems.screenText.termsOfUseText = '<%= EscapeQuotes(ScreenText.TermsOfUse) %>';
+
+    $('#actas-modal').on('show.bs.modal', function (event) {
+        vems.actAsModalShowing(event);
+    });
+
+    $('#tou-modal').on('show.bs.modal', function (event) {
+        vems.touModalShowing(event);
+    });
+    
+    $(document).ready(function() {
+        if (DevExpress.devices.real().phone) {
+            vems.convertTabsForMobile();
+            $('.ems-logo-link').removeAttr('href');
+        }
+
+        if (vems.isAuthd) {
+            var timeoutCntr = 0;
+            var countdownNumSecs = 60;
+            vems.activeSessionTimer = vems.sessionTimer({
+                minutes: <%= Session.Timeout - 1 %>, //account for the 60 second countdown
+                onTimerEnd: function() {
+                    if (typeof autoRefresh !== 'undefined') { clearInterval(autoRefresh); }  // prevent auto-refresh if timeout popup appears
+                    timeoutCntr = 0;
+                    var extendTimeoutFn = function(result) {
+                        var img = new Image(1, 1);
+                        img.src = 'Default.aspx?date=' + escape(new Date());
+                        clearTimeout(expiryTimer);
+                        vems.activeSessionTimer.reset();  
+                    };
+
+                    var timethemoutFn  = function(e){
+                        clearTimeout(expiryTimer);
+                        window.location = "logout.aspx";
+                    };
+
+                    var modalx = vems.showModalMessageWithButtons('<%= EscapeQuotes(Messages.YourSessionIsAboutToExpire) %>', vems.screenText.StillWorkingText, vems.screenText.KeepWorkingText, vems.screenText.SignOutText, extendTimeoutFn, timethemoutFn, extendTimeoutFn);
+                    var countDownEl = $(modalx).find(".countdown");
+                                        
+                    var expiryTimer = setInterval(function(){
+                        updatemodal(timeoutCntr, countDownEl);
+                    }, 1000);
+
+                    var updatemodal = function(){
+                        timeoutCntr= timeoutCntr+1;
+                        countDownEl.html((60-timeoutCntr));
+                        if (timeoutCntr == countdownNumSecs) {
+                            clearInterval(expiryTimer);
+                            var img = new Image(1, 1);
+                            img.src = 'logout.aspx';
+                            window.location = "default.aspx?" + '<%= Querystring.Timeout %>' + "=true";
+                        }
+                    };
+                }
+            });
+            vems.activeSessionTimer.start();
+        }
+
+        (function () {
+            var isMobile = {
+                Android: function() {
+                    return /Android/i.test(navigator.userAgent);
+                },
+                iOS: function() {
+                    return /iPhone|iPad|iPod/i.test(navigator.userAgent);
+                }
+            };
+            function getCookie(cname) {
+                var name = cname + "=";
+                var ca = document.cookie.split(';');
+                for(var i = 0; i < ca.length; i++) {
+                    var c = ca[i];
+                    while (c.charAt(0) == ' ') {
+                        c = c.substring(1);
+                    }
+                    if (c.indexOf(name) == 0) {
+                        return c.substring(name.length, c.length);
+                    }
+                }
+                return "";
+            }
+            var mobileCookie = getCookie('dismissedMobile');
+            // if((!isMobile.Android() && !isMobile.iOS()) || mobileCookie !== "") $('#showMobile').hide();
+                     
+            if(((isMobile.Android() && '<%= AndroidAppStoreURL %>'.length) || (isMobile.iOS() && '<%= IOSAppStoreURL %>'.length)) 
+                && mobileCookie === ""){
+                $('#page-content-wrapper').css('padding-bottom', '20%');
+                $('#showMobile').removeClass('hidden');
+
+                // move all web app content down to accomodate app promo banner
+                $('#vems-navbar-top').css('top', '80px');
+                $('#page-content-wrapper').css('top', '143px');
+                $('#sidebar-wrapper').css('top', '143px');
+            } 
+            if(isMobile.Android()) $('#launchMobile').attr('href', '<%= AndroidAppStoreURL %>');
+            if(isMobile.iOS()) $('#launchMobile').attr('href', '<%= IOSAppStoreURL %>');
+            $('#dismissMobile').on('click', function(item){
+                var d = new Date();
+                d.setTime(d.getTime() + (30*24*60*60*1000));
+                var expires = "expires="+d.toUTCString();
+                document.cookie = "dismissedMobile=true; " + expires;
+                $('#showMobile').hide();
+                $('#page-content-wrapper').css('padding-bottom', '0');
+
+                // move all web app content back up
+                $('#vems-navbar-top').css('top', '0');
+                $('#page-content-wrapper').css('top', 'auto');
+                $('#sidebar-wrapper').css('top', 'auto');
+            });
+            function goToUri(uri, href) {
+                var start, end, elapsed;
+                start = new Date().getTime();
+
+                if(isMobile.iOS()) document.location = uri;
+                if(isMobile.Android()) document.location.replace(uri);
+
+                // end timer
+                end = new Date().getTime();
+                elapsed = (end - start);
+
+                if (elapsed < 1) {
+                    document.location = href;
+                }
+            }
+
+            $('a.intent').on('click', function (event) {
+                goToUri($(this).data('scheme'), $(this).attr('href'));
+
+                event.preventDefault();
+            });
+        })();
+
+        if (showBadBrowserAlert) {
+            $('#bad-browser-modal').modal('show');
+        }
+    });
+</script>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js"></script>
+    <asp:contentplaceholder id="bottomJSHolder" runat="server" />
+    <asp:contentplaceholder>
+        <%= Scripts.Render(CustomJsList.ToArray()) %>
+    </asp:contentplaceholder>
+</html>

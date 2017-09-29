@@ -1,0 +1,63 @@
+﻿/****** This class works better for sliding divs and such  ******/
+.vems-slide
+{   
+    transition-property: left, right, top, bottom, width, height;
+    transition-duration: .75s !important;
+    transition-timing-function: cubic-bezier(0, 1, 0.5, 1) !important;
+}
+
+/****** This class works better for sliding text  ******/
+.vems-simple-slide 
+{
+    transition-property: left, right, top, bottom, width, height;
+    transition-duration: .75s !important;
+    transition-timing-function: ease;
+}
+
+.vems-transition-all 
+{
+    transition-property: all;
+    transition-duration: .6s;
+}
+
+.vems-fade {
+    transition-property: opacity;
+    transition-duration: .3s;
+}
+
+/****** You need this class to apply animations below:  ******/
+.vems-animate {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes zoomIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+.vems-zoomIn {
+  -webkit-animation-name: zoomIn;
+  animation-name: zoomIn;
+}

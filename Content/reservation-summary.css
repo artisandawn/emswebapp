@@ -1,0 +1,13 @@
+﻿li{margin-top:.3em;margin-bottom:.3em;}
+li.serviceOrder, .soLabel{padding-bottom:.3em;list-style-type:none;}
+.additionalInfo{margin-top:.3em;}
+.itemMinWidth{min-width:10em;}
+#Details.ui-tabs .ui-tabs-panel{padding:1em;}
+#Details.ui-tabs #DetailsTab2.ui-tabs-panel {padding:0em;}
+#reservationActions a {margin-top:.3em;}
+
+.additionalInfo{font-size:.8em;font-weight:normal;}
+.itemGrouping{font-weight:bold;}
+.zeroQuantity, .problemWithBooking{background-color: #FF9F88;}
+.tipHeader{width:13em; overflow:hidden;}
+

@@ -1,0 +1,21 @@
+﻿<div>
+    <pre data-bind="text: ko.toJSON(data, null, 2)"></pre>
+
+    <!-- ko if: data.IsHoliday -->
+    <div data-bind="text: data.EventStart()"></div>
+    <!-- /ko -->
+    <!-- ko if: data.StatusId() == 3 -->
+    <span>(CANCELED) </span>
+    <!-- /ko -->
+    <a href="#" data-bind="text: vems.decodeHtml(data.EventName()), attr: { href: data.ReservationSummaryUrl(), 'class': (data.StatusId() == 3) ? 'row-canceled' : '' }"></a>
+    <span data-bind="text: moment(data.EventStart()).format('h:mm A')"></span>
+    <span data-bind="text: moment(data.EventEnd()).format('h:mm A')"></span>
+
+    <!-- ko if: data.ShowFloorMap()   -->
+    <a href="#" data-bind="attr: { href: data.LocationLink(), 'class': (data.StatusId() == 3) ? 'row-canceled' : '' }">
+        <img src="images/floorplan-2x.png" width="24" height="24" />
+    </a>&nbsp;&nbsp;
+    <!-- /ko -->
+    <a href="#" data-bind="text: vems.decodeHtml(data.Room()), attr: { href: data.LocationLink(), 'class': (data.StatusId() == 3) ? 'row-canceled' : '' }"></a>
+
+</div>

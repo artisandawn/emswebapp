@@ -1,0 +1,64 @@
+﻿#content{clear:both;}
+.lm {margin-left:.3em;}
+.processTemplateName{padding-right:3em;}
+.lineHeight{margin-top:.6em;}
+.alignToBoxHeight{margin-top:1.1em;}
+.top{vertical-align:top;}
+#featureScroll, #facilityPicker{overflow:auto;width:18em;max-height:16em;}
+#roomRequestContainer{position:relative;}
+#leftColumn{position:absolute;left:2px;width:22em;top:41px;vertical-align:top;z-index:4;}
+.filterPadding{padding-left:.5em;}
+.padBottom{padding-bottom:1.5em;}
+.processTemplateName{color:#4D4E50;}
+#featureScroll, #facilityPicker{border:1px solid lightgrey;}
+.inputMargin{margin-bottom:.5em;}
+.leftColumnHeaderOffset{margin-top:.6em;}
+.leftCol{float:left;width:21em;}
+#roomRequestCore{padding-left:20.5em;}
+.btnFind {margin-left:.2em;}
+.containerImage{margin-top:1.2em;}
+.cartHoliday{display:block;}
+.cartScroll{max-height:15em;overflow:auto;margin-top:-2px;}
+.abr{width:25%;}
+.attendeeRow{clear:left;position:relative;}
+.attendeeWidth{float:left;display:block;overflow:hidden;border-top: solid 1px;border-bottom: solid 1px;border-left: solid 1px;white-space:nowrap;}
+.aw{width:20%;}
+.editContainerMargin{margin-bottom:.6em;}
+.pc {overflow:auto;height:25em;width:20em;margin-bottom:1em;}
+.flier{padding:1em;position:absolute;z-index:20;}
+#resultsHolder{overflow:auto;height:350px;}
+h3 {margin-bottom:.5em;}
+#bookLoadingContainer{min-height:35em;}
+.iw {width:14%;padding-left:.2em;}
+.lw {width:82%;}
+.t{padding-left:0;}
+.smallerText{font-size:.8em;}
+h4 { margin-bottom:0;}
+/*formatting*/
+.attendeeWidth{border-color: #dcdcdc;background-color:White;}
+#leftColumn{border-right: 2px groove grey;border-bottom: 2px groove grey;}
+.cartHoliday{color:Red;}
+.zeroQuantity{background-color: #FF9F88;}
+.flier{color:white;background-Color :  #225d92;border: solid 1px white;}
+.cartConflict {  background-color: #FF9F88;}
+a.actionLink, a.actionLink:hover{}
+.ui-effects-transfer { border: 2px dotted gray; }
+.labelText {font-size:1.1em;}
+#bookHeaderContainer, #pamBookWrapper 
+{
+    width:651px;
+}
+.bookScroll, .pamBookScroll { width:668px;}
+.safari-mac .bookScroll, .safari-mac .pamBookScroll {width:651px; }
+.bookScroll { height:450px;}
+.pamAttendees{padding-top:17px;}
+
+.s-Request {}
+.s-Reserve {}
+.s-Unavailable{}
+.statusHeader {}
+.statusHeader a, .statusHeader a:link, .statusHeader a:visited {}
+.ui-datepicker 
+{
+    z-index:26!important
+}

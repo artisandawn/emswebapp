@@ -1,0 +1,21 @@
+﻿/*positioning*/
+.catMargin{line-height:2em;}
+.availableServices{margin-top:0px;}
+#mainDisplay{margin-bottom:.5em;}
+#rightCol{width:73%;}
+#leftColumn{width:25%;}
+#existingServicesContainer{padding:0em;}
+.tipHeader{width:15em;display:block; vertical-align:top;}
+.containerImage{margin-top:1.2em;margin-left:.2em;}
+li{margin-top:.3em;	margin-bottom:.3em;list-style-type:none;}
+li.serviceOrder, .soLabel {padding-bottom:.3em;list-style-type:none;}
+.additionalInfo{margin-top:.3em;}
+#rightCol ul, #availableCatsContainer ul{margin:0;padding:0;}
+.itemMinWidth{min-width:10em;}
+
+/*formatting*/
+.zeroQuantity{background-color: #FF9F88;}
+.tipHeader{font-weight:bold;}
+.additionalInfo{font-size:.8em;	font-weight:normal;}
+.itemGrouping{font-weight:bold;}
+#ctl00_pc_ExistingServices_ctl01_ctl00_sodsGrid td {vertical-align:top;}

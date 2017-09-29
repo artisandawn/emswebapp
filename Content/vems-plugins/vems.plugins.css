@@ -1,0 +1,37 @@
+﻿/*begin locationpicker styles*/
+.lp-icon {
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    background-size: cover;
+}
+.lp-label {
+    font-size: 0.6em;
+    color: #fff;
+}
+.lp-icon-favorites {
+    background-image: url(../../Images/btn-blank.png);
+}
+.lp-icon-buildings {
+    background-image: url(../../Images/btn-blank.png);
+}
+.lp-icon-areas {
+    background-image: url(../../Images/btn-blank.png);
+}
+.lp-icon-views {
+    background-image: url(../../Images/btn-blank.png);
+}
+.lp-filter {
+    background: none;
+    border: none;
+    padding: 0;
+    opacity: 0.5;
+    width: 40px;
+}
+    .lp-filter:hover {
+        opacity: 1.0;
+    }
+.lp-filter-active {
+    opacity: 1.0;
+}
+/*end locationpicker styles*/
