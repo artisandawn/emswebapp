@@ -1,0 +1,25 @@
+#page-title h1 {
+  font-size: 1.5em;
+  background-image: url("../../Images/logo-provided-by.png");
+  background-repeat: no-repeat;
+  background-position-x: 280px;
+  background-position-y: center;
+}
+
+.ems-logo {
+  max-width: 165px;
+  max-height: 40px;
+  padding-top: 5px;
+}
+
+.navbar {
+  background: #0077CC;
+  background: -webkit-linear-gradient(#0077CC, #004876);
+  background: -o-linear-gradient(#0077CC, #004876);
+  background: -moz-linear-gradient(#0077CC, #004876);
+  background: linear-gradient(#0077CC, #004876);
+}
+
+#user-menu-section .dropdown-toggle {
+  background-color: #004876 !important;
+}
