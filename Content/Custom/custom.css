@@ -20,6 +20,6 @@
   background: linear-gradient(#0077CC, #004876);
 }
 
-#user-menu-section .dropdown-toggle {
+#user-menu-section .dropdown-toggle, .nav .dropdown-menu {
   background-color: #004876 !important;
 }
