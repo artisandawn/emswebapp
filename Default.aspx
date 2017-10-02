@@ -44,10 +44,10 @@
 
         <!-- Tab panes -->
         <div class="tab-content">
-            <div role="tabpanel" class="tab-pane fade" id="site-home"> 
+            <div role="tabpanel" class="tab-pane fade" id="site-home">
                 <div class="default-page-help-text">
-                    <Dea:WebText ID="HomeHelp" runat="server" ParentType="none" PersonalizationKey="VemsShowHelpText" isHelpText="true" 
-                                 EditPage="EditWebText.aspx" LookupKey="vemsDefaultPageMainHelp" CssClass="default-page-help-text-content"></Dea:WebText>   
+                    <Dea:WebText ID="HomeHelp" runat="server" ParentType="none" PersonalizationKey="VemsShowHelpText" isHelpText="true"
+                                 EditPage="EditWebText.aspx" LookupKey="vemsDefaultPageMainHelp" CssClass="default-page-help-text-content"></Dea:WebText>
                 </div>
             </div>
             <div role="tabpanel" class="tab-pane fade" id="my-home">
@@ -71,17 +71,20 @@
                                 <div class="clear">
                                     <Dea:WebText ID="WebText1" runat="server" ParentType="none" PersonalizationKey="VemsShowHelpText" IsHelpText="true"
                                         EditPage="EditWebText.aspx" LookupKey="VemsLoginPageMainContent"></Dea:WebText>
+                                        <!-- /*** edits Dawn Russell - Web Services Team - October 2017**/ -->
+                                        <p class="custom-sign-in-text">Students, Faculty, and Staff can login with your UserID and password in the fields below.<br /> (Do not include the @mtholyoke.edu)</p>
+                                        <!-- /*** End of edits Dawn Russell ***/ -->
                                 </div>
                                 <div class="loginDiv">
                                     <div id="timeoutMsg" class="timeout-message center-block" style="display: none;">
                                         <span class="fa fa-exclamation-circle timeout-icon"></span>
                                         <span><%= Messages.SessionExpired %><br /><%= Messages.LogInAgain %></span>
-                                    </div>                                
+                                    </div>
                                     <div id="login-standard-div" class="center-block" style="width: 60%; display: none;">
                                         <div class="form-group">
-                                            <label for="userID_input" class="required"><%= EmsParameters.UserIdLabel %></label>                                        
+                                            <label for="userID_input" class="required"><%= EmsParameters.UserIdLabel %></label>
                                                 <asp:TextBox runat="server" ClientIDMode="Static" ID="userID_input" required="required" CssClass="userId form-control"></asp:TextBox>
-                                        
+
                                         </div>
                                         <div class="form-group">
                                             <label for="password_input" class="required"><%=ScreenText.Password %></label>
@@ -95,8 +98,14 @@
 
                                         <div class="form group text-left" >
                                             <asp:Button ID="btnLogin" runat="server"  Text="<%$ Resources:ScreenText, btnLogin %>" OnClick="btnLogin_Click"  CssClass="btn btn-primary" />
+                                            <!-- /*** edits Dawn Russell - Web Services Team - October 2017***/ -->
+                                              <div class="custom-sign-in-text">
+                                              <h3>Instructions for first time users:</h3>
+                                                  <p>When making a reservation, in the sponsor field click on the search/spy glass and start typing the name of your department/organization. Choose the correct affiliation and click close. Then in the Sponsor field, click on the down arrow and select the sponsor name. If your name is not listed as a contact for that department/org, you can choose the option of "temporary contact" and fill in the appropriate fields.</p>
+                                              </div>
+                                            <!-- /*** end of edits Dawn Russell ***/ -->
                                         </div>
-                                        <div class="form-group text-left" style="margin-top: 15px;" id="forgotPasswordContainer" runat="server"> 
+                                        <div class="form-group text-left" style="margin-top: 15px;" id="forgotPasswordContainer" runat="server">
                                             <a href="ForgotPassword.aspx"><i class="fa fa-exclamation-triangle fa-3"></i> <%= Resources.ScreenText.IveForgottenMyPassword %></a>
                                         </div>
                                     </div>
@@ -168,7 +177,7 @@
                                             </div>
                                         </li>
                                     </ul>
-		                        
+
                                     <div class="previous-today-next pull-right">
                                         <a class="hidden-sm hidden-xs" data-bind="click: previousTodayNextHandler.bind($data, -1)"><%= ScreenText.Previous %></a>
                                         <a class="hidden-md hidden-lg fa fa-chevron-left" data-bind="click: previousTodayNextHandler.bind($data, -1)"></a>
@@ -206,10 +215,10 @@
 		                            <div class="form-group">
 			                            <input type="text" class="form-control" id="booking-search-box">
 		                            </div>
-	
+
 		                            <button type="button" class="btn btn-default" id="booking-search-button" data-bind="click: $root.searchForBookings"><%=ScreenText.Search %></button>
                                     <span id="booking-search-count" class="result-count" style="display: none;" data-bind="text: searchRecordCountLabel"></span>
-		                        
+
                                     <!-- ko if: searchRecordCount() == 20 && !DevExpress.devices.real().phone -->
 		                            <span>&nbsp;<%= Messages.WantToSeeMore %> <a href="BrowseReservations.aspx"><%= ScreenText.ManageMyReservations %></a>.</span>
                                     <!-- /ko -->
@@ -264,7 +273,7 @@
             </div>
         </div>
     </div>
-    
+
     <!-- about template modal -->
     <div class="modal fade" id="template-modal" tabindex="-1" role="dialog" aria-labelledby="modal-title">
         <div class="modal-dialog" role="document">
@@ -328,7 +337,7 @@
     </div>
 
     <!-- floor plan modal -->
-    <div id="floorplan-component-modal" data-bind='component: { name: "floorplans-reserve-modal", params: { 
+    <div id="floorplan-component-modal" data-bind='component: { name: "floorplans-reserve-modal", params: {
     RoomInfo: new FloorMapRoomInfo(),
     renderType: "modal",
     ScreenText: {
@@ -422,7 +431,7 @@
         vems.screenText.Results = '<%= escapeQuotes(ScreenText.Results) %>';
         vems.screenText.NoSearchResults = '<%= escapeQuotes(Messages.NothingWasFoundForSearchString) %>';
         var sSignInJson = '<%=SignInViewModelJson%>';
-        vems.home.viewModels.signin = {};        
+        vems.home.viewModels.signin = {};
 
         var FloorMapHash = '<%= FloorMapHash %>';
         var FloorMapWebServiceUrl = '<%= FloormapWebserviceUrl %>';
@@ -436,7 +445,7 @@
             vems.isAuthd = false;
         }
 
-        if (vems.isAuthd) {           
+        if (vems.isAuthd) {
             if (DevExpress.devices.real().phone) {
                 $('#default-tablist').hide();
                 $('#my-reservations > h2').hide();
@@ -514,7 +523,7 @@
             }
         });
 
-        $(document).ready(function () {  
+        $(document).ready(function () {
             if(<%= (!string.IsNullOrEmpty(LoadActionMessage)).ToString().ToLower() %>)
                 vems.showToasterMessage('', '<%= LoadActionMessage %>', 'success', 2000);
 
@@ -540,10 +549,10 @@
 
             vems.home.bookingCounts = vems.eventCountsForMonth;
             vems.home.buildCalendar();
-            
+
             vems.home.viewModels.myBookings = new vems.home.myBookingsVM();
             ko.applyBindings(vems.home.viewModels.myBookings, $('#my-reservations')[0]);
-            
+
             ko.applyBindings(null, $('#booking-details-comp')[0]);
             ko.applyBindings(null, $('#location-details-comp')[0]);
             ko.applyBindings(null, $('#floorplan-component-modal')[0]);
@@ -590,12 +599,12 @@
 
             $(".userId").attr('name','userID_input');
             $(".userId").attr('ID','userID_input');
-            
+
             var loginValidation = {
                 //debug: true,
                 rules: {
                     "userID_input": {required: true },
-                    "password_input": {required: true },                   
+                    "password_input": {required: true },
                 },
                 messages: {
                     "userID_input": {required: "Please type a valid <%= EmsParameters.UserIdLabel.ToLower() %>."},
